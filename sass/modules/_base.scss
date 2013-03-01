@@ -1,0 +1,47 @@
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+p {
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+ul {
+	li {
+	}
+}
+ol {
+	li {
+	}
+}
+li {
+	ul, ol {
+	}
+}
+
+blockquote {
+}
+a, a:active, a:visited {
+	color: $color-white; 
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover, a:active {
+}
+a:hover, a:focus { 
+}
+a:link { 
+}
+
+
