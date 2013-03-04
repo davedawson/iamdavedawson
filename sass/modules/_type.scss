@@ -1,85 +1,12 @@
-@font-face {
-	font-family: 'Antenna-thin';
-	src: asset-url("antennathin.woff", font);
-	font-weight: normal;
-	font-style: normal;
-}
+$type-display: 	"freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;
+$type-sans:    "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+$type-serif: 	"skolar", Times, "Times New Roman", Arial, sans-serif;
 
-@font-face {
-	font-family: 'Antenna-regular';
-	src: asset-url("antennaregular.woff", font);
-	font-weight: normal;
-	font-style: normal;
+@mixin type($family: $type-sans, $size:1em, $weight: normal, $color: $color-grey, $transform:normal, $line-height: 1.2em) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+ 	color: $color;
+	text-transform: $transform;
+	line-height: $line-height;
 }
-@font-face {
-	font-family: 'Antenna-bold';
-	src: asset-url("antennabold.woff", font);
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'icomoon';
-	src: asset-url("icomoon.eot", font);
-	src: asset-url("icomoon.eot?#iefix", font) format('embedded-opentype'),
-		 asset-url("icomoon.woff", font) format('woff'),
-		 asset-url("icomoon.ttf", font) format('truetype'),
-		 asset-url("icomoon.svg#icomoon", font) format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-$type-thin: 	"Antenna-thin", Helvetica, Arial, sans-serif;
-$type-regular:  "Antenna-regular", Helvetica, Arial, sans-serif;
-$type-bold: 	"Antenna-bold", Helvetica, Arial, sans-serif;
-
-@mixin type-sans($size:1em, $color:$color-white, $weight:$type-regular, $transform:normal, $line-height: 1.2em) {
-  font-family: $weight;
-  text-transform: $transform;
-  line-height: $line-height;
-  font-size: $size;
-  color: $color;
-}
-
-// @import "fonts/_icomoon";
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"]:before {
-*/
-.icon-clock:before, .icon-hyperakt:before, .icon-inspiration:before {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	padding: 0 7px 0 0;
-	position: relative;
-	top: 2px;
-}
-.icon-clock:before {
-	content: "\e000";
-}
-.icon-hyperakt:before {
-	content: "\e001";
-}
-.icon-inspiration:before {
-	content: "\e002";
-}
-
-
-
-@import "_defaults";

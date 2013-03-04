@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,129 +19,733 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
+/* line 20, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-@font-face {
-  font-family: 'Antenna-thin';
-  src: asset-url("antennathin.woff", font);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Antenna-regular';
-  src: asset-url("antennaregular.woff", font);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Antenna-bold';
-  src: asset-url("antennabold.woff", font);
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: asset-url("icomoon.eot", font);
-  src: asset-url("icomoon.eot?#iefix", font) format("embedded-opentype"), asset-url("icomoon.woff", font) format("woff"), asset-url("icomoon.ttf", font) format("truetype"), asset-url("icomoon.svg#icomoon", font) format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 47, ../sass/modules/_type.scss */
-[data-icon]:before {
-  font-family: 'icomoon';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Use the following CSS code if you want to have a class per icon */
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
 /*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"]:before {
-*/
-/* line 62, ../sass/modules/_type.scss */
-.icon-clock:before, .icon-hyperakt:before, .icon-inspiration:before {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  padding: 0 7px 0 0;
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 11, ../sass/modules/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 29, ../sass/modules/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 40, ../sass/modules/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 49, ../sass/modules/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 63, ../sass/modules/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+/* line 73, ../sass/modules/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 85, ../sass/modules/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 93, ../sass/modules/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 107, ../sass/modules/_normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 115, ../sass/modules/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 123, ../sass/modules/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 132, ../sass/modules/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 140, ../sass/modules/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 150, ../sass/modules/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 162, ../sass/modules/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 172, ../sass/modules/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 180, ../sass/modules/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 188, ../sass/modules/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
   position: relative;
-  top: 2px;
+  vertical-align: baseline;
 }
 
-/* line 73, ../sass/modules/_type.scss */
-.icon-clock:before {
-  content: "\e000";
+/* line 196, ../sass/modules/_normalize.scss */
+sup {
+  top: -0.5em;
 }
 
-/* line 76, ../sass/modules/_type.scss */
-.icon-hyperakt:before {
-  content: "\e001";
+/* line 200, ../sass/modules/_normalize.scss */
+sub {
+  bottom: -0.25em;
 }
 
-/* line 79, ../sass/modules/_type.scss */
-.icon-inspiration:before {
-  content: "\e002";
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 212, ../sass/modules/_normalize.scss */
+img {
+  border: 0;
 }
 
-/* line 1, ../sass/layouts/blog.scss */
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 220, ../sass/modules/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 232, ../sass/modules/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 244, ../sass/modules/_normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 255, ../sass/modules/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 266, ../sass/modules/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 280, ../sass/modules/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, ../sass/modules/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 305, ../sass/modules/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 315, ../sass/modules/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 327, ../sass/modules/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 339, ../sass/modules/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 348, ../sass/modules/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 359, ../sass/modules/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 372, ../sass/modules/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/modules/_base.scss */
+body {
+  font-family: "freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #444444;
+  text-transform: normal;
+  line-height: 1.2em;
+  background: #ebebde;
+}
+
+/* line 5, ../sass/modules/_base.scss */
+h1 {
+  font-family: "freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #444444;
+  text-transform: normal;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* line 11, ../sass/modules/_base.scss */
+h3 {
+  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-top: 10px;
+  letter-spacing: 0.2em;
+}
+
+/* line 18, ../sass/modules/_base.scss */
 p {
-  font-size: 100px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #444444;
+  margin: 0 0 18px;
+}
+
+/* line 24, ../sass/modules/_base.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+/* line 27, ../sass/modules/_base.scss */
+ul li, ol li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 48, ../sass/modules/_base.scss */
+a, a:active, a:visited {
+  color: #2d0a42;
+  text-decoration: none;
+}
+
+/* ==|== non-semantic helper classes ======================================== */
+/* line 3, ../sass/modules/_tools.scss */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+
+/* line 4, ../sass/modules/_tools.scss */
+.ir br {
+  display: none;
+}
+
+/* line 5, ../sass/modules/_tools.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 6, ../sass/modules/_tools.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 7, ../sass/modules/_tools.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 8, ../sass/modules/_tools.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 9, ../sass/modules/_tools.scss */
+.required {
+  color: red;
+}
+
+/* line 10, ../sass/modules/_tools.scss */
+.floatl {
+  float: left;
+  margin: 0;
+  padding: 0 10px 10px 0;
+}
+
+/* line 11, ../sass/modules/_tools.scss */
+.floatr {
+  float: right;
+  margin: 0;
+  padding: 0 0 10px 10px;
+}
+
+/* line 12, ../sass/modules/_tools.scss */
+.pic img {
+  max-width: 100%;
+}
+
+/* line 13, ../sass/modules/_tools.scss */
+.cf {
+  *zoom: 1;
+}
+/* line 15, ../sass/modules/_tools.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+/* line 19, ../sass/modules/_tools.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 24, ../sass/modules/_tools.scss */
+::-moz-selection {
+  background: #1fb9e7;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 25, ../sass/modules/_tools.scss */
+::selection {
+  background: #1fb9e7;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 1, ../sass/layouts/_layout.scss */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/layouts/_header.scss */
+#header {
+  background: white;
+  padding: 80px 0;
+  margin-bottom: 80px;
+  color: #2d0a42;
+}
+/* line 6, ../sass/layouts/_header.scss */
+#header #logo {
+  float: left;
+}
+/* line 7, ../sass/layouts/_header.scss */
+#header #logo h1 {
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+}
+/* line 13, ../sass/layouts/_header.scss */
+#header #logo h2 {
+  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  color: #444444;
+  text-transform: normal;
+  line-height: 42px;
+}
+/* line 17, ../sass/layouts/_header.scss */
+#header nav {
+  float: right;
+  width: 40%;
+  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  color: #444444;
+  text-transform: normal;
+  line-height: 42px;
+}
+/* line 21, ../sass/layouts/_header.scss */
+#header nav li {
+  display: inline;
+  padding: 6%;
+}
+
+/* line 1, ../sass/layouts/_blocks.scss */
+.project-entry {
+  margin-bottom: 80px;
+}
+/* line 3, ../sass/layouts/_blocks.scss */
+.project-entry img {
+  margin: 0;
+  padding: 0;
+}
+/* line 7, ../sass/layouts/_blocks.scss */
+.project-entry .project-info {
+  background: white;
+  border: 1px solid #b1b17f;
+  border-top: 0;
+  margin: 0;
+  padding: 80px;
+}
+/* line 13, ../sass/layouts/_blocks.scss */
+.project-entry .project-info .details {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  -moz-column-count: 2;
+  -moz-column-gap: 40px;
+  column-count: 2;
+  column-gap: 40px;
+}
+/* line 20, ../sass/layouts/_blocks.scss */
+.project-entry .project-info .details p {
+  font-size: 18px;
+  line-height: 20px;
+}
+/* line 26, ../sass/layouts/_blocks.scss */
+.project-entry .project-info .description {
+  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #444444;
+  text-transform: normal;
+  line-height: 24px;
+}
+/* line 28, ../sass/layouts/_blocks.scss */
+.project-entry .project-info .description a {
+  display: block;
+  font-weight: bold;
+}
+
+/* line 2, ../sass/layouts/_portfolio.scss */
+.project .intro {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 0 10%;
+}
+/* line 6, ../sass/layouts/_portfolio.scss */
+.project .intro h1 {
+  font-size: 68px;
+}
+/* line 9, ../sass/layouts/_portfolio.scss */
+.project .intro p {
+  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 100;
+  color: #444444;
+  text-transform: normal;
+  line-height: 42px;
+}
+/* line 14, ../sass/layouts/_portfolio.scss */
+.project .project-content p:first-child {
+  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 100;
+  color: #444444;
+  text-transform: normal;
+  line-height: 42px;
+}
+/* line 17, ../sass/layouts/_portfolio.scss */
+.project .project-content p:first-child:first-letter {
+  float: left;
+  font-family: "freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;
+  font-size: 148px;
+  font-weight: 900;
+  color: #444444;
+  text-transform: normal;
+  line-height: 42px;
+  padding: 8px 8px 3px 10px;
 }

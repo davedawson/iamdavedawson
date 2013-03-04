@@ -1,0 +1,26 @@
+#header {
+	background: $color-white;
+	padding: 80px 0;
+	margin-bottom: 80px;
+	color: $color-purp;
+	#logo {
+		h1 {
+			font-size: 48px;
+			line-height: 48px;
+			margin: 0;
+		}
+		float: left;
+		h2 {
+			@include type($family: $type-sans, $size: 22px, $weight: 100, $line-height: 42px, $color: $color-grey);
+		}
+	}
+	nav { 
+		float: right;
+		width: 40%;
+		@include type($family: $type-sans, $size: 22px, $weight: 100, $line-height: 42px, $color: $color-grey);
+		li { 
+			display: inline;
+			padding: 6%;
+		}
+	}
+}

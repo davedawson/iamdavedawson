@@ -1,0 +1,40 @@
+---
+layout: default
+title: Projects
+---
+<ul class="entries">
+  {% for post in site.posts %}
+    <li class="project-entry">
+      <div class="pic">
+        <a href="{{ post.url }}" class="cf">
+          <img src="{{ post.short-image }}" />
+        </a>
+      </div>
+      <div class="project-info cf">
+        <div class="d1-d3">
+          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+          <p class="description">{{ post.description}} <span><a href="{{ post.url }}">Read more about {{ post.title }}</a></span></p>
+        </div>
+        <ul class="details d4-d6">
+          <li>
+            <h3>Client</h3>
+            <p>{{ post.client }}</p>
+          </li>
+          <li>
+            <h3>Role</h3>
+            <p>{{ post.role }}</p>
+          </li>
+          <li>
+            <h3>Team</h3>
+            <p>{{ post.team }}</p>
+          </li>
+          <li>
+            <h3>Live Site</h3>
+            <p>{{ post.live-site }}</p>
+          </li>
+        </ul>
+      </div>
+
+    </li>
+  {% endfor %}
+</ul>

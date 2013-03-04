@@ -1,0 +1,23 @@
+.project {
+	.intro {
+		text-align: center;
+		margin-bottom: 80px;
+		padding: 0 10%;
+		h1 {
+			font-size: 68px;
+		}
+		p {
+			@include type($family: $type-sans, $size: 34px, $weight: 100, $line-height: 42px, $color: $color-grey);
+		}
+	}
+	.project-content {
+		p:first-child {
+			@include type($family: $type-sans, $size: 34px, $weight: 100, $line-height: 42px, $color: $color-grey);
+		}
+		p:first-child:first-letter { 
+			float: left; 
+			@include type($family: $type-display, $size: 148px, $line-height: 42px, $color: $color-grey, $weight: 900 );
+			padding: 8px 8px 3px 10px;
+		}
+	}	
+}

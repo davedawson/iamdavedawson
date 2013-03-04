@@ -1,11 +1,17 @@
 ---
 layout: default
 ---
-<section role="banner">
-  <img src="/img/banner.jpg" />
-</section>
-<section class="content">
-  <p>
-  Welcome to John Doe Photography! Please, check out my <a href="/portfolio/">Portfolio</a> to see my work.
-  </p>
-</section>
+
+{% for post in portfolio.posts %}
+<li>
+	<a href="{{ post.url }}">
+		<img src="{{ post.image }}" />
+	</a>
+	<div class="project-info">
+		<h1>{{ post.title }}</h1>
+		<p>{{ post.description}}</p>
+	</div>
+
+</li>
+{% endfor %} 
+<p>{{ post.short-description}}

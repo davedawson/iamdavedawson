@@ -1,12 +1,25 @@
+body {
+	@include type($family: $type-display);
+	background: $color-tan; 
+}
 h1 {
+	@include type($family: $type-display, $size: 36px, $weight: 900);
+	margin-bottom: 20px;
 }
 h2 {
 }
 h3 {
+	@include type($family: $type-sans, $size: 16px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: uppercase);
+	margin-top: 10px;
+	letter-spacing: 0.2em;
 }
 h4 {
 }
 p {
+	font-size: 24px;
+	line-height: 32px;
+	color: $color-grey;
+	margin: 0 0 18px;
 }
 ul, ol {
 	margin: 0;
@@ -33,8 +46,7 @@ li {
 blockquote {
 }
 a, a:active, a:visited {
-	color: $color-white; 
-	font-weight: bold;
+	color: $color-purp; 
 	text-decoration: none;
 }
 a:hover, a:active {

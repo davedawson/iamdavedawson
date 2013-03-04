@@ -1,0 +1,7 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	@include respond-to(handhelds) { padding: 0 3%; }
+	@include respond-to(medium-screens) { padding: 0 6%; display: none; }
+	@include respond-to(wide-screens) {  }
+}
