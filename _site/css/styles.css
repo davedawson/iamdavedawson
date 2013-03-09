@@ -624,7 +624,7 @@ a, a:active, a:visited {
 /* line 1, ../sass/layouts/_header.scss */
 #header {
   background: white;
-  padding: 80px 0;
+  padding: 20px 0;
   margin-bottom: 80px;
   color: #2d0a42;
 }
@@ -679,23 +679,15 @@ a, a:active, a:visited {
   border: 1px solid #b1b17f;
   border-top: 0;
   margin: 0;
-  padding: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-/* line 13, ../sass/layouts/_blocks.scss */
-.project-entry .project-info .details {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 40px;
-  -moz-column-count: 2;
-  -moz-column-gap: 40px;
-  column-count: 2;
-  column-gap: 40px;
-}
-/* line 20, ../sass/layouts/_blocks.scss */
+/* line 15, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .details p {
   font-size: 18px;
   line-height: 20px;
 }
-/* line 26, ../sass/layouts/_blocks.scss */
+/* line 21, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .description {
   font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -704,7 +696,7 @@ a, a:active, a:visited {
   text-transform: normal;
   line-height: 24px;
 }
-/* line 28, ../sass/layouts/_blocks.scss */
+/* line 23, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .description a {
   display: block;
   font-weight: bold;

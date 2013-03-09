@@ -5,7 +5,7 @@ layout: default
   <div class="intro">
   	<h1>{{ page.title }}</h1>
     <p class="subtitle">{{ page.description}}</p>
-  </div>1
+  </div>
   <div class="pic">
     <a href="{{ page.url }}" class="cf">
       <img src="{{ page.short-image }}" />
@@ -15,7 +15,7 @@ layout: default
 
   <div class="project-entry">
     <div class="project-info cf">
-        <div class="details d1-d2">
+        <div class="details d2-d4">
           <h3>Client</h3>
           <p>{{ page.client }}</p>
           <h3>Role</h3>
@@ -23,10 +23,10 @@ layout: default
           <h3>Team</h3>
           <p>{{ page.team }}</p>
           <h3>Live Site</h3>
-          <p><a href="{{ page.live-site }}">{{ page.live-site }}</a></p>
+          <p><a href="http://{{ page.live-site }}">{{ page.live-site }}</a></p>
         </div>
 
-        <div class="project-content d3-d6">
+        <div class="project-content d5-d11">
           {{ content }}
         </div>
     </div>

@@ -9,14 +9,9 @@
 		border: 1px solid darken($color-tan, 30%);
 		border-top: 0;
 		margin: 0;
-		padding: 80px;
+		padding-top: 80px;
+		padding-bottom: 80px;
 		.details {
-			-webkit-column-count: 2;
-			-webkit-column-gap: 40px;
-			-moz-column-count: 2;
-			-moz-column-gap: 40px;
-			column-count: 2;
-  			column-gap: 40px;
 			p {
 				font-size: 18px;
 				line-height: 20px;

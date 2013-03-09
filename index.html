@@ -4,14 +4,14 @@ layout: default
 
 {% for post in portfolio.posts %}
 <li>
-	<a href="{{ post.url }}">
-		<img src="{{ post.image }}" />
-	</a>
+	
 	<div class="project-info">
 		<h1>{{ post.title }}</h1>
 		<p>{{ post.description}}</p>
 	</div>
-
+	<a href="{{ post.url }}">
+		<img src="{{ post.image }}" />
+	</a>
 </li>
 {% endfor %} 
 <p>{{ post.short-description}}
