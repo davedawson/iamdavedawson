@@ -1,17 +1,17 @@
 ---
 layout: default
+title: Projects
 ---
+<ul class="entries">
+  {% for post in site.posts %}
+    <li class="project-entry container">
+      
+      <div class="pic">
+        <a href="{{ post.url }}" class="cf">
+          <img src="{{ post.short-image }}" />
+        </a>
+      </div>
 
-{% for post in portfolio.posts %}
-<li>
-	
-	<div class="project-info">
-		<h1>{{ post.title }}</h1>
-		<p>{{ post.description}}</p>
-	</div>
-	<a href="{{ post.url }}">
-		<img src="{{ post.image }}" />
-	</a>
-</li>
-{% endfor %} 
-<p>{{ post.short-description}}
+    </li>
+  {% endfor %}
+</ul>

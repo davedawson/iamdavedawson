@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286@rails3tutorial2ndEd/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -74,7 +74,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*
  * Corrects `block` display not defined in IE 8/9.
  */
-/* line 21, ../sass/modules/_normalize.scss */
+/* line 11, ../sass/modules/_normalize.scss */
 article,
 aside,
 details,
@@ -92,7 +92,7 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 8/9.
  */
-/* line 31, ../sass/modules/_normalize.scss */
+/* line 29, ../sass/modules/_normalize.scss */
 audio,
 canvas,
 video {
@@ -157,7 +157,7 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-/* line 94, ../sass/modules/_normalize.scss */
+/* line 93, ../sass/modules/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -186,7 +186,7 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 124, ../sass/modules/_normalize.scss */
+/* line 123, ../sass/modules/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -212,7 +212,7 @@ mark {
 /*
  * Corrects font family set oddly in Safari 5 and Chrome.
  */
-/* line 153, ../sass/modules/_normalize.scss */
+/* line 150, ../sass/modules/_normalize.scss */
 code,
 kbd,
 pre,
@@ -250,7 +250,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 189, ../sass/modules/_normalize.scss */
+/* line 188, ../sass/modules/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -329,7 +329,7 @@ legend {
  * 2. Corrects font size not being inherited in all browsers.
  * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
  */
-/* line 269, ../sass/modules/_normalize.scss */
+/* line 266, ../sass/modules/_normalize.scss */
 button,
 input,
 select,
@@ -346,7 +346,7 @@ textarea {
  * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 281, ../sass/modules/_normalize.scss */
+/* line 280, ../sass/modules/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -359,7 +359,7 @@ input {
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 296, ../sass/modules/_normalize.scss */
+/* line 293, ../sass/modules/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -373,7 +373,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 306, ../sass/modules/_normalize.scss */
+/* line 305, ../sass/modules/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -383,7 +383,7 @@ input[disabled] {
  * 1. Addresses box sizing set to `content-box` in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
  */
-/* line 316, ../sass/modules/_normalize.scss */
+/* line 315, ../sass/modules/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -411,7 +411,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 340, ../sass/modules/_normalize.scss */
+/* line 339, ../sass/modules/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -420,7 +420,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 4+.
  */
-/* line 349, ../sass/modules/_normalize.scss */
+/* line 348, ../sass/modules/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -459,7 +459,7 @@ body {
   color: #444444;
   text-transform: normal;
   line-height: 1.2em;
-  background: #ebebde;
+  background: rgba(235, 235, 222, 0.2);
 }
 
 /* line 5, ../sass/modules/_base.scss */
@@ -621,24 +621,34 @@ a, a:active, a:visited {
   margin: 0 auto;
 }
 
+/* line 8, ../sass/layouts/_layout.scss */
+#content {
+  position: relative;
+  top: 100px;
+}
+
 /* line 1, ../sass/layouts/_header.scss */
 #header {
-  background: white;
   padding: 20px 0;
   margin-bottom: 80px;
   color: #2d0a42;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 2;
+  top: 0;
 }
-/* line 6, ../sass/layouts/_header.scss */
+/* line 11, ../sass/layouts/_header.scss */
 #header #logo {
-  float: left;
-}
-/* line 7, ../sass/layouts/_header.scss */
-#header #logo h1 {
-  font-size: 48px;
-  line-height: 48px;
-  margin: 0;
+  text-align: left;
 }
 /* line 13, ../sass/layouts/_header.scss */
+#header #logo h1 {
+  font-size: 18px;
+  line-height: 48px;
+  margin: 0;
+  float: left;
+}
+/* line 20, ../sass/layouts/_header.scss */
 #header #logo h2 {
   font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
   font-size: 22px;
@@ -646,8 +656,9 @@ a, a:active, a:visited {
   color: #444444;
   text-transform: normal;
   line-height: 42px;
+  float: right;
 }
-/* line 17, ../sass/layouts/_header.scss */
+/* line 25, ../sass/layouts/_header.scss */
 #header nav {
   float: right;
   width: 40%;
@@ -658,36 +669,50 @@ a, a:active, a:visited {
   text-transform: normal;
   line-height: 42px;
 }
-/* line 21, ../sass/layouts/_header.scss */
+/* line 29, ../sass/layouts/_header.scss */
 #header nav li {
   display: inline;
   padding: 6%;
 }
 
-/* line 1, ../sass/layouts/_blocks.scss */
+/* line 2, ../sass/layouts/_blocks.scss */
+.project .pic {
+  border: 1px solid #d0d0b2;
+  border-bottom: 0;
+}
+/* line 5, ../sass/layouts/_blocks.scss */
+.project .pic img {
+  display: block;
+}
+
+/* line 10, ../sass/layouts/_blocks.scss */
 .project-entry {
   margin-bottom: 80px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 3, ../sass/layouts/_blocks.scss */
+/* line 14, ../sass/layouts/_blocks.scss */
 .project-entry img {
   margin: 0;
   padding: 0;
 }
-/* line 7, ../sass/layouts/_blocks.scss */
+/* line 18, ../sass/layouts/_blocks.scss */
 .project-entry .project-info {
   background: white;
-  border: 1px solid #b1b17f;
+  border: 1px solid #d0d0b2;
   border-top: 0;
   margin: 0;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-/* line 15, ../sass/layouts/_blocks.scss */
+/* line 26, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .details p {
   font-size: 18px;
   line-height: 20px;
 }
-/* line 21, ../sass/layouts/_blocks.scss */
+/* line 32, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .description {
   font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -696,7 +721,7 @@ a, a:active, a:visited {
   text-transform: normal;
   line-height: 24px;
 }
-/* line 23, ../sass/layouts/_blocks.scss */
+/* line 34, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .description a {
   display: block;
   font-weight: bold;

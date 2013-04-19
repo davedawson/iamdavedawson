@@ -1,12 +1,23 @@
+.project {
+	.pic {
+		border: 1px solid darken($color-tan, 14%);
+		border-bottom: 0;
+		img {
+			display: block;
+		}
+	}
+}
 .project-entry{
 	margin-bottom: 80px;
+	padding: 0;
+	@include borderBox;
 	img {
 		margin: 0;
 		padding: 0;
 	}
 	.project-info {
 		background: $color-white;
-		border: 1px solid darken($color-tan, 30%);
+		border: 1px solid darken($color-tan, 14%);
 		border-top: 0;
 		margin: 0;
 		padding-top: 80px;
