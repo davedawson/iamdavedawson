@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,50 +19,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
+/* line 20, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -675,6 +675,16 @@ a, a:active, a:visited {
   padding: 6%;
 }
 
+/* line 1, ../sass/layouts/_footer.scss */
+#footer {
+  clear: both;
+  margin-top: 2em;
+  padding: 6em;
+  width: 100%;
+  float: left;
+  background: #444444;
+}
+
 /* line 2, ../sass/layouts/_blocks.scss */
 .project .pic {
   border: 1px solid #d0d0b2;
@@ -694,11 +704,6 @@ a, a:active, a:visited {
   box-sizing: border-box;
 }
 /* line 14, ../sass/layouts/_blocks.scss */
-.project-entry img {
-  margin: 0;
-  padding: 0;
-}
-/* line 18, ../sass/layouts/_blocks.scss */
 .project-entry .project-info {
   background: white;
   border: 1px solid #d0d0b2;
@@ -707,12 +712,12 @@ a, a:active, a:visited {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-/* line 26, ../sass/layouts/_blocks.scss */
+/* line 22, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .details p {
   font-size: 18px;
   line-height: 20px;
 }
-/* line 32, ../sass/layouts/_blocks.scss */
+/* line 28, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .description {
   font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -721,23 +726,101 @@ a, a:active, a:visited {
   text-transform: normal;
   line-height: 24px;
 }
-/* line 34, ../sass/layouts/_blocks.scss */
+/* line 30, ../sass/layouts/_blocks.scss */
 .project-entry .project-info .description a {
   display: block;
   font-weight: bold;
 }
 
+/* line 2, ../sass/layouts/_home.scss */
+.home #header {
+  min-height: 900px;
+  padding: 200px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #58d8e3), color-stop(50%, #58bee3), color-stop(100%, #26aadb));
+  background-image: -webkit-linear-gradient(#58d8e3, #58bee3, #26aadb);
+  background-image: -moz-linear-gradient(#58d8e3, #58bee3, #26aadb);
+  background-image: -o-linear-gradient(#58d8e3, #58bee3, #26aadb);
+  background-image: -ms-linear-gradient(#58d8e3, #58bee3, #26aadb);
+  background-image: linear-gradient(#58d8e3, #58bee3, #26aadb);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 9, ../sass/layouts/_home.scss */
+.home #header h1, .home #header p, .home #header li, .home #header a {
+  color: #fff;
+  text-align: left;
+}
+/* line 13, ../sass/layouts/_home.scss */
+.home #header h1 {
+  font-size: 160px;
+  line-height: 120px;
+  letter-spacing: -0.02em;
+  padding-bottom: 60px;
+  padding-left: 8%;
+  margin-bottom: 30px;
+  width: 100%;
+  border-bottom: 30px solid rgba(255, 255, 255, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 24, ../sass/layouts/_home.scss */
+.home #header p {
+  margin-left: 8%;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 29, ../sass/layouts/_home.scss */
+.home #header ul {
+  float: right;
+  width: 50%;
+  margin-right: 8%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 34, ../sass/layouts/_home.scss */
+.home #header ul li a {
+  float: left;
+  display: block;
+  margin-left: 10%;
+}
+/* line 41, ../sass/layouts/_home.scss */
+.home #content {
+  margin: 0 auto;
+}
+
 /* line 2, ../sass/layouts/_portfolio.scss */
+.project-list .project-entry {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+/* line 6, ../sass/layouts/_portfolio.scss */
+.project-list .project-entry .large {
+  width: 100%;
+}
+/* line 9, ../sass/layouts/_portfolio.scss */
+.project-list .project-entry .logo {
+  display: block;
+  margin: -400px auto 0;
+}
+
+/* line 17, ../sass/layouts/_portfolio.scss */
 .project .intro {
   text-align: center;
   margin-bottom: 80px;
   padding: 0 10%;
 }
-/* line 6, ../sass/layouts/_portfolio.scss */
+/* line 21, ../sass/layouts/_portfolio.scss */
 .project .intro h1 {
   font-size: 68px;
 }
-/* line 9, ../sass/layouts/_portfolio.scss */
+/* line 24, ../sass/layouts/_portfolio.scss */
 .project .intro p {
   font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
   font-size: 34px;
@@ -746,7 +829,7 @@ a, a:active, a:visited {
   text-transform: normal;
   line-height: 42px;
 }
-/* line 14, ../sass/layouts/_portfolio.scss */
+/* line 29, ../sass/layouts/_portfolio.scss */
 .project .project-content p:first-child {
   font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
   font-size: 34px;
@@ -755,7 +838,7 @@ a, a:active, a:visited {
   text-transform: normal;
   line-height: 42px;
 }
-/* line 17, ../sass/layouts/_portfolio.scss */
+/* line 32, ../sass/layouts/_portfolio.scss */
 .project .project-content p:first-child:first-letter {
   float: left;
   font-family: "freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;

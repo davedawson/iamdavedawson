@@ -11,10 +11,6 @@
 	margin-bottom: 80px;
 	padding: 0;
 	@include borderBox;
-	img {
-		margin: 0;
-		padding: 0;
-	}
 	.project-info {
 		background: $color-white;
 		border: 1px solid darken($color-tan, 14%);
