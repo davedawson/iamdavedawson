@@ -1,0 +1,12 @@
+@import "modules/shortcuts";
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+  @include borderBox;
+	@include respond-to(handhelds) { padding: 0 3%; }
+	@include respond-to(medium-screens) { padding: 0 6%; }
+	@include respond-to(wide-screens) {  }
+}
+#content {
+  position: relative;
+}

@@ -1,0 +1,12 @@
+$type-display: 	"freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;
+$type-sans:    "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+$type-serif: 	"skolar", Times, "Times New Roman", Arial, sans-serif;
+
+@mixin type($family: $type-sans, $size:1em, $weight: normal, $color: $color-grey, $transform:normal, $line-height: 1.2em) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+ 	color: $color;
+	text-transform: $transform;
+	line-height: $line-height;
+}

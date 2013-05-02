@@ -4,5 +4,21 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass";
 @import "compass/reset";
+
+@import "modules/defaults";
+@import "modules/normalize";
+@import "modules/type";
+@import "modules/base";
+@import "modules/shortcuts";
+@import "modules/tools";
+@import "modules/grid";
+
+@import "layouts/layout";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/blocks";
+@import "layouts/home";
 @import "layouts/blog";
+@import "layouts/portfolio"; 

@@ -1,11 +1,17 @@
 ---
 layout: default
+title: Projects
 ---
-<section role="banner">
-  <img src="/img/banner.jpg" />
-</section>
-<section class="content">
-  <p>
-  Welcome to John Doe Photography! Please, check out my <a href="/portfolio/">Portfolio</a> to see my work.
-  </p>
-</section>
+<ul class="entries">
+  {% for post in site.posts %}
+    <li class="project-entry container">
+      
+      <div class="pic">
+        <a href="{{ post.url }}" class="cf">
+          <img src="{{ post.short-image }}" />
+        </a>
+      </div>
+
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,9 @@
+#footer {
+	clear: both;
+  margin-top: 2em;
+  padding: 6em;
+  width: 100%;
+  float: left;
+  background: $color-grey;
+  @include borderBox;
+}

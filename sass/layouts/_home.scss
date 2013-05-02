@@ -1,0 +1,82 @@
+@import "modules/shortcuts";
+
+.home {
+  border: 0;
+  #header {
+    padding: 3em 0;
+    border-bottom: 1px solid transparentize($color-white, 0.2);
+    position: relative;
+    margin: 0;
+//    @include background-image(linear-gradient(#0a5188, #0a5388, #0a6388));
+    @include background-image(linear-gradient(#58d8e3, #58bee3, #26aadb));
+    @include borderBox;
+      @include respond-to(wide-screens) { 
+        padding: 14rem 2rem;
+      }
+    h1, p, li, a {
+      color: #fff;
+    }
+    h1 {
+      font-size: 4rem;
+      line-height: 3rem;
+      letter-spacing: -0.02em;
+      padding: 1rem 8%;
+      margin: 0 auto 0.4em;
+      text-align: center;
+      width: 80%;
+      border-bottom: 30px solid transparentize(#fff, 0.8);
+      @include borderBox;
+        @include respond-to(wide-screens) { 
+          width: 100%;
+          text-align: left;
+          font-size: 7rem;
+          line-height: 0.9em;
+          strong {
+            display: block;
+          }
+        }
+    }
+    p {
+      text-align: center;
+      @include respond-to(wide-screens) { 
+          float: left;
+          margin-left: 8%;
+        }
+      @include borderBox;
+    }
+    nav {
+      width: 80%;
+      margin: 0 auto;
+      float: none;
+      @include borderBox;
+        @include respond-to(wide-screens) { 
+          float: right;
+          width: 50%;
+          margin-right: 8%;
+        }
+      ul {
+        text-align: center;
+        @include respond-to(wide-screens) { 
+          text-align: right;
+        }
+      }
+      li a {
+        padding: .4em 9%;
+        background: transparentize($color-purp, 0.9);
+        display: inline-block;
+        text-align: center;
+        @include borderRadius;
+          @include respond-to(wide-screens) { 
+            float: none;
+            background: none;
+            padding: 0;
+            margin-left: 1em;
+          }
+      }
+    }
+  }
+  #content {
+    margin: 0 auto;
+  }
+  
+}

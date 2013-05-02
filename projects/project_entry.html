@@ -1,0 +1,29 @@
+---
+layout: default
+---
+	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+      <p class="description">{{ post.description}}</p>
+
+    <div class="pic">
+      <div class="container">
+        <a href="{{ post.url }}" class="cf">
+          <img src="{{ post.short-image }}" />
+        </a>
+      </div>
+    </div>
+    <div class="project-info cf">
+        <div class="details d3-d6">
+          <h3>Client</h3>
+          <p>{{ post.client }}</p>
+          <h3>Role</h3>
+          <p>{{ post.role }}</p>
+          <h3>Team</h3>
+          <p>{{ post.team }}</p>
+        </div>
+
+        <div class="d1-d2">
+          {{ content }}
+        </div>
+    </div>
+{{ content }}
