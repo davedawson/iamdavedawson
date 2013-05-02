@@ -1,6 +1,7 @@
 body {
 	@include type($family: $type-display);
-	background: transparentize($color-tan, 0.8); 
+	// background: transparentize($color-tan, 0.8); 
+	background: $color-white;
 }
 h1 {
 	@include type($family: $type-display, $size: 36px, $weight: 900);

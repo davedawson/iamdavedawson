@@ -6,8 +6,8 @@ layout: home
     {% for post in site.posts %}
       <li class="project-entry container">
         <a href="{{ post.url }}" class="cf">
-          <img src="{{ post.large-image }}" alt="{{ post.title }} background" class="large blur" /> 
           <img src="{{ post.white-logo }}" alt="{{ post.title }} logo" class="logo" />
+          <img src="{{ post.large-image }}" alt="{{ post.title }} background" class="large blur" /> 
         </a>
       </li>
     {% endfor %}

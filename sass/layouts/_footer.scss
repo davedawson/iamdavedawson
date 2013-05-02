@@ -5,4 +5,5 @@
   width: 100%;
   float: left;
   background: $color-grey;
+  @include borderBox;
 }

@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
     
     var dd = {
       blurImages: function(){
-        //$(".blur").pixastic("blurfast", {amount:3});
+        // $(".blur").pixastic("blurfast", {amount:5});
       }
     };
     /*-------------------------------------------    

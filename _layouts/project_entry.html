@@ -1,19 +1,37 @@
 ---
 layout: default
 ---
-<div class="project container">
+<div class="project-entry">
   <div class="intro">
-  	<h1>{{ page.title }}</h1>
-    <p class="subtitle">{{ page.description}}</p>
+    <div class="container">
+    	<h1>{{ page.title }}</h1>
+      <p class="subtitle">{{ page.description}}</p>
+    </div>
   </div>
-  <div class="pic">
+<!--   <div class="pic">
     <a href="{{ page.url }}" class="cf">
       <img src="{{ page.short-image }}" />
     </a>
   </div>
-  
+-->
+<div class="impact {{ page.class }}"> 
+  <img src="{{ page.large-image }}" alt="{{ page.title }}" class="large blur" />
+  <div class="container">
+    <div class="browser">
+      <div class="chrome">
+        <div class="url">
+          <p><a href="http://{{ page.live-site }}">{{ page.live-site }}</a></p>
+        </div><!-- /.url -->
+      </div><!-- /.chrome -->  
+      <div class="page">
+        <img src="{{ page.website-image }}" alt="{{ page.title }}" />
+      </div><!-- /.page -->
+    </div><!-- /.browser -->
+  </div><!-- /.container -->
+</div>
 
-  <div class="project-entry">
+
+  <div class="container beef">
     <div class="project-info cf">
         <div class="details d2-d4">
           <h3>Client</h3>

@@ -1,25 +1,29 @@
+body {
+	// border-top: 88px solid #58d8e3; 
+}
 #header {
 	// background: $color-white;
 	padding: 20px 0;
-	margin-bottom: 80px;
+	// margin-bottom: 80px;
 	color: $color-purp;
-	background: rgba(255,255,255,0.9);
+	// background: rgba(0,0,0,0.05);
+	// border-bottom: 1px solid rgba(255,255,255,0.9);
 	// position: fixed;
-	width: 100%; 
+	// width: 100%; 
 	z-index: 2;
 	top: 0;
 	#logo {
 		text-align: left;
 		h1 {
-			font-size: 18px;
-			line-height: 48px;
-			margin: 0;
-			float: left;
+		// 	font-size: 18px;
+		// 	line-height: 48px;
+		// 	margin: 0;
+		// 	float: left;
 		}
 		
 		h2 {
-			@include type($family: $type-sans, $size: 22px, $weight: 100, $line-height: 42px, $color: $color-grey);
-			float: right;
+		//	@include type($family: $type-sans, $size: 22px, $weight: 100, $line-height: 42px, $color: $color-grey);
+		// 	float: right;
 		}
 	}
 	nav { 
@@ -30,5 +34,15 @@
 			display: inline;
 			padding: 6%;
 		}
+	}
+}
+
+#header {
+	width: 50%;
+	margin: 0 auto;
+	h1, h2 {
+		text-align: center;
+		display: block;
+		float: none;
 	}
 }
