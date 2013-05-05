@@ -1,31 +1,45 @@
 .project-list {
 	.project-entry {
 		position: relative;
-	  width: 90%;
+	  width: 100%;
 	  overflow: hidden;
 	  min-height: 167px;
+	  height: 10em;
+	  margin: 10px;
+	  background: #000;
+	  @include borderBox;
+	  @include baseTransition;
 	  @include respond-to(wide-screens) {
-		  width: 100%; 
+		  width: 46.6225%;
+		  float: left; 
 		  margin: 10px;
+		  height: 30em;
 		}
-	  
+	  @include respond-to(medium-screens) {
+			width: 100%;
+			float: none;
+			height: 20em;
+	  }
+	  .thumb {
+	  	display: table;
+			text-align: center;
+			height: 100%;
+			width: 100%;
+			a {
+				display: table-cell;
+				vertical-align: middle;
+				position: relative;
+			}
+	  }
+
 		.large {
 			width: 100%;
 			margin: -5%;
 			// position: absolute;
 		}
 		.logo {
-			position: absolute;
-			z-index: 99;
-			display: block;
-			max-width: 80%;
-			max-height: 140px;
-			left: 15%;
-
+			width: 60%;
 			@include respond-to(wide-screens) { 
-				max-width: 100%;
-				left: 25%;
-				max-height: none;
 			}
 		}
 	}

@@ -643,42 +643,88 @@ a, a:active, a:visited {
 
 /* line 4, ../sass/layouts/_header.scss */
 #header {
-  padding: 20px 0;
-  color: #2d0a42;
-  z-index: 2;
-  top: 0;
-}
-/* line 15, ../sass/layouts/_header.scss */
-#header #logo {
-  text-align: left;
-}
-/* line 29, ../sass/layouts/_header.scss */
-#header nav {
-  float: right;
-  width: 40%;
-  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  font-weight: 100;
-  color: #444444;
-  text-transform: normal;
-  line-height: 42px;
-}
-/* line 33, ../sass/layouts/_header.scss */
-#header nav li {
-  display: inline;
-  padding: 6%;
-}
-
-/* line 40, ../sass/layouts/_header.scss */
-#header {
-  width: 50%;
-  margin: 0 auto;
-}
-/* line 43, ../sass/layouts/_header.scss */
-#header h1, #header h2 {
   text-align: center;
-  display: block;
+}
+/* line 7, ../sass/layouts/_header.scss */
+#header .nav {
+  text-align: center;
+  margin: 3em auto;
+  width: 30%;
+}
+/* line 11, ../sass/layouts/_header.scss */
+#header .nav li {
+  display: inline-block;
   float: none;
+  margin: 1em;
+  width: inherit;
+  transition: width 0.2s;
+  transition-delay: 0.3s;
+  padding: 10px;
+}
+/* line 20, ../sass/layouts/_header.scss */
+#header .nav li.logo {
+  width: 80px;
+  text-align: center;
+}
+/* line 24, ../sass/layouts/_header.scss */
+#header .nav li.logo:hover {
+  width: inherit;
+  transition-delay: 0.3s;
+}
+/* line 28, ../sass/layouts/_header.scss */
+#header .nav li.logo a {
+  border: 3px solid #bd5e24;
+  color: #bd5e24;
+  padding: 10px;
+  display: block;
+}
+/* line 38, ../sass/layouts/_header.scss */
+#header .nav li.logo strong {
+  font-weight: normal;
+  display: inline;
+  float: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 44, ../sass/layouts/_header.scss */
+#header .nav li.logo em {
+  display: inline-block;
+  float: none;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  transition: width 0.4s;
+}
+/* line 55, ../sass/layouts/_header.scss */
+#header .nav li.logo:hover em {
+  display: inline-block;
+  opacity: 1;
+  height: auto;
+  width: 100px;
+  transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in;
+  transition-delay: 0.4s;
+}
+/* line 65, ../sass/layouts/_header.scss */
+#header .nav li.logo:hover em.ave {
+  width: 20px;
+}
+/* line 68, ../sass/layouts/_header.scss */
+#header .nav li.logo:hover em.awson {
+  width: 50px;
+}
+/* line 75, ../sass/layouts/_header.scss */
+#header #logo h1 a {
+  background: #bd5e24;
+  color: white;
+  text-align: center;
 }
 
 /* line 1, ../sass/layouts/_footer.scss */
@@ -999,36 +1045,62 @@ a, a:active, a:visited {
 /* line 2, ../sass/layouts/_portfolio.scss */
 .project-list .project-entry {
   position: relative;
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   min-height: 167px;
+  height: 10em;
+  margin: 10px;
+  background: #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
   /* line 2, ../sass/layouts/_portfolio.scss */
   .project-list .project-entry {
-    width: 100%;
+    width: 46.6225%;
+    float: left;
     margin: 10px;
+    height: 30em;
   }
 }
-/* line 12, ../sass/layouts/_portfolio.scss */
+@media only screen and (min-width: 569px) and (max-width: 972px) {
+  /* line 2, ../sass/layouts/_portfolio.scss */
+  .project-list .project-entry {
+    width: 100%;
+    float: none;
+    height: 20em;
+  }
+}
+/* line 23, ../sass/layouts/_portfolio.scss */
+.project-list .project-entry .thumb {
+  display: table;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+/* line 28, ../sass/layouts/_portfolio.scss */
+.project-list .project-entry .thumb a {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 35, ../sass/layouts/_portfolio.scss */
 .project-list .project-entry .large {
   width: 100%;
   margin: -5%;
 }
-/* line 17, ../sass/layouts/_portfolio.scss */
+/* line 40, ../sass/layouts/_portfolio.scss */
 .project-list .project-entry .logo {
-  position: absolute;
-  z-index: 99;
-  display: block;
-  max-width: 80%;
-  max-height: 140px;
-  left: 15%;
-}
-@media only screen and (min-width: 569px) {
-  /* line 17, ../sass/layouts/_portfolio.scss */
-  .project-list .project-entry .logo {
-    max-width: 100%;
-    left: 25%;
-    max-height: none;
-  }
+  width: 60%;
 }

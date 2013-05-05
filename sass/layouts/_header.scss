@@ -2,47 +2,84 @@ body {
 	// border-top: 88px solid #58d8e3; 
 }
 #header {
-	// background: $color-white;
-	padding: 20px 0;
-	// margin-bottom: 80px;
-	color: $color-purp;
-	// background: rgba(0,0,0,0.05);
-	// border-bottom: 1px solid rgba(255,255,255,0.9);
-	// position: fixed;
-	// width: 100%; 
-	z-index: 2;
-	top: 0;
+	//position: absolute;
+	text-align: center;
+	.nav {
+		text-align: center;
+		margin: 3em auto;
+		width: 30%;
+		li {
+			display: inline-block;
+			float: none;
+			margin: 1em;
+			width: inherit;
+			// @include baseTransition;
+			transition: width 0.2s;
+			transition-delay: 0.3s;
+			padding: 10px;
+			&.logo {
+				width: 80px;
+				text-align: center;
+				// @include baseTransition;
+				&:hover {
+					width: inherit;
+					transition-delay: 0.3s;
+				}
+				a {
+					// background: $color-red;
+					border: 3px solid $color-red;
+					// color: $color-white;
+					color: $color-red;
+					padding: 10px;
+					display: block;
+					// @include baseTransition;
+				}
+				
+				strong {
+					font-weight: normal;
+					display: inline;
+					float: none;
+					@include baseTransition;
+				}
+				em {
+					display: inline-block;
+					float: none;
+					opacity: 0; 
+			    height: 0;
+			    width: 0;
+					// @include baseTransition;
+					// transition-delay: 0;
+					transition: width 0.4s;
+				}
+			}
+			&.logo:hover em {
+				display: inline-block;
+				opacity: 1;
+				height: auto;
+				width: 100px;
+				// @include baseTransition;
+				
+				transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in;
+				transition-delay: 0.4s;
+				// width: 140px;
+				&.ave {
+					width: 20px;
+				}
+				&.awson {
+					width: 50px;
+				}
+			}
+		}
+	}
 	#logo {
-		text-align: left;
-		h1 {
+		h1 a{
+			background: $color-red;
+			color: $color-white;
+			text-align: center;
 		// 	font-size: 18px;
 		// 	line-height: 48px;
 		// 	margin: 0;
 		// 	float: left;
 		}
-		
-		h2 {
-		//	@include type($family: $type-sans, $size: 22px, $weight: 100, $line-height: 42px, $color: $color-grey);
-		// 	float: right;
-		}
-	}
-	nav { 
-		float: right;
-		width: 40%;
-		@include type($family: $type-sans, $size: 22px, $weight: 100, $line-height: 42px, $color: $color-grey);
-		li { 
-			display: inline;
-			padding: 6%;
-		}
-	}
-}
-
-#header {
-	width: 50%;
-	margin: 0 auto;
-	h1, h2 {
-		text-align: center;
-		display: block;
-		float: none;
 	}
 }
