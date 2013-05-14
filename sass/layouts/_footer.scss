@@ -4,6 +4,11 @@
   padding: 6em;
   width: 100%;
   float: left;
-  background: $color-grey;
+  // background: $color-grey;
   @include borderBox;
+  p {
+    color: $color-grey;
+    text-align: center; 
+    font-size: 14px;
+  }
 }

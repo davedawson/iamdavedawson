@@ -6,24 +6,34 @@ body {
 	text-align: center;
 	.nav {
 		text-align: center;
-		margin: 3em auto;
-		width: 30%;
+		@include respond-to(wide-screens) { 
+			margin: 3em auto;
+			width: 50%;
+		}
 		li {
 			display: inline-block;
 			float: none;
-			margin: 1em;
-			width: inherit;
+			margin: 1em 0;
+			width: auto;
 			// @include baseTransition;
 			transition: width 0.2s;
 			transition-delay: 0.3s;
 			padding: 10px;
+			@include respond-to(wide-screens) { 
+				margin: 1em;
+			}
 			&.logo {
-				width: 80px;
+				
 				text-align: center;
 				// @include baseTransition;
+				@include respond-to(wide-screens) { 
+					width: 60px;
+				}
 				&:hover {
-					width: inherit;
-					transition-delay: 0.3s;
+					@include respond-to(wide-screens) { 
+						width: 160px;
+						transition-delay: 0.3s;
+					}
 				}
 				a {
 					// background: $color-red;
@@ -42,14 +52,18 @@ body {
 					@include baseTransition;
 				}
 				em {
-					display: inline-block;
-					float: none;
-					opacity: 0; 
-			    height: 0;
-			    width: 0;
-					// @include baseTransition;
-					// transition-delay: 0;
-					transition: width 0.4s;
+					@include respond-to(handhelds) { }
+					@include respond-to(medium-screens) { }
+					@include respond-to(wide-screens) {  
+						display: inline-block;
+						float: none;
+						opacity: 0; 
+				    height: 0;
+				    width: 0;
+						// @include baseTransition;
+						// transition-delay: 0;
+						transition: width 0.4s;
+					}
 				}
 			}
 			&.logo:hover em {
@@ -59,14 +73,16 @@ body {
 				width: 100px;
 				// @include baseTransition;
 				
-				transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in;
+				transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
 				transition-delay: 0.4s;
 				// width: 140px;
 				&.ave {
 					width: 20px;
+					margin-right: 4px;
 				}
 				&.awson {
 					width: 50px;
+					margin-left: -2px
 				}
 			}
 		}

@@ -5,14 +5,14 @@
 	  overflow: hidden;
 	  min-height: 167px;
 	  height: 10em;
-	  margin: 10px;
+	  margin: 4% 0;
 	  background: #000;
 	  @include borderBox;
 	  @include baseTransition;
 	  @include respond-to(wide-screens) {
 		  width: 46.6225%;
 		  float: left; 
-		  margin: 10px;
+		  margin: 1.68875%;
 		  height: 30em;
 		}
 	  @include respond-to(medium-screens) {
