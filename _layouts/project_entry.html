@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="project-entry">
+<div class="project-specific {{ page.class }}">
   <div class="intro">
     <div class="container">
     	<h1>{{ page.title }}</h1>
-      <p class="subtitle">{{ page.description}}</p>
+      <p class="subtitle">{{ page.description }}</p>
     </div>
   </div>
 <!--   <div class="pic">
@@ -15,7 +15,6 @@ layout: default
   </div>
 -->
 <div class="impact {{ page.class }}"> 
-  <img src="{{ page.large-image }}" alt="{{ page.title }}" class="large blur" />
   <div class="container">
     <div class="browser">
       <div class="chrome">
@@ -39,7 +38,7 @@ layout: default
           <h3>Role</h3>
           <p>{{ page.role }}</p>
           <h3>Team</h3>
-          <p>{{ page.team }}</p>
+          <p>{{ page.collaborators }}</p>
           <h3>Live Site</h3>
           <p><a href="http://{{ page.live-site }}">{{ page.live-site }}</a></p>
         </div>
@@ -50,3 +49,22 @@ layout: default
     </div>
   </div>
 </div>
+
+<div class="page-navigation container"> 
+  <h2>Check out a few other projects:</h2>
+    <div class="left"> 
+    {% if page.previous.url %} 
+      <a href="{{page.previous.url}}" class="arrow" title="Previous Post: {{page.previous.title}}">
+        <strong>&larr;</strong> <span>{{page.previous.title}}</span>
+      </a> 
+    {% endif %} 
+    </div> 
+
+    <div class="right"> 
+    {% if page.next.url %} 
+      <a href="{{page.next.url}}" class="arrow" title="next Post: {{page.next.title}}">
+        <span>{{page.next.title}}</span> <strong>&rarr;</strong>
+      </a> 
+    {% endif %} 
+    </div> 
+</div> 

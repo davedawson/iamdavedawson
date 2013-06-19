@@ -1,0 +1,21 @@
+$pih: "/img/projects/large/pih-large.jpg";
+
+.project-specific {
+  &.pih {
+    .impact {
+      background: url($pih) center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+.project-list {
+  .project-entry {
+    &.pih {
+      background: url($pih) center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+
+

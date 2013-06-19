@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,50 +19,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
+/* line 20, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -453,7 +453,7 @@ table {
 
 /* line 1, ../sass/modules/_base.scss */
 body {
-  font-family: "freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;
+  font-family: "Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
   font-size: 1em;
   font-weight: normal;
   color: #444444;
@@ -464,7 +464,7 @@ body {
 
 /* line 6, ../sass/modules/_base.scss */
 h1 {
-  font-family: "freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;
+  font-family: "Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
   font-size: 36px;
   font-weight: 900;
   color: #444444;
@@ -475,7 +475,7 @@ h1 {
 
 /* line 12, ../sass/modules/_base.scss */
 h3 {
-  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: #444444;
@@ -487,25 +487,26 @@ h3 {
 
 /* line 19, ../sass/modules/_base.scss */
 p {
+  font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
   font-size: 24px;
   line-height: 32px;
   color: #444444;
   margin: 0 0 18px;
 }
 
-/* line 25, ../sass/modules/_base.scss */
+/* line 26, ../sass/modules/_base.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
-/* line 28, ../sass/modules/_base.scss */
+/* line 29, ../sass/modules/_base.scss */
 ul li, ol li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 49, ../sass/modules/_base.scss */
+/* line 50, ../sass/modules/_base.scss */
 a, a:active, a:visited {
   color: #2d0a42;
   text-decoration: none;
@@ -656,7 +657,13 @@ a, a:active, a:visited {
     width: 50%;
   }
 }
-/* line 13, ../sass/layouts/_header.scss */
+@media only screen and (min-width: 569px) and (max-width: 972px) {
+  /* line 7, ../sass/layouts/_header.scss */
+  #header .nav {
+    width: 80%;
+  }
+}
+/* line 16, ../sass/layouts/_header.scss */
 #header .nav li {
   display: inline-block;
   float: none;
@@ -665,53 +672,68 @@ a, a:active, a:visited {
   transition: width 0.2s;
   transition-delay: 0.3s;
   padding: 10px;
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500px;
 }
 @media only screen and (min-width: 569px) {
-  /* line 13, ../sass/layouts/_header.scss */
+  /* line 16, ../sass/layouts/_header.scss */
   #header .nav li {
     margin: 1em;
   }
 }
-/* line 25, ../sass/layouts/_header.scss */
+/* line 31, ../sass/layouts/_header.scss */
+#header .nav li a {
+  color: #444444;
+}
+/* line 33, ../sass/layouts/_header.scss */
+#header .nav li a:hover {
+  color: black;
+}
+/* line 38, ../sass/layouts/_header.scss */
 #header .nav li.logo {
+  font-family: "Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   text-align: center;
 }
 @media only screen and (min-width: 569px) {
-  /* line 25, ../sass/layouts/_header.scss */
+  /* line 38, ../sass/layouts/_header.scss */
   #header .nav li.logo {
     width: 60px;
   }
 }
 @media only screen and (min-width: 569px) {
-  /* line 32, ../sass/layouts/_header.scss */
+  /* line 46, ../sass/layouts/_header.scss */
   #header .nav li.logo:hover {
     width: 160px;
     transition-delay: 0.3s;
   }
 }
-/* line 38, ../sass/layouts/_header.scss */
+/* line 52, ../sass/layouts/_header.scss */
 #header .nav li.logo a {
   border: 3px solid #bd5e24;
   color: #bd5e24;
-  padding: 10px;
+  padding: 10px 10px 8px;
   display: block;
 }
-/* line 48, ../sass/layouts/_header.scss */
+/* line 62, ../sass/layouts/_header.scss */
 #header .nav li.logo strong {
   font-weight: normal;
   display: inline;
   float: none;
   -webkit-transition-property: all;
   -moz-transition-property: all;
+  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
-  /* line 54, ../sass/layouts/_header.scss */
+  /* line 68, ../sass/layouts/_header.scss */
   #header .nav li.logo em {
     display: inline-block;
     float: none;
@@ -721,7 +743,7 @@ a, a:active, a:visited {
     transition: width 0.4s;
   }
 }
-/* line 69, ../sass/layouts/_header.scss */
+/* line 83, ../sass/layouts/_header.scss */
 #header .nav li.logo:hover em {
   display: inline-block;
   opacity: 1;
@@ -730,17 +752,17 @@ a, a:active, a:visited {
   transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
   transition-delay: 0.4s;
 }
-/* line 79, ../sass/layouts/_header.scss */
+/* line 93, ../sass/layouts/_header.scss */
 #header .nav li.logo:hover em.ave {
   width: 20px;
-  margin-right: 4px;
+  margin-right: 10px;
 }
-/* line 83, ../sass/layouts/_header.scss */
+/* line 97, ../sass/layouts/_header.scss */
 #header .nav li.logo:hover em.awson {
   width: 50px;
-  margin-left: -2px;
+  margin-left: 0px;
 }
-/* line 91, ../sass/layouts/_header.scss */
+/* line 105, ../sass/layouts/_header.scss */
 #header #logo h1 a {
   background: #bd5e24;
   color: white;
@@ -775,176 +797,6 @@ a, a:active, a:visited {
   display: block;
 }
 
-/* line 11, ../sass/layouts/_blocks.scss */
-.project-entry {
-  padding-top: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 14, ../sass/layouts/_blocks.scss */
-.project-entry .intro {
-  text-align: center;
-  padding: 4em 10%;
-  background: rgba(235, 235, 222, 0.2);
-}
-/* line 18, ../sass/layouts/_blocks.scss */
-.project-entry .intro p {
-  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 100;
-  color: #444444;
-  text-transform: normal;
-  line-height: 1.4em;
-}
-/* line 21, ../sass/layouts/_blocks.scss */
-.project-entry .intro h1 {
-  font-size: 3rem;
-}
-@media only screen and (min-width: 569px) {
-  /* line 21, ../sass/layouts/_blocks.scss */
-  .project-entry .intro h1 {
-    font-size: 7rem;
-  }
-}
-/* line 28, ../sass/layouts/_blocks.scss */
-.project-entry .beef {
-  margin-top: 6rem;
-}
-/* line 31, ../sass/layouts/_blocks.scss */
-.project-entry .beef .project-content p:first-child {
-  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
-  font-size: 34px;
-  font-weight: 100;
-  color: #444444;
-  text-transform: normal;
-  line-height: 42px;
-}
-/* line 34, ../sass/layouts/_blocks.scss */
-.project-entry .beef .project-content p:first-child:first-letter {
-  float: left;
-  font-family: "freight-micro-pro", "Marais", Helvetica, Arial, sans-serif;
-  font-size: 148px;
-  font-weight: 900;
-  color: #444444;
-  text-transform: normal;
-  line-height: 42px;
-  padding: 8px 8px 3px 10px;
-}
-/* line 40, ../sass/layouts/_blocks.scss */
-.project-entry .beef .project-info {
-  background: white;
-  border-top: 0;
-  margin: 0;
-}
-/* line 46, ../sass/layouts/_blocks.scss */
-.project-entry .beef .project-info .details p {
-  font-size: 18px;
-  line-height: 20px;
-}
-/* line 52, ../sass/layouts/_blocks.scss */
-.project-entry .beef .project-info .description {
-  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  color: #444444;
-  text-transform: normal;
-  line-height: 24px;
-}
-/* line 54, ../sass/layouts/_blocks.scss */
-.project-entry .beef .project-info .description a {
-  display: block;
-  font-weight: bold;
-}
-
-/* line 63, ../sass/layouts/_blocks.scss */
-.impact {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-}
-@media only screen and (min-width: 569px) {
-  /* line 63, ../sass/layouts/_blocks.scss */
-  .impact {
-    height: 694px;
-  }
-}
-@media only screen and (min-width: 569px) and (max-width: 972px) {
-  /* line 63, ../sass/layouts/_blocks.scss */
-  .impact {
-    height: 400px;
-  }
-}
-/* line 74, ../sass/layouts/_blocks.scss */
-.impact .large {
-  height: 850px;
-  overflow: hidden;
-  position: absolute;
-}
-/* line 80, ../sass/layouts/_blocks.scss */
-.impact .browser {
-  width: 82.1601%;
-  margin-left: 8.8815%;
-  top: 40px;
-  position: relative;
-  background: #dcdcdc;
-  -webkit-border-top-left-radius: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-topleft: 6px;
-  -moz-border-radius-topright: 6px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 40px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 40px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 40px;
-}
-/* line 93, ../sass/layouts/_blocks.scss */
-.impact .browser img {
-  display: relative;
-  max-width: 100%;
-  width: overflow;
-}
-/* line 99, ../sass/layouts/_blocks.scss */
-.impact .browser .chrome {
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 102, ../sass/layouts/_blocks.scss */
-.impact .browser .chrome .url {
-  background: #eeeeee;
-  padding: 4px 10px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  font-family: "freight-sans-pro", "ff-tisa-sans-web-pro", Helvetica, Arial, sans-serif;
-  font-size: 11px;
-  font-weight: normal;
-  color: #a8a8a8;
-  text-transform: normal;
-  line-height: 14px;
-}
-/* line 107, ../sass/layouts/_blocks.scss */
-.impact .browser .chrome .url p {
-  margin: 0;
-  line-height: 18px;
-}
-/* line 111, ../sass/layouts/_blocks.scss */
-.impact .browser .chrome .url a {
-  font-size: 15px;
-  line-height: 13px;
-  position: relative;
-  color: #a8a8a8;
-  width: 100%;
-  display: block;
-}
-/* line 119, ../sass/layouts/_blocks.scss */
-.impact .browser .chrome .url a:hover .url {
-  background: white;
-}
-
 /* line 3, ../sass/layouts/_home.scss */
 .home {
   border: 0;
@@ -959,6 +811,7 @@ a, a:active, a:visited {
   background-image: -webkit-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: -moz-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: -o-linear-gradient(#58d8e3, #58bee3, #26aadb);
+  background-image: -ms-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: linear-gradient(#58d8e3, #58bee3, #26aadb);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1066,7 +919,168 @@ a, a:active, a:visited {
   margin: 0 auto;
 }
 
-/* line 2, ../sass/layouts/_portfolio.scss */
+/* line 1, ../sass/layouts/_portfolio.scss */
+.project-specific {
+  padding-top: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 4, ../sass/layouts/_portfolio.scss */
+.project-specific .intro {
+  text-align: center;
+  padding: 4em 10%;
+  background: rgba(235, 235, 222, 0.2);
+}
+/* line 8, ../sass/layouts/_portfolio.scss */
+.project-specific .intro p {
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #444444;
+  text-transform: normal;
+  line-height: 1.4em;
+}
+/* line 11, ../sass/layouts/_portfolio.scss */
+.project-specific .intro h1 {
+  font-size: 3rem;
+}
+@media only screen and (min-width: 569px) {
+  /* line 11, ../sass/layouts/_portfolio.scss */
+  .project-specific .intro h1 {
+    font-size: 7rem;
+  }
+}
+/* line 18, ../sass/layouts/_portfolio.scss */
+.project-specific .beef {
+  margin-top: 6rem;
+}
+/* line 20, ../sass/layouts/_portfolio.scss */
+.project-specific .beef .project-content {
+  /* p:first-child {
+  	@include type($family: $type-sans, $size: 34px, $weight: 100, $line-height: 42px, $color: $color-grey);
+  }
+  p:first-child:first-letter { 
+  	float: left; 
+  	@include type($family: $type-display, $size: 148px, $line-height: 42px, $color: $color-grey, $weight: 900 );
+  	padding: 8px 8px 3px 10px;
+  } */
+}
+/* line 30, ../sass/layouts/_portfolio.scss */
+.project-specific .beef .project-info {
+  background: white;
+  border-top: 0;
+  margin: 0;
+}
+/* line 36, ../sass/layouts/_portfolio.scss */
+.project-specific .beef .project-info .details p {
+  font-size: 18px;
+  line-height: 20px;
+}
+/* line 42, ../sass/layouts/_portfolio.scss */
+.project-specific .beef .project-info .description {
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #444444;
+  text-transform: normal;
+  line-height: 24px;
+}
+/* line 44, ../sass/layouts/_portfolio.scss */
+.project-specific .beef .project-info .description a {
+  display: block;
+  font-weight: bold;
+}
+
+/* line 53, ../sass/layouts/_portfolio.scss */
+.impact {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+@media only screen and (min-width: 569px) {
+  /* line 53, ../sass/layouts/_portfolio.scss */
+  .impact {
+    height: 694px;
+  }
+}
+@media only screen and (min-width: 569px) and (max-width: 972px) {
+  /* line 53, ../sass/layouts/_portfolio.scss */
+  .impact {
+    height: 400px;
+  }
+}
+/* line 64, ../sass/layouts/_portfolio.scss */
+.impact .large {
+  height: 850px;
+  overflow: hidden;
+  position: absolute;
+}
+/* line 70, ../sass/layouts/_portfolio.scss */
+.impact .browser {
+  width: 82.1601%;
+  margin-left: 8.8815%;
+  top: 40px;
+  position: relative;
+  background: #dcdcdc;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 40px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 40px;
+}
+/* line 83, ../sass/layouts/_portfolio.scss */
+.impact .browser img {
+  display: relative;
+  max-width: 100%;
+  width: overflow;
+}
+/* line 89, ../sass/layouts/_portfolio.scss */
+.impact .browser .chrome {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 92, ../sass/layouts/_portfolio.scss */
+.impact .browser .chrome .url {
+  background: #eeeeee;
+  padding: 4px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  color: #a8a8a8;
+  text-transform: normal;
+  line-height: 14px;
+}
+/* line 97, ../sass/layouts/_portfolio.scss */
+.impact .browser .chrome .url p {
+  margin: 0;
+  line-height: 18px;
+}
+/* line 101, ../sass/layouts/_portfolio.scss */
+.impact .browser .chrome .url a {
+  font-size: 15px;
+  line-height: 13px;
+  position: relative;
+  color: #a8a8a8;
+  width: 100%;
+  display: block;
+}
+/* line 109, ../sass/layouts/_portfolio.scss */
+.impact .browser .chrome .url a:hover .url {
+  background: white;
+}
+
+/* line 119, ../sass/layouts/_portfolio.scss */
 .project-list .project-entry {
   position: relative;
   width: 100%;
@@ -1080,15 +1094,17 @@ a, a:active, a:visited {
   box-sizing: border-box;
   -webkit-transition-property: all;
   -moz-transition-property: all;
+  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
-  /* line 2, ../sass/layouts/_portfolio.scss */
+  /* line 119, ../sass/layouts/_portfolio.scss */
   .project-list .project-entry {
     width: 46.6225%;
     float: left;
@@ -1097,32 +1113,155 @@ a, a:active, a:visited {
   }
 }
 @media only screen and (min-width: 569px) and (max-width: 972px) {
-  /* line 2, ../sass/layouts/_portfolio.scss */
+  /* line 119, ../sass/layouts/_portfolio.scss */
   .project-list .project-entry {
     width: 100%;
     float: none;
     height: 20em;
   }
 }
-/* line 23, ../sass/layouts/_portfolio.scss */
+/* line 140, ../sass/layouts/_portfolio.scss */
 .project-list .project-entry .thumb {
   display: table;
   text-align: center;
   height: 100%;
   width: 100%;
 }
-/* line 28, ../sass/layouts/_portfolio.scss */
+/* line 145, ../sass/layouts/_portfolio.scss */
 .project-list .project-entry .thumb a {
   display: table-cell;
   vertical-align: middle;
   position: relative;
 }
-/* line 35, ../sass/layouts/_portfolio.scss */
+/* line 152, ../sass/layouts/_portfolio.scss */
 .project-list .project-entry .large {
   width: 100%;
   margin: -5%;
 }
-/* line 40, ../sass/layouts/_portfolio.scss */
+/* line 157, ../sass/layouts/_portfolio.scss */
 .project-list .project-entry .logo {
   width: 60%;
+}
+
+/* line 165, ../sass/layouts/_portfolio.scss */
+.page-navigation {
+  border-top: 3px solid rgba(68, 68, 68, 0.4);
+  margin-top: 6em;
+  padding-top: 3em;
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #a8a8a8;
+  text-transform: normal;
+  line-height: 14px;
+}
+@media only screen and (min-width: 569px) {
+  /* line 165, ../sass/layouts/_portfolio.scss */
+  .page-navigation {
+    position: fixed;
+    top: 30em;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+  }
+  /* line 178, ../sass/layouts/_portfolio.scss */
+  .page-navigation.container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/* line 184, ../sass/layouts/_portfolio.scss */
+.page-navigation h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 569px) {
+  /* line 184, ../sass/layouts/_portfolio.scss */
+  .page-navigation h2 {
+    display: none;
+  }
+}
+/* line 191, ../sass/layouts/_portfolio.scss */
+.page-navigation .left {
+  float: left;
+}
+/* line 194, ../sass/layouts/_portfolio.scss */
+.page-navigation .right {
+  float: right;
+  text-align: right;
+}
+/* line 198, ../sass/layouts/_portfolio.scss */
+.page-navigation .left .arrow, .page-navigation .right .arrow {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+@media only screen and (min-width: 569px) {
+  /* line 198, ../sass/layouts/_portfolio.scss */
+  .page-navigation .left .arrow, .page-navigation .right .arrow {
+    padding: 15px;
+    display: block;
+    float: left;
+    background: #bd5e24;
+    color: white;
+    opacity: 0.3;
+  }
+}
+/* line 208, ../sass/layouts/_portfolio.scss */
+.page-navigation .left .arrow strong, .page-navigation .right .arrow strong {
+  display: none;
+}
+@media only screen and (min-width: 569px) {
+  /* line 208, ../sass/layouts/_portfolio.scss */
+  .page-navigation .left .arrow strong, .page-navigation .right .arrow strong {
+    display: block;
+    float: left;
+  }
+}
+/* line 215, ../sass/layouts/_portfolio.scss */
+.page-navigation .left .arrow span, .page-navigation .right .arrow span {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+@media only screen and (min-width: 569px) {
+  /* line 215, ../sass/layouts/_portfolio.scss */
+  .page-navigation .left .arrow span, .page-navigation .right .arrow span {
+    display: none;
+  }
+}
+/* line 222, ../sass/layouts/_portfolio.scss */
+.page-navigation .left .arrow:hover, .page-navigation .right .arrow:hover {
+  opacity: 1;
+}
+/* line 225, ../sass/layouts/_portfolio.scss */
+.page-navigation .left .arrow:hover span, .page-navigation .right .arrow:hover span {
+  display: block;
+}
+
+/* line 5, ../sass/layouts/_projects.scss */
+.project-specific.pih .impact {
+  background: url("/img/projects/large/pih-large.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 13, ../sass/layouts/_projects.scss */
+.project-list .project-entry.pih {
+  background: url("/img/projects/large/pih-large.jpg") center no-repeat;
+  background-size: cover;
 }

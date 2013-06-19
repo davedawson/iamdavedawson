@@ -10,6 +10,9 @@ body {
 			margin: 3em auto;
 			width: 50%;
 		}
+		@include respond-to(medium-screens) { 
+			width: 80%;
+		}
 		li {
 			display: inline-block;
 			float: none;
@@ -19,11 +22,22 @@ body {
 			transition: width 0.2s;
 			transition-delay: 0.3s;
 			padding: 10px;
+			font-family: $type-sans;
+			font-size: 20px;
+			font-weight: 500px;
 			@include respond-to(wide-screens) { 
 				margin: 1em;
 			}
+			a {
+				color: $color-grey;
+				&:hover {
+					color: $color-black;
+				}
+			}
+
 			&.logo {
-				
+				font-family: $type-display;
+				font-size: 16px;
 				text-align: center;
 				// @include baseTransition;
 				@include respond-to(wide-screens) { 
@@ -40,7 +54,7 @@ body {
 					border: 3px solid $color-red;
 					// color: $color-white;
 					color: $color-red;
-					padding: 10px;
+					padding: 10px 10px 8px;
 					display: block;
 					// @include baseTransition;
 				}
@@ -78,11 +92,11 @@ body {
 				// width: 140px;
 				&.ave {
 					width: 20px;
-					margin-right: 4px;
+					margin-right: 10px;
 				}
 				&.awson {
 					width: 50px;
-					margin-left: -2px
+					margin-left: 0px
 				}
 			}
 		}
