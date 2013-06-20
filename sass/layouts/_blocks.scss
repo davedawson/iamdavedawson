@@ -1,4 +1,7 @@
 @import "modules/shortcuts";
+body {
+  background: $color-bg;
+}
 .project {
 	.pic {
 		border: 1px solid darken($color-tan, 14%);

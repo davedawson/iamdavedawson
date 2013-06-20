@@ -1,16 +1,17 @@
 body {
-	// border-top: 88px solid #58d8e3; 
+	// border-top: 88px solid #58d8e3;
 }
 #header {
 	//position: absolute;
 	text-align: center;
+	background: $color-white;
 	.nav {
 		text-align: center;
-		@include respond-to(wide-screens) { 
+		@include respond-to(wide-screens) {
 			margin: 3em auto;
 			width: 50%;
 		}
-		@include respond-to(medium-screens) { 
+		@include respond-to(medium-screens) {
 			width: 80%;
 		}
 		li {
@@ -25,7 +26,7 @@ body {
 			font-family: $type-sans;
 			font-size: 20px;
 			font-weight: 500px;
-			@include respond-to(wide-screens) { 
+			@include respond-to(wide-screens) {
 				margin: 1em;
 			}
 			a {
@@ -35,16 +36,16 @@ body {
 				}
 			}
 
-			&.logo {
+			&.nav-logo {
 				font-family: $type-display;
 				font-size: 16px;
 				text-align: center;
 				// @include baseTransition;
-				@include respond-to(wide-screens) { 
+				@include respond-to(wide-screens) {
 					width: 60px;
 				}
 				&:hover {
-					@include respond-to(wide-screens) { 
+					@include respond-to(wide-screens) {
 						width: 160px;
 						transition-delay: 0.3s;
 					}
@@ -58,7 +59,7 @@ body {
 					display: block;
 					// @include baseTransition;
 				}
-				
+
 				strong {
 					font-weight: normal;
 					display: inline;
@@ -68,10 +69,10 @@ body {
 				em {
 					@include respond-to(handhelds) { }
 					@include respond-to(medium-screens) { }
-					@include respond-to(wide-screens) {  
+					@include respond-to(wide-screens) {
 						display: inline-block;
 						float: none;
-						opacity: 0; 
+						opacity: 0;
 				    height: 0;
 				    width: 0;
 						// @include baseTransition;
@@ -86,7 +87,7 @@ body {
 				height: auto;
 				width: 100px;
 				// @include baseTransition;
-				
+
 				transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
 				transition-delay: 0.4s;
 				// width: 140px;

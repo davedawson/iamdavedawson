@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<!--
 <div class="project-specific {{ page.class }}">
   <div class="intro">
     <div class="container">
@@ -8,20 +9,20 @@ layout: default
       <p class="subtitle">{{ page.description }}</p>
     </div>
   </div>
-<!--   <div class="pic">
+   <div class="pic">
     <a href="{{ page.url }}" class="cf">
       <img src="{{ page.short-image }}" />
     </a>
   </div>
 -->
-<div class="impact {{ page.class }}"> 
+<div class="impact {{ page.class }}">
   <div class="container">
     <div class="browser">
       <div class="chrome">
         <div class="url">
           <p><a href="http://{{ page.live-site }}">{{ page.live-site }}</a></p>
         </div><!-- /.url -->
-      </div><!-- /.chrome -->  
+      </div><!-- /.chrome -->
       <div class="page">
         <img src="{{ page.website-image }}" alt="{{ page.title }}" />
       </div><!-- /.page -->
@@ -50,21 +51,21 @@ layout: default
   </div>
 </div>
 
-<div class="page-navigation container"> 
+<div class="page-navigation container">
   <h2>Check out a few other projects:</h2>
-    <div class="left"> 
-    {% if page.previous.url %} 
+    <div class="left">
+    {% if page.previous.url %}
       <a href="{{page.previous.url}}" class="arrow" title="Previous Post: {{page.previous.title}}">
         <strong>&larr;</strong> <span>{{page.previous.title}}</span>
-      </a> 
-    {% endif %} 
-    </div> 
+      </a>
+    {% endif %}
+    </div>
 
-    <div class="right"> 
-    {% if page.next.url %} 
+    <div class="right">
+    {% if page.next.url %}
       <a href="{{page.next.url}}" class="arrow" title="next Post: {{page.next.title}}">
         <span>{{page.next.title}}</span> <strong>&rarr;</strong>
-      </a> 
-    {% endif %} 
-    </div> 
-</div> 
+      </a>
+    {% endif %}
+    </div>
+</div>

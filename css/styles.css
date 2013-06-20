@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,50 +19,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -645,25 +645,26 @@ a, a:active, a:visited {
 /* line 4, ../sass/layouts/_header.scss */
 #header {
   text-align: center;
+  background: white;
 }
-/* line 7, ../sass/layouts/_header.scss */
+/* line 8, ../sass/layouts/_header.scss */
 #header .nav {
   text-align: center;
 }
 @media only screen and (min-width: 569px) {
-  /* line 7, ../sass/layouts/_header.scss */
+  /* line 8, ../sass/layouts/_header.scss */
   #header .nav {
     margin: 3em auto;
     width: 50%;
   }
 }
 @media only screen and (min-width: 569px) and (max-width: 972px) {
-  /* line 7, ../sass/layouts/_header.scss */
+  /* line 8, ../sass/layouts/_header.scss */
   #header .nav {
     width: 80%;
   }
 }
-/* line 16, ../sass/layouts/_header.scss */
+/* line 17, ../sass/layouts/_header.scss */
 #header .nav li {
   display: inline-block;
   float: none;
@@ -677,64 +678,62 @@ a, a:active, a:visited {
   font-weight: 500px;
 }
 @media only screen and (min-width: 569px) {
-  /* line 16, ../sass/layouts/_header.scss */
+  /* line 17, ../sass/layouts/_header.scss */
   #header .nav li {
     margin: 1em;
   }
 }
-/* line 31, ../sass/layouts/_header.scss */
+/* line 32, ../sass/layouts/_header.scss */
 #header .nav li a {
   color: #444444;
 }
-/* line 33, ../sass/layouts/_header.scss */
+/* line 34, ../sass/layouts/_header.scss */
 #header .nav li a:hover {
   color: black;
 }
-/* line 38, ../sass/layouts/_header.scss */
-#header .nav li.logo {
+/* line 39, ../sass/layouts/_header.scss */
+#header .nav li.nav-logo {
   font-family: "Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
 }
 @media only screen and (min-width: 569px) {
-  /* line 38, ../sass/layouts/_header.scss */
-  #header .nav li.logo {
+  /* line 39, ../sass/layouts/_header.scss */
+  #header .nav li.nav-logo {
     width: 60px;
   }
 }
 @media only screen and (min-width: 569px) {
-  /* line 46, ../sass/layouts/_header.scss */
-  #header .nav li.logo:hover {
+  /* line 47, ../sass/layouts/_header.scss */
+  #header .nav li.nav-logo:hover {
     width: 160px;
     transition-delay: 0.3s;
   }
 }
-/* line 52, ../sass/layouts/_header.scss */
-#header .nav li.logo a {
+/* line 53, ../sass/layouts/_header.scss */
+#header .nav li.nav-logo a {
   border: 3px solid #bd5e24;
   color: #bd5e24;
   padding: 10px 10px 8px;
   display: block;
 }
-/* line 62, ../sass/layouts/_header.scss */
-#header .nav li.logo strong {
+/* line 63, ../sass/layouts/_header.scss */
+#header .nav li.nav-logo strong {
   font-weight: normal;
   display: inline;
   float: none;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
-  /* line 68, ../sass/layouts/_header.scss */
-  #header .nav li.logo em {
+  /* line 69, ../sass/layouts/_header.scss */
+  #header .nav li.nav-logo em {
     display: inline-block;
     float: none;
     opacity: 0;
@@ -743,7 +742,7 @@ a, a:active, a:visited {
     transition: width 0.4s;
   }
 }
-/* line 83, ../sass/layouts/_header.scss */
+/* line 84, ../sass/layouts/_header.scss */
 #header .nav li.logo:hover em {
   display: inline-block;
   opacity: 1;
@@ -752,17 +751,17 @@ a, a:active, a:visited {
   transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
   transition-delay: 0.4s;
 }
-/* line 93, ../sass/layouts/_header.scss */
+/* line 94, ../sass/layouts/_header.scss */
 #header .nav li.logo:hover em.ave {
   width: 20px;
   margin-right: 10px;
 }
-/* line 97, ../sass/layouts/_header.scss */
+/* line 98, ../sass/layouts/_header.scss */
 #header .nav li.logo:hover em.awson {
   width: 50px;
   margin-left: 0px;
 }
-/* line 105, ../sass/layouts/_header.scss */
+/* line 106, ../sass/layouts/_header.scss */
 #header #logo h1 a {
   background: #bd5e24;
   color: white;
@@ -787,12 +786,17 @@ a, a:active, a:visited {
   font-size: 14px;
 }
 
-/* line 3, ../sass/layouts/_blocks.scss */
+/* line 2, ../sass/layouts/_blocks.scss */
+body {
+  background: #faf9f3;
+}
+
+/* line 6, ../sass/layouts/_blocks.scss */
 .project .pic {
   border: 1px solid #d0d0b2;
   border-bottom: 0;
 }
-/* line 6, ../sass/layouts/_blocks.scss */
+/* line 9, ../sass/layouts/_blocks.scss */
 .project .pic img {
   display: block;
 }
@@ -811,7 +815,6 @@ a, a:active, a:visited {
   background-image: -webkit-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: -moz-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: -o-linear-gradient(#58d8e3, #58bee3, #26aadb);
-  background-image: -ms-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: linear-gradient(#58d8e3, #58bee3, #26aadb);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1094,12 +1097,10 @@ a, a:active, a:visited {
   box-sizing: border-box;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1195,12 +1196,10 @@ a, a:active, a:visited {
 .page-navigation .left .arrow, .page-navigation .right .arrow {
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1230,12 +1229,10 @@ a, a:active, a:visited {
 .page-navigation .left .arrow span, .page-navigation .right .arrow span {
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
