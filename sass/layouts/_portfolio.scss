@@ -1,54 +1,8 @@
 .project-specific {
-	padding-top: 0;
-	@include borderBox;
-	.intro {
-		text-align: center;
-		padding: 4em 10%;
-		background: transparentize($color-tan, 0.8);
-		p {
-			@include type($family: $type-sans, $size: 1.6rem, $weight: 100, $line-height: 1.4em, $color: $color-grey);
-		}
-		h1 {
-			font-size: 3rem;
-			@include respond-to(wide-screens) {
-				font-size: 7rem;
-			}
-		}
-	}
-	.beef {
-		margin-top: 6rem;
-		.project-content {
-			/* p:first-child {
-				@include type($family: $type-sans, $size: 34px, $weight: 100, $line-height: 42px, $color: $color-grey);
-			}
-			p:first-child:first-letter { 
-				float: left; 
-				@include type($family: $type-display, $size: 148px, $line-height: 42px, $color: $color-grey, $weight: 900 );
-				padding: 8px 8px 3px 10px;
-			} */
-		}	
-		.project-info {
-			background: $color-white;
-			// border: 1px solid darken($color-tan, 14%);
-			border-top: 0;
-			margin: 0;
-			.details {
-				p {
-					font-size: 18px;
-					line-height: 20px;
-				}
-			}
-			
-			.description {
-				@include type($family: $type-sans, $size: 18px, $line-height: 24px, $color: $color-grey);
-				a {
-					display: block;
-					font-weight: bold;
-				}
-			}
-		}
-	}	
+
 }
+
+
 
 .impact {
 	width: 100%;
@@ -58,7 +12,7 @@
 	@include respond-to(wide-screens) {
 		height: 694px;
 	}
-	@include respond-to(medium-screens) { 
+	@include respond-to(medium-screens) {
 		height: 400px;
 	}
 	.large {
@@ -67,57 +21,59 @@
 		overflow: hidden;
 		position: absolute;
 	}
-	.browser {
-		width: 82.1601%;
-	  margin-left: 8.8815%;
-	  top: 40px;
-	  position: relative;
-		background: #dcdcdc;
-		-webkit-border-top-left-radius: 6px;
-		-webkit-border-top-right-radius: 6px;
-		-moz-border-radius-topleft: 6px;
-		-moz-border-radius-topright: 6px;
-		border-top-left-radius: 6px;
-		border-top-right-radius: 6px;
-		@include box-shadow(rgba(0,0,0,0.25) 0px 0px 40px);
-		img {
-			display: relative;
-			max-width: 100%;
-			width: overflow;
-			//max-height: 1000px;
-		}
-		.chrome {
-			padding: 10px;
-			@include borderBox;
-			.url {
-				background: #eeeeee;
-				padding: 4px 10px;
-				@include borderRadius;
-				@include type($family: $type-sans, $size: 11px, $line-height: 14px, $color: #a8a8a8);
-				p {
-					margin: 0;
-					line-height: 18px;
-				}
-				a {
-					font-size: 15px;
-					line-height: 13px;
-					position: relative;
-					color: #a8a8a8;
-					width: 100%;
-					display: block;
-				}
-				a:hover .url {
-					background: $color-white;
-				}
+}
+.browser {
+	width: 82.1601%;
+  margin-left: 8.8815%;
+  top: 40px;
+  position: relative;
+	background: #dcdcdc;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	@include box-shadow(rgba(0,0,0,0.25) 0px 0px 40px);
+	img {
+		display: relative;
+		max-width: 100%;
+		width: overflow;
+		//max-height: 1000px;
+	}
+	.chrome {
+		padding: 10px;
+		@include borderBox;
+		.url {
+			background: #eeeeee;
+			padding: 4px 10px;
+			@include borderRadius;
+			@include baseTransition;
+			&:hover {
+				background: $color-white;
+			}
+			p {
+				margin: 0;
+				@include type($family: $type-sans, $size: 11px, $line-height: 18px, $color: lighten($color-grey, 0.7));			}
+			a {
+				font-size: 15px;
+				line-height: 18px;
+				position: relative;
+				color: #a8a8a8;
+				width: 100%;
+				display: block;
+			}
+			a:hover .url {
+				background: $color-white;
 			}
 		}
-	}	
+	}
 }
 
 
 .project-list {
 	.project-entry {
-		position: relative;
+	  position: relative;
 	  width: 100%;
 	  overflow: hidden;
 	  min-height: 167px;
@@ -128,7 +84,7 @@
 	  @include baseTransition;
 	  @include respond-to(wide-screens) {
 		  width: 46.6225%;
-		  float: left; 
+		  float: left;
 		  margin: 1.68875%;
 		  height: 30em;
 		}
@@ -156,22 +112,27 @@
 		}
 		.logo {
 			width: 60%;
-			@include respond-to(wide-screens) { 
+			display: block;
+			background-size: contain;
+			background-position: center;
+			margin: 0 auto;
+			min-height: 150px;
+			@include respond-to(wide-screens) {
 			}
 		}
 	}
 }
 
 .page-navigation {
-	border-top: 3px solid transparentize($color-grey, 0.6); 
+	border-top: 3px solid transparentize($color-grey, 0.6);
 	margin-top: 6em;
 	padding-top: 3em;
 	@include type($family: $type-sans, $size: 18px, $line-height: 14px, $color: #a8a8a8);
-	
-	@include respond-to(wide-screens) { 
+
+	@include respond-to(wide-screens) {
 		position: fixed;
 		top: 30em;
-		width: 90%; 
+		width: 90%;
 		margin: 0 auto;
 		padding: 0;
 		border: 0;
@@ -181,10 +142,10 @@
 		}
 
 	}
-	h2 { 
+	h2 {
 		text-align: center;
 		margin-bottom: 2em;
-		@include respond-to(wide-screens) { 
+		@include respond-to(wide-screens) {
 			display: none;
 		}
 	}
@@ -197,7 +158,7 @@
 	}
 	.left .arrow, .right .arrow {
 		@include baseTransition;
-		@include respond-to(wide-screens) { 
+		@include respond-to(wide-screens) {
 			padding: 15px;
 			display: block;
 			float: left;
@@ -207,16 +168,17 @@
 		}
 		strong {
 			display: none;
-			@include respond-to(wide-screens) { 
+			@include respond-to(wide-screens) {
 				display: block;
 				float: left;
+				margin: 0 5px;
 			}
 		}
 		span {
 			@include baseTransition;
-			@include respond-to(wide-screens) { 
+			@include respond-to(wide-screens) {
 				display: none;
-
+				width: 0;
 			}
 		}
 		&:hover {
@@ -224,6 +186,8 @@
 		}
 		&:hover span {
 			display: block;
+			float: left;
+			width: auto;
 		}
 	}
 }

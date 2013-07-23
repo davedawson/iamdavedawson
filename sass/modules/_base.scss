@@ -1,61 +1,74 @@
 body {
-	@include type($family: $type-display);
-	// background: transparentize($color-tan, 0.8); 
+	@include type($family: $type-sans);
+	// background: transparentize($color-tan, 0.8);
 	background: $color-white;
+	text-legibility: optimizeLegibility;
 }
-h1 {
+a {
+	text-decoration: none;
+}
+ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+// Standard type styles
+.entry {
+	h1 {
 	@include type($family: $type-display, $size: 36px, $weight: 900);
 	margin-bottom: 20px;
 }
-h2 {
-}
-h3 {
-	@include type($family: $type-sans, $size: 16px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: uppercase);
-	margin-top: 10px;
-	letter-spacing: 0.2em;
-}
-h4 {
-}
-p {
-	font-family: $type-serif;
-	font-size: 24px;
-	line-height: 32px;
-	color: $color-grey;
-	margin: 0 0 18px;
-}
-ul, ol {
-	margin: 0;
-	padding: 0;
-	li {
-		list-style-type: none;
+	h2 {
+		@include type($family: $type-display, $size: 36px, $weight: 900);
+	}
+	h3 {
+		@include type($family: $type-sans, $size: 16px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: uppercase);
+		margin-top: 10px;
+		letter-spacing: 0.2em;
+	}
+	h4 {
+	}
+	p {
+		font-family: $type-serif;
+		font-size: 22px;
+		line-height: 30px;
+		color: $color-grey;
+		margin: 0 0 18px;
+	}
+	ul, ol {
 		margin: 0;
 		padding: 0;
+		li {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
 	}
-}
-ul {
+	ul {
+		li {
+		}
+	}
+	ol {
+		li {
+		}
+	}
 	li {
+		ul, ol {
+		}
 	}
-}
-ol {
-	li {
-	}
-}
-li {
-	ul, ol {
-	}
-}
 
-blockquote {
-}
-a, a:active, a:visited {
-	color: $color-purp; 
-	text-decoration: none;
-}
-a:hover, a:active {
-}
-a:hover, a:focus { 
-}
-a:link { 
+	blockquote {
+	}
+	a, a:active, a:visited {
+		color: $color-red;
+		text-decoration: none;
+	}
+	a:hover, a:active {
+	}
+	a:hover, a:focus {
+	}
+	a:link {
+	}
 }
 
 

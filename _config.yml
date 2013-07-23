@@ -6,6 +6,8 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 
+relative_permalinks: true
+
 future:      true
 lsi:         false
 pygments:    false

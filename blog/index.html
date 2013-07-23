@@ -1,0 +1,20 @@
+---
+layout: blog_index
+categories: blog
+---
+<div class="container">
+  <ul class="project-list entries">
+    {% for post in site.posts %}
+      {% if post.categories contains 'blog' %}
+      <li class="project-entry {{ post.class }}">
+        <div class="thumb">
+          <a href="{{ post.url }}" class="cf">
+            <span class="logo {{ post.logo-class }}">
+            </span>
+          </a>
+        </div>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

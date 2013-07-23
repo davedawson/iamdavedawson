@@ -1,0 +1,32 @@
+set :application, "tinybop-ee"
+set :scm, :git
+set :repository,  "git@github.com:imjared/tinybop-ee.git"
+
+server "70.32.89.52", :app
+set :user, "root"
+set :use_sudo, false
+
+set :deploy_to, "/var/www/vhosts/tinybop.com/site"
+set :deploy_via, :remote_cache
+set :normalize_asset_timestamps, false
+set :keep_releases, 5
+
+set :copy_exclude, ["themes/cp_themes", ".git", ".DS_Store", ".gitignore", ".gitmodules", "node_modules", "package.json", "grunt.js", ".editorconfig", "config/deploy.rb", "sync.sh", "img", "jobs", "assets"]
+
+task :symlinks_setup do
+    run "rm -rf #{release_path}/images"
+    run "ln -nfs #{shared_path}/.htaccess #{release_path}/.htaccess"
+    run "ln -nfs #{shared_path}/assets #{release_path}/assets"
+    run "ln -nfs #{shared_path}/jobs #{release_path}/jobs"
+    run "ln -nfs #{shared_path}/images #{release_path}/images"
+    run "ln -nfs #{shared_path}/img #{release_path}/img"
+    run "ln -nfs #{shared_path}/cp_themes #{release_path}/themes"
+
+    # run "chmod 755 -R /home3/laserjn/www/tinybop"
+    run "mkdir #{release_path}/moonbase/expressionengine/cache"
+    run "chmod 666 #{release_path}/moonbase/expressionengine/config/database.php"
+    run "chmod 666 #{release_path}/moonbase/expressionengine/config/config.php"
+    run "chmod 777 #{release_path}/moonbase/expressionengine/cache"
+end
+
+after "deploy:update_code", "symlinks_setup"

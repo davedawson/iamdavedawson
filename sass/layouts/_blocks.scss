@@ -1,16 +1,36 @@
 @import "modules/shortcuts";
 body {
-  background: $color-bg;
+  background: transparentize ($color-bg, 0.2);
+  text-rendering: optimizeLegibility;
 }
-.project {
-	.pic {
-		border: 1px solid darken($color-tan, 14%);
-		border-bottom: 0;
-		img {
-			display: block;
-		}
+
+.pic {
+  margin: 30px 0;
+  @include box-shadow(rgba(0,0,0,0) 0px 0px 5px);
+	img {
+		display: block;
+    @include borderBox;
 	}
+  p {
+    width: 100%;
+    padding: 0.7em;
+    margin: 0;
+    text-align: center;
+    font: 100 italic 14px $type-sans;
+    color: lighten($color-grey, 0.7);
+    background: transparentize($color-grey, 0.9);
+    @include borderBox;
+    @include baseTransition;
+  }
+  &:hover p {
+    color: lighten($color-grey, 0.6);
+    background: transparentize($color-grey, 0.8);
+  }
+  &:hover {
+    @include box-shadow(rgba(0,0,0,0.15) 0px 0px 5px);
+  }
 }
+
 
 .blur {
 
@@ -18,4 +38,29 @@ body {
 .blur:hover {
 
 
+}
+
+.summary {
+  padding: 1em 0;
+  margin: 1em 0;
+  border-bottom: 1px solid transparentize($color-grey, 0.95);
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.4em;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.entry {
+  p:first-of-type {
+    @include type($family: $type-sans, $size: 2rem, $weight: 100, $line-height: 44px, $color: $color-grey);
+  }
+  /*
+  p:first-child:first-letter {
+    float: left;
+    @include type($family: $type-display, $size: 148px, $line-height: 42px, $color: $color-grey, $weight: 900 );
+    padding: 8px 8px 3px 10px;
+  } */
 }

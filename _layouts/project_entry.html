@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<!--
 <div class="project-specific {{ page.class }}">
   <div class="intro">
     <div class="container">
@@ -9,12 +8,28 @@ layout: default
       <p class="subtitle">{{ page.description }}</p>
     </div>
   </div>
-   <div class="pic">
-    <a href="{{ page.url }}" class="cf">
-      <img src="{{ page.short-image }}" />
-    </a>
-  </div>
--->
+
+<div class="details cf">
+  <ul class="container">
+    <li class="d1-d3 t1-t3">
+      <h3>Client</h3>
+      <p>{{ page.client }}</p>
+    </li>
+    <li class="d4-d6 t4-t6">
+      <h3>Role</h3>
+      <p>{{ page.role }}</p>
+    </li>
+    <li class="d7-d9 t1-t3">
+      <h3>Team</h3>
+      <p>{{ page.collaborators }}</p>
+    </li>
+    <li class="d10-d12 t4-t6">
+      <h3>Live Site</h3>
+      <p><a href="http://{{ page.live-site }}">{{ page.live-site }}</a></p>
+    </li>
+  </ul>
+</div>
+
 <div class="impact {{ page.class }}">
   <div class="container">
     <div class="browser">
@@ -30,25 +45,14 @@ layout: default
   </div><!-- /.container -->
 </div>
 
-
   <div class="container beef">
     <div class="project-info cf">
-        <div class="details d2-d4">
-          <h3>Client</h3>
-          <p>{{ page.client }}</p>
-          <h3>Role</h3>
-          <p>{{ page.role }}</p>
-          <h3>Team</h3>
-          <p>{{ page.collaborators }}</p>
-          <h3>Live Site</h3>
-          <p><a href="http://{{ page.live-site }}">{{ page.live-site }}</a></p>
-        </div>
-
-        <div class="project-content d5-d11">
+        <div class="project-content entry">
           {{ content }}
         </div>
     </div>
   </div>
+
 </div>
 
 <div class="page-navigation container">

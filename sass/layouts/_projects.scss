@@ -1,17 +1,144 @@
 $pih: "/img/projects/large/pih-large.jpg";
-
+$ndnf: "/img/projects/large/ndnf-large.jpg";
 .project-specific {
+  padding-top: 0;
+  @include borderBox;
+  .intro {
+    text-align: center;
+    padding: 2em 5%;
+    background: transparentize($color-tan, 0.8);
+    font-family: $type-display;
+    @include respond-to(medium-screens) {
+      padding: 4em 5%;
+    }
+    p {
+      width: 70%;
+      margin: 0 auto;
+      @include type($family: $type-sans, $size: 1rem, $weight: 100, $line-height: 1.4em, $color: transparentize($color-grey, 0.3));
+      @include respond-to(wide-screens) {
+        font-size: 1.6rem;
+      }
+      @include respond-to(medium-screens) {
+        font-size: 1.2rem
+      }
+    }
+    h1 {
+      font-size: 3rem;
+      line-height: 3.1rem;
+      margin-bottom: 0.3rem;
+      @include baseTransition;
+      @include respond-to(wide-screens) {
+        font-size: 5.6rem;
+        line-height: 6.7rem;
+        margin-bottom: 1.1rem;
+      }
+      @include respond-to(medium-screens) {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+      }
+
+    }
+  }
+  .details {
+    background: transparentize($color-tan, 0.5);
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    @include borderBox;
+    li {}
+    p {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+  .beef {
+    margin-top: 2rem;
+    @include respond-to(medium-screens) {
+      margin-top: 6rem;
+    }
+
+  }
+  .project-info {
+    // background: $color-white;
+    // border: 1px solid darken($color-tan, 14%);
+    border-top: 0;
+    margin: 0;
+
+    .description {
+      @include type($family: $type-sans, $size: 18px, $line-height: 24px, $color: $color-grey);
+      a {
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+  .impact {
+    background-size: cover;
+    background-color: $color-grey;
+  }
+  /*
   &.pih {
     .impact {
-      background: url($pih) center no-repeat;
+      background: url("/img/projects/large/pih-large.jpg") center no-repeat;
       background-size: cover;
     }
   }
+  &.ndnf {
+    .impact {
+      background: url("/img/projects/large/ndnf-large.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+  &.fdr {
+    .impact {
+      background: url("/img/projects/large/fdr-large.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+  &.arm {
+    .impact {
+      background: url("/img/projects/large/arm-large.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+  &.hrc {
+    .impact {
+      background: url("/img/projects/large/hrc-large.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+  &.at {
+    .impact {
+      background: url("/img/projects/large/at-large.jpg") center no-repeat;
+      background-size: cover;
+    }
+  } */
 }
 .project-list {
   .project-entry {
+    background-size: cover;
     &.pih {
-      background: url($pih) center no-repeat;
+      background: url("/img/projects/square/pih-square-1.jpg") center no-repeat;
+      background-size: cover;
+    }
+    &.ndnf {
+      background: url("/img/projects/square/ndnf-square.jpg") center no-repeat;
+      background-size: cover;
+    }
+    &.fdr {
+      background: url("/img/projects/square/fdr-square.jpg") center no-repeat;
+      background-size: cover;
+    }
+    &.arm {
+      background: url("/img/projects/square/arm-square.jpg") center no-repeat;
+      background-size: cover;
+    }
+    &.hrc {
+      background: url("/img/projects/square/hrc-square.jpg") center no-repeat;
+      background-size: cover;
+    }
+    &.at {
+      background: url("/img/projects/square/at-square.jpg") center no-repeat;
       background-size: cover;
     }
   }

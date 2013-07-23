@@ -11,14 +11,15 @@ body {
 			margin: 3em auto;
 			width: 50%;
 		}
-		@include respond-to(medium-screens) {
-			width: 80%;
+		@include respond-to(wide-screens) {
+			width: 100%;
 		}
 		li {
 			display: inline-block;
 			float: none;
 			margin: 1em 0;
 			width: auto;
+			margin-top: 80px;
 			// @include baseTransition;
 			transition: width 0.2s;
 			transition-delay: 0.3s;
@@ -27,7 +28,7 @@ body {
 			font-size: 20px;
 			font-weight: 500px;
 			@include respond-to(wide-screens) {
-				margin: 1em;
+				margin: 1em 4%;
 			}
 			a {
 				color: $color-grey;
@@ -40,6 +41,15 @@ body {
 				font-family: $type-display;
 				font-size: 16px;
 				text-align: center;
+				position: absolute;
+				top: 20px;
+			  left: 32%;
+			  margin: 0;
+				@include respond-to(wide-screens) {
+					position: relative;
+					top: auto;
+					left: auto
+				}
 				// @include baseTransition;
 				@include respond-to(wide-screens) {
 					width: 60px;
@@ -81,7 +91,7 @@ body {
 					}
 				}
 			}
-			&.logo:hover em {
+			&.nav-logo:hover em {
 				display: inline-block;
 				opacity: 1;
 				height: auto;

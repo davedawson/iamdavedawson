@@ -5,12 +5,12 @@
 }
 
 
-// Mixins 
+// Mixins
 @mixin borderRadius {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
-} 
+}
 
 @mixin box-shadow($shadows...) {
   -moz-box-shadow: $shadows;
@@ -19,16 +19,21 @@
 }
 
 @mixin borderBox {
-  -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 @mixin textFieldClean {
-  border: 0;  
+  border: 0;
   @include borderRadius;
   @include borderBox;
   padding: 10px
+}
+
+@mixin clearfix { min-height:0;
+  &:before, &:after { content:"\0020"; display:block; height:0; visibility:hidden; }
+  &:after { clear:both; }
 }
 
 $mq-mobile-portrait   : 320px;
@@ -43,7 +48,7 @@ $mq-desktop-max       : 1382px;
     @media only screen and (min-width: $mq-mobile-landscape + 1) { @content; }
   }
   @else if $media == medium-screens {
-    @media only screen and (min-width: $mq-mobile-landscape + 1) and (max-width: $mq-desktop) { @content; }
+    @media only screen and (min-width: $mq-mobile-landscape + 1) and (max-width: $mq-desktop - 1) { @content; }
   }
   @else if $media == handhelds {
     @media only screen and (max-width: $mq-mobile-landscape) { @content; }
