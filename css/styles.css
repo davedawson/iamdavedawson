@@ -461,21 +461,24 @@ body {
   line-height: 1.2em;
   background: white;
   text-legibility: optimizeLegibility;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-/* line 7, ../sass/modules/_base.scss */
+/* line 9, ../sass/modules/_base.scss */
 a {
   text-decoration: none;
+  color: #42b9c1;
 }
 
-/* line 10, ../sass/modules/_base.scss */
+/* line 13, ../sass/modules/_base.scss */
 ul, ol, li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 17, ../sass/modules/_base.scss */
+/* line 20, ../sass/modules/_base.scss */
 .entry h1 {
   font-family: "Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
   font-size: 36px;
@@ -485,7 +488,7 @@ ul, ol, li {
   line-height: 1.2em;
   margin-bottom: 20px;
 }
-/* line 21, ../sass/modules/_base.scss */
+/* line 24, ../sass/modules/_base.scss */
 .entry h2 {
   font-family: "Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
   font-size: 36px;
@@ -494,7 +497,7 @@ ul, ol, li {
   text-transform: normal;
   line-height: 1.2em;
 }
-/* line 24, ../sass/modules/_base.scss */
+/* line 27, ../sass/modules/_base.scss */
 .entry h3 {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -505,7 +508,7 @@ ul, ol, li {
   margin-top: 10px;
   letter-spacing: 0.2em;
 }
-/* line 31, ../sass/modules/_base.scss */
+/* line 34, ../sass/modules/_base.scss */
 .entry p {
   font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
   font-size: 22px;
@@ -513,18 +516,18 @@ ul, ol, li {
   color: #444444;
   margin: 0 0 18px;
 }
-/* line 38, ../sass/modules/_base.scss */
+/* line 41, ../sass/modules/_base.scss */
 .entry ul, .entry ol {
   margin: 0;
   padding: 0;
 }
-/* line 41, ../sass/modules/_base.scss */
+/* line 44, ../sass/modules/_base.scss */
 .entry ul li, .entry ol li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 62, ../sass/modules/_base.scss */
+/* line 65, ../sass/modules/_base.scss */
 .entry a, .entry a:active, .entry a:visited {
   color: #42b9c1;
   text-decoration: none;
@@ -855,7 +858,7 @@ body {
   box-sizing: border-box;
 }
 /* line 14, ../sass/layouts/_blocks.scss */
-.pic p {
+.pic p, .pic p:first-of-type {
   width: 100%;
   padding: 0.7em;
   margin: 0;
@@ -889,30 +892,67 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
 }
 
-/* line 43, ../sass/layouts/_blocks.scss */
-.summary {
+/* line 34, ../sass/layouts/_blocks.scss */
+.blog.summary {
   padding: 1em 0;
   margin: 1em 0;
   border-bottom: 1px solid rgba(68, 68, 68, 0.05);
 }
-/* line 47, ../sass/layouts/_blocks.scss */
-.summary h2 {
+/* line 38, ../sass/layouts/_blocks.scss */
+.blog.summary h2 {
   font-size: 2rem;
   margin-bottom: 0.4em;
+  font-family: "Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
 }
-/* line 51, ../sass/layouts/_blocks.scss */
-.summary p {
+/* line 43, ../sass/layouts/_blocks.scss */
+.blog.summary p {
   font-size: 18px;
+  font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
+  color: #444444;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
-/* line 57, ../sass/layouts/_blocks.scss */
+/* line 53, ../sass/layouts/_blocks.scss */
 .entry p:first-of-type {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 100;
   color: #444444;
   text-transform: normal;
-  line-height: 44px;
+  line-height: 2.3rem;
+}
+@media only screen and (min-width: 569px) {
+  /* line 53, ../sass/layouts/_blocks.scss */
+  .entry p:first-of-type {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+}
+@media only screen and (min-width: 569px) and (max-width: 971px) {
+  /* line 53, ../sass/layouts/_blocks.scss */
+  .entry p:first-of-type {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+
+/* line 68, ../sass/layouts/_blocks.scss */
+.blog.entry h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+/* line 72, ../sass/layouts/_blocks.scss */
+.blog.entry time {
+  margin-bottom: 2rem;
+}
+
+/* line 77, ../sass/layouts/_blocks.scss */
+time {
+  font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #aaaaaa;
 }
 
 /* line 3, ../sass/layouts/_home.scss */
@@ -1144,75 +1184,7 @@ body {
   background: white;
 }
 
-/* line 75, ../sass/layouts/_portfolio.scss */
-.project-list .project-entry {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  min-height: 167px;
-  height: 10em;
-  margin: 4% 0;
-  background: #000;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -ms-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-@media only screen and (min-width: 569px) {
-  /* line 75, ../sass/layouts/_portfolio.scss */
-  .project-list .project-entry {
-    width: 46.6225%;
-    float: left;
-    margin: 1.68875%;
-    height: 30em;
-  }
-}
-@media only screen and (min-width: 569px) and (max-width: 971px) {
-  /* line 75, ../sass/layouts/_portfolio.scss */
-  .project-list .project-entry {
-    width: 100%;
-    float: none;
-    height: 20em;
-  }
-}
-/* line 96, ../sass/layouts/_portfolio.scss */
-.project-list .project-entry .thumb {
-  display: table;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-/* line 101, ../sass/layouts/_portfolio.scss */
-.project-list .project-entry .thumb a {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
-}
-/* line 108, ../sass/layouts/_portfolio.scss */
-.project-list .project-entry .large {
-  width: 100%;
-  margin: -5%;
-}
-/* line 113, ../sass/layouts/_portfolio.scss */
-.project-list .project-entry .logo {
-  width: 60%;
-  display: block;
-  background-size: contain;
-  background-position: center;
-  margin: 0 auto;
-  min-height: 150px;
-}
-
-/* line 126, ../sass/layouts/_portfolio.scss */
+/* line 73, ../sass/layouts/_portfolio.scss */
 .page-navigation {
   border-top: 3px solid rgba(68, 68, 68, 0.4);
   margin-top: 6em;
@@ -1225,7 +1197,7 @@ body {
   line-height: 14px;
 }
 @media only screen and (min-width: 569px) {
-  /* line 126, ../sass/layouts/_portfolio.scss */
+  /* line 73, ../sass/layouts/_portfolio.scss */
   .page-navigation {
     position: fixed;
     top: 30em;
@@ -1234,33 +1206,33 @@ body {
     padding: 0;
     border: 0;
   }
-  /* line 139, ../sass/layouts/_portfolio.scss */
+  /* line 86, ../sass/layouts/_portfolio.scss */
   .page-navigation.container {
     width: 100%;
     max-width: 100%;
   }
 }
-/* line 145, ../sass/layouts/_portfolio.scss */
+/* line 92, ../sass/layouts/_portfolio.scss */
 .page-navigation h2 {
   text-align: center;
   margin-bottom: 2em;
 }
 @media only screen and (min-width: 569px) {
-  /* line 145, ../sass/layouts/_portfolio.scss */
+  /* line 92, ../sass/layouts/_portfolio.scss */
   .page-navigation h2 {
     display: none;
   }
 }
-/* line 152, ../sass/layouts/_portfolio.scss */
+/* line 99, ../sass/layouts/_portfolio.scss */
 .page-navigation .left {
   float: left;
 }
-/* line 155, ../sass/layouts/_portfolio.scss */
+/* line 102, ../sass/layouts/_portfolio.scss */
 .page-navigation .right {
   float: right;
   text-align: right;
 }
-/* line 159, ../sass/layouts/_portfolio.scss */
+/* line 106, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow, .page-navigation .right .arrow {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -1274,7 +1246,7 @@ body {
   transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
-  /* line 159, ../sass/layouts/_portfolio.scss */
+  /* line 106, ../sass/layouts/_portfolio.scss */
   .page-navigation .left .arrow, .page-navigation .right .arrow {
     padding: 15px;
     display: block;
@@ -1284,19 +1256,19 @@ body {
     opacity: 0.3;
   }
 }
-/* line 169, ../sass/layouts/_portfolio.scss */
+/* line 116, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow strong, .page-navigation .right .arrow strong {
   display: none;
 }
 @media only screen and (min-width: 569px) {
-  /* line 169, ../sass/layouts/_portfolio.scss */
+  /* line 116, ../sass/layouts/_portfolio.scss */
   .page-navigation .left .arrow strong, .page-navigation .right .arrow strong {
     display: block;
     float: left;
     margin: 0 5px;
   }
 }
-/* line 177, ../sass/layouts/_portfolio.scss */
+/* line 124, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow span, .page-navigation .right .arrow span {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -1310,17 +1282,17 @@ body {
   transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
-  /* line 177, ../sass/layouts/_portfolio.scss */
+  /* line 124, ../sass/layouts/_portfolio.scss */
   .page-navigation .left .arrow span, .page-navigation .right .arrow span {
     display: none;
     width: 0;
   }
 }
-/* line 184, ../sass/layouts/_portfolio.scss */
+/* line 131, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow:hover, .page-navigation .right .arrow:hover {
   opacity: 1;
 }
-/* line 187, ../sass/layouts/_portfolio.scss */
+/* line 134, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow:hover span, .page-navigation .right .arrow:hover span {
   display: block;
   float: left;
@@ -1374,8 +1346,7 @@ body {
 /* line 6, ../sass/layouts/_projects.scss */
 .project-specific .intro {
   text-align: center;
-  padding: 2em 5%;
-  background: rgba(235, 235, 222, 0.2);
+  padding: 1em 5% 4em;
   font-family: "Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
 }
 @media only screen and (min-width: 569px) and (max-width: 971px) {
@@ -1440,7 +1411,7 @@ body {
 }
 /* line 42, ../sass/layouts/_projects.scss */
 .project-specific .details {
-  background: rgba(235, 235, 222, 0.5);
+  background: rgba(235, 235, 222, 0.2);
   width: 100%;
   margin: 0;
   padding: 1em;
@@ -1453,22 +1424,29 @@ body {
   font-size: 18px;
   line-height: 20px;
 }
-/* line 54, ../sass/layouts/_projects.scss */
+/* line 53, ../sass/layouts/_projects.scss */
+.project-specific .details h3 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  color: #777777;
+}
+/* line 60, ../sass/layouts/_projects.scss */
 .project-specific .beef {
   margin-top: 2rem;
 }
 @media only screen and (min-width: 569px) and (max-width: 971px) {
-  /* line 54, ../sass/layouts/_projects.scss */
+  /* line 60, ../sass/layouts/_projects.scss */
   .project-specific .beef {
     margin-top: 6rem;
   }
 }
-/* line 61, ../sass/layouts/_projects.scss */
+/* line 67, ../sass/layouts/_projects.scss */
 .project-specific .project-info {
   border-top: 0;
   margin: 0;
 }
-/* line 67, ../sass/layouts/_projects.scss */
+/* line 73, ../sass/layouts/_projects.scss */
 .project-specific .project-info .description {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -1477,48 +1455,209 @@ body {
   text-transform: normal;
   line-height: 24px;
 }
-/* line 69, ../sass/layouts/_projects.scss */
+/* line 75, ../sass/layouts/_projects.scss */
 .project-specific .project-info .description a {
   display: block;
   font-weight: bold;
 }
-/* line 75, ../sass/layouts/_projects.scss */
+/* line 81, ../sass/layouts/_projects.scss */
 .project-specific .impact {
   background-size: cover;
   background-color: #444444;
 }
 
-/* line 118, ../sass/layouts/_projects.scss */
-.project-list .project-entry {
-  background-size: cover;
-}
-/* line 120, ../sass/layouts/_projects.scss */
-.project-list .project-entry.pih {
-  background: url("/img/projects/square/pih-square-1.jpg") center no-repeat;
-  background-size: cover;
-}
 /* line 124, ../sass/layouts/_projects.scss */
-.project-list .project-entry.ndnf {
-  background: url("/img/projects/square/ndnf-square.jpg") center no-repeat;
+.project-list .summary {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 250px;
+  height: 10em;
+  margin: 4% 0;
+  background: #000;
   background-size: cover;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 128, ../sass/layouts/_projects.scss */
-.project-list .project-entry.fdr {
-  background: url("/img/projects/square/fdr-square.jpg") center no-repeat;
-  background-size: cover;
+@media only screen and (min-width: 569px) {
+  /* line 124, ../sass/layouts/_projects.scss */
+  .project-list .summary {
+    width: 46.6225%;
+    float: left;
+    margin: 1.68875%;
+    height: 30em;
+    background-size: cover;
+    background-position: center;
+  }
+  /* line 143, ../sass/layouts/_projects.scss */
+  .project-list .summary:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+  }
+  /* line 156, ../sass/layouts/_projects.scss */
+  .project-list .summary:hover:after {
+    opacity: 1;
+  }
 }
-/* line 132, ../sass/layouts/_projects.scss */
-.project-list .project-entry.arm {
-  background: url("/img/projects/square/arm-square.jpg") center no-repeat;
-  background-size: cover;
+@media only screen and (min-width: 569px) and (max-width: 971px) {
+  /* line 124, ../sass/layouts/_projects.scss */
+  .project-list .summary {
+    width: 100%;
+    float: none;
+    height: 20em;
+  }
 }
-/* line 136, ../sass/layouts/_projects.scss */
-.project-list .project-entry.hrc {
-  background: url("/img/projects/square/hrc-square.jpg") center no-repeat;
-  background-size: cover;
+/* line 165, ../sass/layouts/_projects.scss */
+.project-list .summary .thumb {
+  display: table;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 4;
 }
-/* line 140, ../sass/layouts/_projects.scss */
-.project-list .project-entry.at {
-  background: url("/img/projects/square/at-square.jpg") center no-repeat;
-  background-size: cover;
+/* line 172, ../sass/layouts/_projects.scss */
+.project-list .summary .thumb .wrap {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 178, ../sass/layouts/_projects.scss */
+.project-list .summary .large {
+  width: 100%;
+  margin: -5%;
+}
+/* line 183, ../sass/layouts/_projects.scss */
+.project-list .summary .logo {
+  width: 60%;
+  display: block;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  min-height: 150px;
+  position: relative;
+  z-index: 3;
+  -webkit-filter: drop-shadow(-5px -5px 5px black);
+  filter: drop-shadow(-5px -5px 5px black);
+  /* Same syntax as box-shadow */
+}
+/* line 197, ../sass/layouts/_projects.scss */
+.project-list .summary.pih {
+  background-image: url("/img/projects/square/pih-square-blurred.jpg");
+}
+/* line 199, ../sass/layouts/_projects.scss */
+.project-list .summary.pih:after {
+  background-image: url("/img/projects/square/pih-square-focused.jpg");
+}
+/* line 203, ../sass/layouts/_projects.scss */
+.project-list .summary.ndnf {
+  background-image: url("/img/projects/square/ndnf-square-blurred.jpg");
+}
+/* line 205, ../sass/layouts/_projects.scss */
+.project-list .summary.ndnf:after {
+  background-image: url("/img/projects/square/ndnf-square-focused.jpg");
+}
+/* line 209, ../sass/layouts/_projects.scss */
+.project-list .summary.fdr {
+  background-image: url("/img/projects/square/fdr-square-blurred.jpg");
+}
+/* line 211, ../sass/layouts/_projects.scss */
+.project-list .summary.fdr:after {
+  background-image: url("/img/projects/square/fdr-square-focused.jpg");
+}
+/* line 215, ../sass/layouts/_projects.scss */
+.project-list .summary.arm {
+  background-image: url("/img/projects/square/arm-square-blurred.jpg");
+}
+/* line 217, ../sass/layouts/_projects.scss */
+.project-list .summary.arm:after {
+  background-image: url("/img/projects/square/arm-square-focused.jpg");
+}
+/* line 221, ../sass/layouts/_projects.scss */
+.project-list .summary.hrc {
+  background-image: url("/img/projects/square/hrc-square-blurred.jpg");
+}
+/* line 223, ../sass/layouts/_projects.scss */
+.project-list .summary.hrc:after {
+  background-image: url("/img/projects/square/hrc-square-focused.jpg");
+}
+/* line 227, ../sass/layouts/_projects.scss */
+.project-list .summary.at {
+  background-image: url("/img/projects/square/at-square-blurred.jpg");
+}
+/* line 229, ../sass/layouts/_projects.scss */
+.project-list .summary.at:after {
+  background-image: url("/img/projects/square/at-square-focused.jpg");
+}
+/* line 233, ../sass/layouts/_projects.scss */
+.project-list .summary.wntd {
+  background-image: url("/img/projects/square/wntd-square-blurred.jpg");
+}
+/* line 235, ../sass/layouts/_projects.scss */
+.project-list .summary.wntd:after {
+  background-image: url("/img/projects/square/wntd-square-focused.jpg");
+}
+/* line 239, ../sass/layouts/_projects.scss */
+.project-list .summary.filmlinc {
+  background-image: url("/img/projects/square/filmlinc-square-blurred.jpg");
+}
+/* line 241, ../sass/layouts/_projects.scss */
+.project-list .summary.filmlinc:after {
+  background-image: url("/img/projects/square/filmlinc-square-focused.jpg");
+}
+/* line 245, ../sass/layouts/_projects.scss */
+.project-list .summary.surfrider {
+  background-image: url("/img/projects/square/surfrider-square-blurred.jpg");
+}
+/* line 247, ../sass/layouts/_projects.scss */
+.project-list .summary.surfrider:after {
+  background-image: url("/img/projects/square/surfrider-square-focused.jpg");
+}
+/* line 251, ../sass/layouts/_projects.scss */
+.project-list .summary.rb {
+  background-image: url("/img/projects/square/rb-square-blurred.jpg");
+}
+/* line 253, ../sass/layouts/_projects.scss */
+.project-list .summary.rb:after {
+  background-image: url("/img/projects/square/rb-square-focused.jpg");
+}
+/* line 257, ../sass/layouts/_projects.scss */
+.project-list .summary.stash {
+  background-image: url("/img/projects/square/stash-square-blurred.jpg");
+}
+/* line 259, ../sass/layouts/_projects.scss */
+.project-list .summary.stash:after {
+  background-image: url("/img/projects/square/stash-square-focused.jpg");
+}
+/* line 263, ../sass/layouts/_projects.scss */
+.project-list .summary.lb {
+  background-image: url("/img/projects/square/lb-square-blurred.jpg");
+}
+/* line 265, ../sass/layouts/_projects.scss */
+.project-list .summary.lb:after {
+  background-image: url("/img/projects/square/lb-square-focused.jpg");
 }

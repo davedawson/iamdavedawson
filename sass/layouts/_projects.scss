@@ -5,8 +5,8 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
   @include borderBox;
   .intro {
     text-align: center;
-    padding: 2em 5%;
-    background: transparentize($color-tan, 0.8);
+    padding: 1em 5% 4em;
+    // background: transparentize($color-tan, 0.8);
     font-family: $type-display;
     @include respond-to(medium-screens) {
       padding: 4em 5%;
@@ -40,7 +40,7 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
     }
   }
   .details {
-    background: transparentize($color-tan, 0.5);
+    background: transparentize($color-tan, 0.8);
     width: 100%;
     margin: 0;
     padding: 1em;
@@ -49,6 +49,12 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
     p {
       font-size: 18px;
       line-height: 20px;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.1rem;
+      color: lighten($color-grey, 20%);
     }
   }
   .beef {
@@ -115,31 +121,150 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
   } */
 }
 .project-list {
-  .project-entry {
+  .summary {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 250px;
+    height: 10em;
+    margin: 4% 0;
+    background: #000;
     background-size: cover;
-    &.pih {
-      background: url("/img/projects/square/pih-square-1.jpg") center no-repeat;
+    z-index: 1;
+    @include borderBox;
+    @include baseTransition;
+    @include respond-to(wide-screens) {
+      width: 46.6225%;
+      float: left;
+      margin: 1.68875%;
+      height: 30em;
       background-size: cover;
+      background-position: center;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 2;
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition:    opacity 0.5s;
+        -o-transition:      opacity 0.5s;
+      }
+      &:hover:after {
+        opacity: 1;
+      }
+    }
+    @include respond-to(medium-screens) {
+      width: 100%;
+      float: none;
+      height: 20em;
+    }
+    .thumb {
+      display: table;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index: 4;
+      .wrap {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+      }
+    }
+    .large {
+      width: 100%;
+      margin: -5%;
+      // position: absolute;
+    }
+    .logo {
+      width: 60%;
+      display: block;
+      background-size: contain;
+      background-position: center;
+      margin: 0 auto;
+      min-height: 150px;
+      position: relative;
+      z-index: 3;
+      -webkit-filter: drop-shadow( -5px -5px 5px #000 );
+      filter: drop-shadow( -5px -5px 5px #000 ); /* Same syntax as box-shadow */
+      @include respond-to(wide-screens) {
+      }
+    }
+    &.pih {
+      background-image: url("/img/projects/square/pih-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/pih-square-focused.jpg");
+      }
     }
     &.ndnf {
-      background: url("/img/projects/square/ndnf-square.jpg") center no-repeat;
-      background-size: cover;
+      background-image: url("/img/projects/square/ndnf-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/ndnf-square-focused.jpg");
+      }
     }
     &.fdr {
-      background: url("/img/projects/square/fdr-square.jpg") center no-repeat;
-      background-size: cover;
+      background-image: url("/img/projects/square/fdr-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/fdr-square-focused.jpg");
+      }
     }
     &.arm {
-      background: url("/img/projects/square/arm-square.jpg") center no-repeat;
-      background-size: cover;
+      background-image: url("/img/projects/square/arm-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/arm-square-focused.jpg");
+      }
     }
     &.hrc {
-      background: url("/img/projects/square/hrc-square.jpg") center no-repeat;
-      background-size: cover;
+      background-image: url("/img/projects/square/hrc-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/hrc-square-focused.jpg");
+      }
     }
     &.at {
-      background: url("/img/projects/square/at-square.jpg") center no-repeat;
-      background-size: cover;
+      background-image: url("/img/projects/square/at-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/at-square-focused.jpg");
+      }
+    }
+    &.wntd {
+      background-image: url("/img/projects/square/wntd-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/wntd-square-focused.jpg");
+      }
+    }
+    &.filmlinc {
+      background-image: url("/img/projects/square/filmlinc-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/filmlinc-square-focused.jpg");
+      }
+    }
+    &.surfrider {
+      background-image: url("/img/projects/square/surfrider-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/surfrider-square-focused.jpg");
+      }
+    }
+    &.rb {
+      background-image: url("/img/projects/square/rb-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/rb-square-focused.jpg");
+      }
+    }
+    &.stash {
+      background-image: url("/img/projects/square/stash-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/stash-square-focused.jpg");
+      }
+    }
+    &.lb {
+      background-image: url("/img/projects/square/lb-square-blurred.jpg");
+      &:after {
+        background-image: url("/img/projects/square/lb-square-focused.jpg");
+      }
     }
   }
 }

@@ -70,59 +70,6 @@
 	}
 }
 
-
-.project-list {
-	.project-entry {
-	  position: relative;
-	  width: 100%;
-	  overflow: hidden;
-	  min-height: 167px;
-	  height: 10em;
-	  margin: 4% 0;
-	  background: #000;
-	  @include borderBox;
-	  @include baseTransition;
-	  @include respond-to(wide-screens) {
-		  width: 46.6225%;
-		  float: left;
-		  margin: 1.68875%;
-		  height: 30em;
-		}
-	  @include respond-to(medium-screens) {
-			width: 100%;
-			float: none;
-			height: 20em;
-	  }
-	  .thumb {
-	  	display: table;
-			text-align: center;
-			height: 100%;
-			width: 100%;
-			a {
-				display: table-cell;
-				vertical-align: middle;
-				position: relative;
-			}
-	  }
-
-		.large {
-			width: 100%;
-			margin: -5%;
-			// position: absolute;
-		}
-		.logo {
-			width: 60%;
-			display: block;
-			background-size: contain;
-			background-position: center;
-			margin: 0 auto;
-			min-height: 150px;
-			@include respond-to(wide-screens) {
-			}
-		}
-	}
-}
-
 .page-navigation {
 	border-top: 3px solid transparentize($color-grey, 0.6);
 	margin-top: 6em;

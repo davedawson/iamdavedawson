@@ -11,7 +11,7 @@ body {
 		display: block;
     @include borderBox;
 	}
-  p {
+  p, p:first-of-type {
     width: 100%;
     padding: 0.7em;
     margin: 0;
@@ -31,30 +31,52 @@ body {
   }
 }
 
-
-.blur {
-
-}
-.blur:hover {
-
-
-}
-
-.summary {
+.blog.summary {
   padding: 1em 0;
   margin: 1em 0;
   border-bottom: 1px solid transparentize($color-grey, 0.95);
   h2 {
     font-size: 2rem;
     margin-bottom: 0.4em;
+    font-family: $type-display;
   }
   p {
     font-size: 18px;
+    font-family: $type-serif;
+    color: $color-grey;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 }
 
 .entry {
   p:first-of-type {
-    @include type($family: $type-sans, $size: 2rem, $weight: 100, $line-height: 44px, $color: $color-grey);
+    @include type($family: $type-sans, $size: 1.6rem, $weight: 100, $line-height: 2.3rem, $color: $color-grey);
+    @include respond-to(wide-screens) {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+      }
+      @include respond-to(medium-screens) {
+        font-size: 1.5rem;
+line-height: 1.9rem;
+
+      }
   }
+}
+
+.blog.entry {
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  time {
+    margin-bottom: 2rem;
+  }
+}
+
+time {
+  font-family: $type-serif;
+  font-style: italic;
+  font-size: 0.9em;
+  color: lighten($color-grey, 40%);
 }

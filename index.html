@@ -6,13 +6,13 @@ categories: projects
   <ul class="project-list entries">
     {% for post in site.posts %}
       {% if post.categories contains 'projects' %}
-      <li class="project-entry {{ post.class }}">
-        <div class="thumb">
-          <a href="{{ post.url }}" class="cf">
+      <li class="project summary {{ post.class }}">
+        <a href="{{ post.url }}" class="thumb">
+          <div class="wrap cf">
             <span class="logo {{ post.logo-class }}">
             </span>
-          </a>
-        </div>
+          </div>
+        </a>
       </li>
       {% endif %}
     {% endfor %}

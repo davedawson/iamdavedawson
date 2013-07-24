@@ -3,9 +3,12 @@ body {
 	// background: transparentize($color-tan, 0.8);
 	background: $color-white;
 	text-legibility: optimizeLegibility;
+	font-size: 16px;
+	line-height: 20px;
 }
 a {
 	text-decoration: none;
+	color: $color-red;
 }
 ul, ol, li {
 	margin: 0;

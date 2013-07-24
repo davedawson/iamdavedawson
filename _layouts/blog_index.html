@@ -8,8 +8,8 @@ categories: blog
       {% if post.categories contains 'blog' %}
       <li class="summary {{ post.class }}">
           <a href="{{ post.url }}" class="cf"><h2>{{ post.title }}</h2></a>
-          <time>{{ post.date | date: "%B %d, %Y" }}</time>
           <p>{{ post.summary }}</p>
+          <time>{{ post.date | date: "%B %d, %Y" }}</time>
       </li>
       {% endif %}
     {% endfor %}

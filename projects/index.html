@@ -5,7 +5,7 @@ title: Projects
 <div class="container">
   <ul class="project-list entries">
     {% for post in site.posts %}
-      <li class="project-entry {{ post.class }}">
+      <li class="project summary {{ post.class }}">
         <div class="thumb">
           <a href="{{ post.url }}" class="cf">
             <img src="{{ post.white-logo }}" alt="{{ post.title }} logo" class="logo" />

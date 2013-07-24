@@ -2,10 +2,10 @@
 layout: default
 page_class: blog_entry
 ---
-<div class="container blog-entry entry">
+<div class="container blog entry">
 	<article class="d3-d9 t2-t5">
 		<h1>{{ page.title }}</h1>
-		<time>{{ page.date | date: "%B %d, %Y" }}</time>
 		{{ page.content }}
+		<time>{{ page.date | date: "%B %d, %Y" }}</time>
 	</article>
 </div>
