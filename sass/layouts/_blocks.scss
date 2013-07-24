@@ -57,10 +57,4 @@ body {
   p:first-of-type {
     @include type($family: $type-sans, $size: 2rem, $weight: 100, $line-height: 44px, $color: $color-grey);
   }
-  /*
-  p:first-child:first-letter {
-    float: left;
-    @include type($family: $type-display, $size: 148px, $line-height: 42px, $color: $color-grey, $weight: 900 );
-    padding: 8px 8px 3px 10px;
-  } */
 }

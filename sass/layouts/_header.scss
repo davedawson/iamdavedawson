@@ -1,14 +1,17 @@
 body {
 	// border-top: 88px solid #58d8e3;
+	background: transparentize($color-tan, 0.9);
 }
 #header {
 	//position: absolute;
 	text-align: center;
 	background: $color-white;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	margin-bottom: 4em;
 	.nav {
 		text-align: center;
 		@include respond-to(wide-screens) {
-			margin: 3em auto;
+			margin: 2em auto;
 			width: 50%;
 		}
 		@include respond-to(wide-screens) {
