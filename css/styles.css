@@ -641,30 +641,13 @@ ul, ol, li {
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  width: 94%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 568px) {
-  /* line 2, ../sass/layouts/_layout.scss */
-  .container {
-    margin: 0 3%;
-  }
-}
-@media only screen and (min-width: 569px) and (max-width: 971px) {
-  /* line 2, ../sass/layouts/_layout.scss */
-  .container {
-    margin: 0 6%;
-  }
-}
-@media only screen and (min-width: 569px) {
-  /* line 2, ../sass/layouts/_layout.scss */
-  .container {
-    margin: 0 auto;
-  }
-}
 
-/* line 10, ../sass/layouts/_layout.scss */
+/* line 8, ../sass/layouts/_layout.scss */
 #content {
   position: relative;
 }
@@ -1561,8 +1544,8 @@ time {
   min-height: 150px;
   position: relative;
   z-index: 3;
-  -webkit-filter: drop-shadow(-5px -5px 5px black);
-  filter: drop-shadow(-5px -5px 5px black);
+  -webkit-filter: drop-shadow(0px 0px 45px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 0px 45px rgba(0, 0, 0, 0.3));
   /* Same syntax as box-shadow */
 }
 /* line 197, ../sass/layouts/_projects.scss */
@@ -1651,7 +1634,7 @@ time {
 }
 /* line 259, ../sass/layouts/_projects.scss */
 .project-list .summary.stash:after {
-  background-image: url("/img/projects/square/stash-square-focused.jpg");
+  background-image: url("/img/projects/square/stash-square-focused.gif");
 }
 /* line 263, ../sass/layouts/_projects.scss */
 .project-list .summary.lb {

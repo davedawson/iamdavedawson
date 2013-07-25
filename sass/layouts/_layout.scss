@@ -2,10 +2,8 @@
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
+	width: 94%;
   @include borderBox;
-	@include respond-to(handhelds) { margin: 0 3%; }
-	@include respond-to(medium-screens) { margin: 0 6%; }
-	@include respond-to(wide-screens) { margin: 0 auto; }
 }
 #content {
   position: relative;

@@ -189,8 +189,8 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
       min-height: 150px;
       position: relative;
       z-index: 3;
-      -webkit-filter: drop-shadow( -5px -5px 5px #000 );
-      filter: drop-shadow( -5px -5px 5px #000 ); /* Same syntax as box-shadow */
+      -webkit-filter: drop-shadow(0px 0px 45px rgba(0,0,0,0.3));
+      filter: drop-shadow(0px 0px 45px rgba(0,0,0,0.3)); /* Same syntax as box-shadow */
       @include respond-to(wide-screens) {
       }
     }
@@ -257,7 +257,7 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
     &.stash {
       background-image: url("/img/projects/square/stash-square-blurred.jpg");
       &:after {
-        background-image: url("/img/projects/square/stash-square-focused.jpg");
+        background-image: url("/img/projects/square/stash-square-focused.gif");
       }
     }
     &.lb {
