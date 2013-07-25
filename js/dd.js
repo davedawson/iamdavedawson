@@ -10,18 +10,18 @@ Created by Cottleston Pie
 *************************************************
 */
 
-jQuery(document).ready(function() { 
-    
+jQuery(document).ready(function() {
+
     var dd = {
-      blurImages: function(){
-        // $(".blur").pixastic("blurfast", {amount:5});
+      centerArrows: function(){
+        $('.page-navigation .left').flexVerticalCenter();
       }
     };
-    /*-------------------------------------------    
+    /*-------------------------------------------
         Initial Actions
-    -------------------------------------------*/   
-    
+    -------------------------------------------*/
+
     // Call methods like this
 
-    dd.blurImages();
+    // dd.centerArrows();
 });

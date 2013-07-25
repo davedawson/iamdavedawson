@@ -16,7 +16,7 @@ body {
     padding: 0.7em;
     margin: 0;
     text-align: center;
-    font: 100 italic 14px $type-sans;
+    font: 100 italic 14px $type-sans !important;
     color: lighten($color-grey, 0.7);
     background: transparentize($color-grey, 0.9);
     @include borderBox;

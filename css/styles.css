@@ -846,7 +846,7 @@ body {
   padding: 0.7em;
   margin: 0;
   text-align: center;
-  font: 100 italic 14px "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font: 100 italic 14px "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif !important;
   color: #464646;
   background: rgba(68, 68, 68, 0.1);
   -webkit-box-sizing: border-box;
@@ -1178,44 +1178,63 @@ time {
   color: #a8a8a8;
   text-transform: normal;
   line-height: 14px;
+ /*
+.left {
+	float: left;
+}
+.right {
+	float: right;
+	text-align: right;
+} */
 }
 @media only screen and (min-width: 569px) {
   /* line 73, ../sass/layouts/_portfolio.scss */
   .page-navigation {
-    position: fixed;
-    top: 30em;
-    width: 90%;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0;
     padding: 0;
     border: 0;
   }
-  /* line 86, ../sass/layouts/_portfolio.scss */
-  .page-navigation.container {
-    width: 100%;
-    max-width: 100%;
-  }
 }
-/* line 92, ../sass/layouts/_portfolio.scss */
+/* line 91, ../sass/layouts/_portfolio.scss */
 .page-navigation h2 {
   text-align: center;
   margin-bottom: 2em;
 }
 @media only screen and (min-width: 569px) {
-  /* line 92, ../sass/layouts/_portfolio.scss */
+  /* line 91, ../sass/layouts/_portfolio.scss */
   .page-navigation h2 {
     display: none;
   }
 }
-/* line 99, ../sass/layouts/_portfolio.scss */
-.page-navigation .left {
-  float: left;
+/* line 98, ../sass/layouts/_portfolio.scss */
+.page-navigation .wrap {
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-/* line 102, ../sass/layouts/_portfolio.scss */
-.page-navigation .right {
-  float: right;
-  text-align: right;
+/* line 111, ../sass/layouts/_portfolio.scss */
+.page-navigation .wrap-2 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0;
 }
-/* line 106, ../sass/layouts/_portfolio.scss */
+/* line 121, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow, .page-navigation .right .arrow {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -1229,29 +1248,29 @@ time {
   transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
-  /* line 106, ../sass/layouts/_portfolio.scss */
+  /* line 121, ../sass/layouts/_portfolio.scss */
   .page-navigation .left .arrow, .page-navigation .right .arrow {
     padding: 15px;
-    display: block;
+    display: inline-block;
     float: left;
     background: #42b9c1;
     color: white;
     opacity: 0.3;
   }
 }
-/* line 116, ../sass/layouts/_portfolio.scss */
+/* line 131, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow strong, .page-navigation .right .arrow strong {
   display: none;
 }
 @media only screen and (min-width: 569px) {
-  /* line 116, ../sass/layouts/_portfolio.scss */
+  /* line 131, ../sass/layouts/_portfolio.scss */
   .page-navigation .left .arrow strong, .page-navigation .right .arrow strong {
     display: block;
     float: left;
     margin: 0 5px;
   }
 }
-/* line 124, ../sass/layouts/_portfolio.scss */
+/* line 139, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow span, .page-navigation .right .arrow span {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -1265,17 +1284,17 @@ time {
   transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
-  /* line 124, ../sass/layouts/_portfolio.scss */
+  /* line 139, ../sass/layouts/_portfolio.scss */
   .page-navigation .left .arrow span, .page-navigation .right .arrow span {
     display: none;
     width: 0;
   }
 }
-/* line 131, ../sass/layouts/_portfolio.scss */
+/* line 146, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow:hover, .page-navigation .right .arrow:hover {
   opacity: 1;
 }
-/* line 134, ../sass/layouts/_portfolio.scss */
+/* line 149, ../sass/layouts/_portfolio.scss */
 .page-navigation .left .arrow:hover span, .page-navigation .right .arrow:hover span {
   display: block;
   float: left;

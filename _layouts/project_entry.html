@@ -57,23 +57,27 @@ layout: default
 
 <div class="page-navigation container">
   <h2>Check out a few other projects:</h2>
-    <div class="left">
-    {% if page.previous.categories contains 'projects' %}
-      {% if page.previous.url %}
-      <a href="{{page.previous.url}}" class="arrow" title="Previous Post: {{page.previous.title}}">
-        <strong>&larr;</strong> <span>{{page.previous.title}}</span>
-      </a>
-      {% endif %}
-    {% endif %}
-    </div>
-
-    <div class="right">
-    {% if page.next.url %}
+  <div class="wrap">
+    <div class="wrap-2">
+      <div class="left">
       {% if page.previous.categories contains 'projects' %}
-      <a href="{{page.next.url}}" class="arrow" title="next Post: {{page.next.title}}">
-        <span>{{page.next.title}}</span> <strong>&rarr;</strong>
-      </a>
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}" class="arrow" title="Previous Post: {{page.previous.title}}">
+          <strong>&larr;</strong> <span>{{page.previous.title}}</span>
+        </a>
+        {% endif %}
       {% endif %}
-    {% endif %}
+      </div>
+
+      <div class="right">
+      {% if page.previous.categories contains 'projects' %}
+        {% if page.next.url %}
+        <a href="{{page.next.url}}" class="arrow" title="next Post: {{page.next.title}}">
+          <span>{{page.next.title}}</span> <strong>&rarr;</strong>
+        </a>
+        {% endif %}
+      {% endif %}
     </div>
+  </div>
+  </div>
 </div>

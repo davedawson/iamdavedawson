@@ -77,17 +77,16 @@
 	@include type($family: $type-sans, $size: 18px, $line-height: 14px, $color: #a8a8a8);
 
 	@include respond-to(wide-screens) {
-		position: fixed;
-		top: 30em;
-		width: 90%;
-		margin: 0 auto;
+		position:absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		border-spacing:0;
+		border-collapse:collapse;
+		margin: 0;
 		padding: 0;
 		border: 0;
-		&.container {
-			width: 100%;
-			max-width: 100%;
-		}
-
 	}
 	h2 {
 		text-align: center;
@@ -96,18 +95,34 @@
 			display: none;
 		}
 	}
+	.wrap {
+		display:table;
+		position:fixed;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		border-spacing:0;
+		border-collapse:collapse;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	.wrap-2 {
+		display:table-cell;vertical-align:middle;text-align:center;padding:0
+	}/*
 	.left {
 		float: left;
 	}
 	.right {
 		float: right;
 		text-align: right;
-	}
+	} */
 	.left .arrow, .right .arrow {
 		@include baseTransition;
 		@include respond-to(wide-screens) {
 			padding: 15px;
-			display: block;
+			display: inline-block;
 			float: left;
 			background: $color-red;
 			color: $color-white;
