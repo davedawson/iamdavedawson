@@ -70,24 +70,7 @@
 	}
 }
 
-.page-navigation {
-	border-top: 3px solid transparentize($color-grey, 0.6);
-	margin-top: 6em;
-	padding-top: 3em;
-	@include type($family: $type-sans, $size: 18px, $line-height: 14px, $color: #a8a8a8);
-
-	@include respond-to(wide-screens) {
-		position:absolute;
-		top:0;
-		left:0;
-		height:100%;
-		width:100%;
-		border-spacing:0;
-		border-collapse:collapse;
-		margin: 0;
-		padding: 0;
-		border: 0;
-	}
+.nav-wrap {
 	h2 {
 		text-align: center;
 		margin-bottom: 2em;
@@ -95,22 +78,27 @@
 			display: none;
 		}
 	}
-	.wrap {
-		display:table;
-		position:fixed;
-		top:0;
-		left:0;
-		height:100%;
-		width:100%;
-		border-spacing:0;
-		border-collapse:collapse;
+}
+.page-navigation {
+	border-top: 3px solid transparentize($color-grey, 0.6);
+	margin-top: 6em;
+	padding-top: 3em;
+	@include type($family: $type-sans, $size: 18px, $line-height: 14px, $color: #a8a8a8);
+	@include respond-to(wide-screens) {
+		border: 0;
 		margin: 0;
 		padding: 0;
-		border: 0;
+		width: 100%;
+		max-width: 100%;
 	}
-	.wrap-2 {
-		display:table-cell;vertical-align:middle;text-align:center;padding:0
-	}/*
+
+	.wrap {
+		// width:400px;
+		background: lighten($color-tan, 0.8);
+		margin: 0 auto;
+	}
+
+	/*
 	.left {
 		float: left;
 	}
@@ -118,15 +106,26 @@
 		float: right;
 		text-align: right;
 	} */
+	.left, .right {
+		width: 50%;
+		float: left;
+	}
+	.left {
+		text-align: right;
+	}
+
 	.left .arrow, .right .arrow {
 		@include baseTransition;
 		@include respond-to(wide-screens) {
+			width: 100%;
 			padding: 15px;
 			display: inline-block;
-			float: left;
-			background: $color-red;
-			color: $color-white;
-			opacity: 0.3;
+			float: right;
+			background: #f8f8f5;
+			color: $color-grey;
+			line-height: 1.2em;
+			// opacity: 0.3;
+			@include borderBox;
 		}
 		strong {
 			display: none;
@@ -141,15 +140,36 @@
 			@include respond-to(wide-screens) {
 				display: none;
 				width: 0;
+				opacity: 0;
+				font-size: 14px;
+				@include baseTransition;
 			}
 		}
 		&:hover {
 			opacity: 1;
+			@include baseTransition;
+			@include respond-to(wide-screens) {
+				background: darken(#f8f8f5,10%);
+			}
 		}
 		&:hover span {
 			display: block;
 			float: left;
 			width: auto;
+			opacity: 1;
+			@include baseTransition;
+		}
+	}
+	.left .arrow {
+		@include respond-to(wide-screens) {
+			float: left;
+			border-right: 1px solid darken(#f8f8f5,10%);
+			span {
+				float: right !important;
+			}
+			strong {
+				float: right;
+			}
 		}
 	}
 }

@@ -2,6 +2,7 @@ $pih: "/img/projects/large/pih-large.jpg";
 $ndnf: "/img/projects/large/ndnf-large.jpg";
 .project-specific {
   padding-top: 0;
+  margin-bottom: 6em;
   @include borderBox;
   .intro {
     text-align: center;

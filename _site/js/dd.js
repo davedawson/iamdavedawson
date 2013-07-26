@@ -15,6 +15,9 @@ jQuery(document).ready(function() {
     var dd = {
       centerArrows: function(){
         $('.page-navigation .left').flexVerticalCenter();
+      },
+      projectSticky: function(){
+        $(".page-navigation").scrollToFixed( { bottom: 0, limit: $('.nav-wrap').offset().top } );
       }
     };
     /*-------------------------------------------
@@ -24,4 +27,5 @@ jQuery(document).ready(function() {
     // Call methods like this
 
     // dd.centerArrows();
+    dd.projectSticky();
 });

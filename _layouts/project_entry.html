@@ -55,21 +55,21 @@ layout: default
 
 </div>
 
-<div class="page-navigation container">
+<div class="nav-wrap cf">
   <h2>Check out a few other projects:</h2>
-  <div class="wrap">
-    <div class="wrap-2">
-      <div class="left">
+  <div class="page-navigation cf">
+    <div class="wrap cf">
+      <div class="left cf">
       {% if page.previous.categories contains 'projects' %}
         {% if page.previous.url %}
         <a href="{{page.previous.url}}" class="arrow" title="Previous Post: {{page.previous.title}}">
-          <strong>&larr;</strong> <span>{{page.previous.title}}</span>
+          <span>{{page.previous.title}}</span> <strong>&larr;</strong>
         </a>
         {% endif %}
       {% endif %}
       </div>
 
-      <div class="right">
+      <div class="right cf">
       {% if page.previous.categories contains 'projects' %}
         {% if page.next.url %}
         <a href="{{page.next.url}}" class="arrow" title="next Post: {{page.next.title}}">
@@ -77,7 +77,7 @@ layout: default
         </a>
         {% endif %}
       {% endif %}
+      </div>
     </div>
-  </div>
   </div>
 </div>

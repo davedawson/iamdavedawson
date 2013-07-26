@@ -1,6 +1,17 @@
-$type-display: 	"Marais", "freight-micro-pro", Helvetica, Arial, sans-serif;
+$type-display: 	"Marais", Helvetica, Arial, sans-serif;
 $type-sans:     "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
 $type-serif: 	  "skolar", Times, "Times New Roman", Arial, sans-serif;
+
+@font-face {
+    font-family: 'Marais';
+    src: url('/fonts/marais_ultra-webfont.eot');
+    src: url('/fonts/marais_ultra-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/marais_ultra-webfont.woff') format('woff'),
+         url('/fonts/marais_ultra-webfont.ttf') format('truetype'),
+         url('/fonts/marais_ultra-webfont.svg#maraisultra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @mixin type($family: $type-sans, $size:1em, $weight: normal, $color: $color-grey, $transform:normal, $line-height: 1.2em) {
 	font-family: $family;
