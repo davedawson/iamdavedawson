@@ -1,132 +1,189 @@
 @import "modules/shortcuts";
-.project {
-	.pic {
-		border: 1px solid darken($color-tan, 14%);
-		border-bottom: 0;
-		img {
-			display: block;
-		}
-	}
-}
-.project-entry{
-	padding-top: 0;
-	@include borderBox;
-	.intro {
-		text-align: center;
-		padding: 4em 10%;
-		background: transparentize($color-tan, 0.8);
-		p {
-			@include type($family: $type-sans, $size: 1.6rem, $weight: 100, $line-height: 1.4em, $color: $color-grey);
-		}
-		h1 {
-			font-size: 3rem;
-			@include respond-to(wide-screens) {
-				font-size: 7rem;
-			}
-		}
-	}
-	.beef {
-		margin-top: 6rem;
-		.project-content {
-			p:first-child {
-				@include type($family: $type-sans, $size: 34px, $weight: 100, $line-height: 42px, $color: $color-grey);
-			}
-			p:first-child:first-letter { 
-				float: left; 
-				@include type($family: $type-display, $size: 148px, $line-height: 42px, $color: $color-grey, $weight: 900 );
-				padding: 8px 8px 3px 10px;
-			}
-		}	
-		.project-info {
-			background: $color-white;
-			// border: 1px solid darken($color-tan, 14%);
-			border-top: 0;
-			margin: 0;
-			.details {
-				p {
-					font-size: 18px;
-					line-height: 20px;
-				}
-			}
-			
-			.description {
-				@include type($family: $type-sans, $size: 18px, $line-height: 24px, $color: $color-grey);
-				a {
-					display: block;
-					font-weight: bold;
-				}
-			}
-		}
-	}	
+body {
+  background: transparentize ($color-bg, 0.2);
+  text-rendering: optimizeLegibility;
 }
 
-.impact {
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-	height: 300px;
-	@include respond-to(wide-screens) {
-		height: 694px;
-	}
-	@include respond-to(medium-screens) { 
-		height: 400px;
-	}
-	.large {
-		// width: 100%;
-		height: 850px;
-		overflow: hidden;
-		position: absolute;
-	}
-	.browser {
-		width: 82.1601%;
-	  margin-left: 8.8815%;
-	  top: 40px;
-	  position: relative;
-		background: #dcdcdc;
-		-webkit-border-top-left-radius: 6px;
-		-webkit-border-top-right-radius: 6px;
-		-moz-border-radius-topleft: 6px;
-		-moz-border-radius-topright: 6px;
-		border-top-left-radius: 6px;
-		border-top-right-radius: 6px;
-		@include box-shadow(rgba(0,0,0,0.25) 0px 0px 40px);
-		img {
-			display: relative;
-			max-width: 100%;
-			width: overflow;
-			//max-height: 1000px;
-		}
-		.chrome {
-			padding: 10px;
-			@include borderBox;
-			.url {
-				background: #eeeeee;
-				padding: 4px 10px;
-				@include borderRadius;
-				@include type($family: $type-sans, $size: 11px, $line-height: 14px, $color: #a8a8a8);
-				p {
-					margin: 0;
-					line-height: 18px;
-				}
-				a {
-					font-size: 15px;
-					line-height: 13px;
-					position: relative;
-					color: #a8a8a8;
-					width: 100%;
-					display: block;
-				}
-				a:hover .url {
-					background: $color-white;
-				}
-			}
-		}
-	}	
+#content {
+  padding: 1em 0;
+  @include respond-to(wide-screens) {
+    padding: 4em 0;
+  }
 }
-.blur {
 
+.entry {
+  h1 {
+  @include type($family: $type-display, $size: 36px, $weight: 900);
+    margin-bottom: 20px;
+  }
+  h2 {
+    @include type($family: $type-display, $size: 36px, $weight: 900);
+  }
+  h3 {
+    @include type($family: $type-sans, $size: 16px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: uppercase);
+    margin-top: 10px;
+    letter-spacing: 0.2em;
+  }
+  h4 {
+  }
+  em {
+    font-style: italic;
+  }
+  strong {
+    font-weight: bold;
+  }
+  p {
+    font-family: $type-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: $color-grey;
+    margin: 0 0 18px;
+  }
+  ul, ol {
+    margin: 0.5em 0.5em 1em;
+    padding: 0;
+    li {
+      @include type($family: $type-sans);
+      font-size: 18px;
+      line-height: 30px;
+      list-style-type: disc;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  @include respond-to(mobile) {
+    ul {
+      margin: 20em 0 1em 0;
+    }
+  }
+
+  ul {
+    li {
+    }
+  }
+  ol {
+    li {
+    }
+  }
+  li {
+    ul, ol {
+    }
+  }
+
+  blockquote {
+  }
+  a, a:active, a:visited {
+    color: $color-red;
+    text-decoration: none;
+  }
+  a:hover, a:active {
+  }
+  a:hover, a:focus {
+  }
+  a:link {
+  }
+
+  .note {
+    @include type($family: $type-sans);
+    font-style: italic;
+    font-size: 0.85em;
+    color: lighten($color-grey, 10%);
+  }
 }
-.blur:hover {
 
-
+.pic {
+  margin: 30px 0;
+  @include box-shadow(rgba(0,0,0,0) 0px 0px 5px);
+	img {
+		display: block;
+    @include borderBox;
+	}
+  p, p:first-of-type {
+    width: 100%;
+    padding: 0.7em;
+    margin: 0;
+    text-align: center;
+    font: 100 italic 14px $type-sans !important;
+    color: lighten($color-grey, 0.7);
+    background: transparentize($color-grey, 0.9);
+    @include borderBox;
+    @include baseTransition;
+  }
+  &:hover p {
+    color: lighten($color-grey, 0.6);
+    background: transparentize($color-grey, 0.8);
+  }
+  &:hover {
+    @include box-shadow(rgba(0,0,0,0.15) 0px 0px 5px);
+  }
 }
+
+.blog-list .summary {
+  padding: 1em 0;
+  margin: 1em 0;
+  border-bottom: 1px solid transparentize($color-grey, 0.95);
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.4em;
+    font-family: $type-display;
+  }
+  p {
+    font-size: 18px;
+    font-family: $type-serif;
+    color: $color-grey;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
+.entry {
+  p:first-of-type {
+    @include type($family: $type-sans, $size: 1.6rem, $weight: 100, $line-height: 2.3rem, $color: $color-grey);
+    @include respond-to(wide-screens) {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+      }
+      @include respond-to(medium-screens) {
+        font-size: 1.5rem;
+line-height: 1.9rem;
+
+      }
+  }
+}
+
+.blog.entry {
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  time {
+    margin-bottom: 2rem;
+  }
+}
+
+time {
+  font-family: $type-serif;
+  font-style: italic;
+  font-size: 0.9em;
+  color: lighten($color-grey, 40%);
+}
+
+.sidebar {
+  @include baseTransition;
+  p, p:first-of-type {
+    font-family: $type-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: lighten($color-grey, 10%);
+    margin: 0 0 18px;
+  }
+  ul li {
+    font-size: 18px;
+  }
+  .pic {
+    margin-top: 0;
+  }
+}
+
+
+

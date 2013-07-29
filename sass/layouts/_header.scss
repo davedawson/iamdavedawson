@@ -1,48 +1,132 @@
 body {
-	// border-top: 88px solid #58d8e3; 
+	// border-top: 88px solid #58d8e3;
+	background: transparentize($color-tan, 0.9);
 }
 #header {
-	// background: $color-white;
-	padding: 20px 0;
-	// margin-bottom: 80px;
-	color: $color-purp;
-	// background: rgba(0,0,0,0.05);
-	// border-bottom: 1px solid rgba(255,255,255,0.9);
-	// position: fixed;
-	// width: 100%; 
-	z-index: 2;
-	top: 0;
+	//position: absolute;
+	text-align: center;
+	background: $color-white;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	// margin-bottom: 4em;
+	.nav {
+		text-align: center;
+		@include respond-to(wide-screens) {
+			margin: 2em auto;
+			width: 50%;
+		}
+		@include respond-to(wide-screens) {
+			width: 100%;
+		}
+		li {
+			display: inline-block;
+			float: none;
+			margin: 1em 0;
+			width: auto;
+			margin-top: 80px;
+			// @include baseTransition;
+			transition: width 0.2s;
+			transition-delay: 0.3s;
+			padding: 10px;
+			font-family: $type-sans;
+			font-size: 16px;
+			font-weight: 500px;
+			@include respond-to(wide-screens) {
+				margin: 1em 4%;
+				font-size: 20px
+			}
+			a {
+				color: $color-grey;
+				&:hover {
+					color: $color-black;
+				}
+			}
+
+			&.nav-logo {
+				font-family: $type-display;
+				font-size: 16px;
+				text-align: center;
+				position: absolute;
+				top: 20px;
+			  left: 50%;
+			  margin: 0;
+				@include respond-to(wide-screens) {
+					position: relative;
+					top: auto;
+					left: auto
+				}
+				// @include baseTransition;
+				@include respond-to(wide-screens) {
+					width: 60px;
+				}
+				&:hover {
+					@include respond-to(wide-screens) {
+						width: 160px;
+						transition-delay: 0.3s;
+					}
+				}
+				a {
+					// background: $color-red;
+					border: 3px solid $color-red;
+					// color: $color-white;
+					color: $color-red;
+					padding: 10px 10px 8px;
+					display: block;
+					position: relative;
+					left: -50%;
+					// @include baseTransition;
+				}
+
+				strong {
+					font-weight: normal;
+					display: inline;
+					float: none;
+					@include baseTransition;
+				}
+				em {
+					@include respond-to(handhelds) { }
+					@include respond-to(medium-screens) { }
+					@include respond-to(wide-screens) {
+						display: inline-block;
+						float: none;
+						opacity: 0;
+				    height: 0;
+				    width: 0;
+						// @include baseTransition;
+						// transition-delay: 0;
+						transition: width 0.4s;
+					}
+				}
+			}
+			&.nav-logo:hover em {
+				display: inline-block;
+				opacity: 1;
+				height: auto;
+				width: 100px;
+				// @include baseTransition;
+
+				transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
+				transition-delay: 0.4s;
+				// width: 140px;
+				&.ave {
+					width: 20px;
+					margin-right: 10px;
+				}
+				&.awson {
+					width: 50px;
+					margin-left: 0px
+				}
+			}
+		}
+	}
 	#logo {
-		text-align: left;
-		h1 {
+		h1 a{
+			background: $color-red;
+			color: $color-white;
+			text-align: center;
 		// 	font-size: 18px;
 		// 	line-height: 48px;
 		// 	margin: 0;
 		// 	float: left;
 		}
-		
-		h2 {
-		//	@include type($family: $type-sans, $size: 22px, $weight: 100, $line-height: 42px, $color: $color-grey);
-		// 	float: right;
-		}
-	}
-	nav { 
-		float: right;
-		width: 40%;
-		@include type($family: $type-sans, $size: 22px, $weight: 100, $line-height: 42px, $color: $color-grey);
-		li { 
-			display: inline;
-			padding: 6%;
-		}
-	}
-}
-
-#header {
-	width: 50%;
-	margin: 0 auto;
-	h1, h2 {
-		text-align: center;
-		display: block;
-		float: none;
 	}
 }

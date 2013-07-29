@@ -1,9 +1,14 @@
-<body>
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+{% capture id_prefix %}{% if post %}post{% else %}page{% endif %}{% endcapture %}
+{% capture id %}{{ id_prefix }}-{{ page.url | replace:'/','-' }}{% endcapture %}
+
+<body class="{{ layout }} {{ id }}">
   <section id="header" class="cf">
-    <div class="container cf">
-      <section id="logo">
-        <h1><a href="/">Dave Dawson</a></h1>
-        <h2><a href="#">Creating things that matter</a></h2>
-      </section><!-- /#main-logo -->
-    </div>
+    <ul class="container nav cf">
+      <li class="nav-projects"><a href="/projects">Projects</a></li>
+      <li class="nav-blog"><a href="/blog">Blog</a></li>
+      <li class="nav-logo cf"><a href="/" class="cf"><strong>D</strong><em class="ave">ave</em> <strong>D</strong><em class="awson">awson</em></a></li>
+      <li class="nav-about"><a href="/about">About</a></li>
+      <li class="nav-contact"><a href="/contact">Contact</a></li>
+    </ul>
   </section><!-- /#header-->

@@ -10,6 +10,7 @@
 .floatl { float: left; margin: 0; padding: 0 10px 10px 0; }
 .floatr { float: right; margin: 0; padding: 0 0 10px 10px; }
 .pic img { max-width: 100%; }
+.clear { clear: both; }
 .cf {
   *zoom: 1;
   &:before, &:after {

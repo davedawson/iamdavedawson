@@ -1,17 +1,20 @@
 ---
-layout: default
-title: Projects
+layout: home
+categories: projects
 ---
-<ul class="entries">
-  {% for post in site.posts %}
-    <li class="project-entry container">
-      
-      <div class="pic">
-        <a href="{{ post.url }}" class="cf">
-          <img src="{{ post.short-image }}" />
+<div class="container">
+  <ul class="project-list entries">
+    {% for post in site.posts %}
+      {% if post.categories contains 'projects' %}
+      <li class="project summary {{ post.class }}">
+        <a href="{{ post.url }}" class="thumb">
+          <div class="wrap cf">
+            <span class="logo {{ post.logo-class }}">
+            </span>
+          </div>
         </a>
-      </div>
-
-    </li>
-  {% endfor %}
-</ul>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

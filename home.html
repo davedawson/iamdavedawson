@@ -1,14 +1,16 @@
 ---
 layout: home
+categories: projects
 ---
 <div class="container">
   <ul class="project-list entries">
     {% for post in site.posts %}
-      <li class="project-entry container">
-        <a href="{{ post.url }}" class="cf">
-          <img src="{{ post.white-logo }}" alt="{{ post.title }} logo" class="logo" />
-          <img src="{{ post.large-image }}" alt="{{ post.title }} background" class="large blur" /> 
-        </a>
+      <li class="project summary {{ page.class }}">
+        <div class="thumb">
+          <a href="{{ post.url }}" class="cf {{ post.white-logo }}">
+
+          </a>
+        </div>
       </li>
     {% endfor %}
   </ul>

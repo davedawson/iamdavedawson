@@ -1,12 +1,12 @@
 safe:        false
-auto:        true
-server:      false
-server_port: 4000
-url: http://localhost:4000
+port: 9000
+url: http://localhost:9000
 
 source:      .
 destination: ./_site
 plugins:     ./_plugins
+
+relative_permalinks: true
 
 future:      true
 lsi:         false
@@ -33,7 +33,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
-  
+
   coderay:
     coderay_wrap: div
     coderay_line_numbers: inline

@@ -10,10 +10,10 @@
 @import "modules/defaults";
 @import "modules/normalize";
 @import "modules/type";
-@import "modules/base";
 @import "modules/shortcuts";
 @import "modules/tools";
 @import "modules/grid";
+@import "modules/base";
 
 @import "layouts/layout";
 @import "layouts/header";
@@ -21,4 +21,6 @@
 @import "layouts/blocks";
 @import "layouts/home";
 @import "layouts/blog";
-@import "layouts/portfolio"; 
+@import "layouts/portfolio";
+@import "layouts/projects";
+@import "layouts/pages";
