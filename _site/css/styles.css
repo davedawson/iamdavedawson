@@ -1716,9 +1716,10 @@ time {
     width: 100%;
     float: none;
     height: 20em;
+    margin: 1.68875% 0;
   }
 }
-/* line 166, ../sass/layouts/_projects.scss */
+/* line 167, ../sass/layouts/_projects.scss */
 .project-list .summary .thumb {
   display: table;
   text-align: center;
@@ -1727,18 +1728,18 @@ time {
   position: relative;
   z-index: 4;
 }
-/* line 173, ../sass/layouts/_projects.scss */
+/* line 174, ../sass/layouts/_projects.scss */
 .project-list .summary .thumb .wrap {
   display: table-cell;
   vertical-align: middle;
   position: relative;
 }
-/* line 179, ../sass/layouts/_projects.scss */
+/* line 180, ../sass/layouts/_projects.scss */
 .project-list .summary .large {
   width: 100%;
   margin: -5%;
 }
-/* line 184, ../sass/layouts/_projects.scss */
+/* line 185, ../sass/layouts/_projects.scss */
 .project-list .summary .logo {
   width: 60%;
   display: block;
@@ -1752,99 +1753,99 @@ time {
   filter: drop-shadow(0px 0px 45px rgba(0, 0, 0, 0.3));
   /* Same syntax as box-shadow */
 }
-/* line 198, ../sass/layouts/_projects.scss */
+/* line 199, ../sass/layouts/_projects.scss */
 .project-list .summary.pih {
   background-image: url("/img/projects/square/pih-square-blurred.jpg");
 }
-/* line 200, ../sass/layouts/_projects.scss */
+/* line 201, ../sass/layouts/_projects.scss */
 .project-list .summary.pih:after {
   background-image: url("/img/projects/square/pih-square-focused.jpg");
 }
-/* line 204, ../sass/layouts/_projects.scss */
+/* line 205, ../sass/layouts/_projects.scss */
 .project-list .summary.ndnf {
   background-image: url("/img/projects/square/ndnf-square-blurred.jpg");
 }
-/* line 206, ../sass/layouts/_projects.scss */
+/* line 207, ../sass/layouts/_projects.scss */
 .project-list .summary.ndnf:after {
   background-image: url("/img/projects/square/ndnf-square-focused.jpg");
 }
-/* line 210, ../sass/layouts/_projects.scss */
+/* line 211, ../sass/layouts/_projects.scss */
 .project-list .summary.fdr {
   background-image: url("/img/projects/square/fdr-square-blurred.jpg");
 }
-/* line 212, ../sass/layouts/_projects.scss */
+/* line 213, ../sass/layouts/_projects.scss */
 .project-list .summary.fdr:after {
   background-image: url("/img/projects/square/fdr-square-focused.jpg");
 }
-/* line 216, ../sass/layouts/_projects.scss */
+/* line 217, ../sass/layouts/_projects.scss */
 .project-list .summary.arm {
   background-image: url("/img/projects/square/arm-square-blurred.jpg");
 }
-/* line 218, ../sass/layouts/_projects.scss */
+/* line 219, ../sass/layouts/_projects.scss */
 .project-list .summary.arm:after {
   background-image: url("/img/projects/square/arm-square-focused.jpg");
 }
-/* line 222, ../sass/layouts/_projects.scss */
+/* line 223, ../sass/layouts/_projects.scss */
 .project-list .summary.hrc {
   background-image: url("/img/projects/square/hrc-square-blurred.jpg");
 }
-/* line 224, ../sass/layouts/_projects.scss */
+/* line 225, ../sass/layouts/_projects.scss */
 .project-list .summary.hrc:after {
   background-image: url("/img/projects/square/hrc-square-focused.jpg");
 }
-/* line 228, ../sass/layouts/_projects.scss */
+/* line 229, ../sass/layouts/_projects.scss */
 .project-list .summary.at {
   background-image: url("/img/projects/square/at-square-blurred.jpg");
 }
-/* line 230, ../sass/layouts/_projects.scss */
+/* line 231, ../sass/layouts/_projects.scss */
 .project-list .summary.at:after {
   background-image: url("/img/projects/square/at-square-focused.jpg");
 }
-/* line 234, ../sass/layouts/_projects.scss */
+/* line 235, ../sass/layouts/_projects.scss */
 .project-list .summary.wntd {
   background-image: url("/img/projects/square/wntd-square-blurred.jpg");
 }
-/* line 236, ../sass/layouts/_projects.scss */
+/* line 237, ../sass/layouts/_projects.scss */
 .project-list .summary.wntd:after {
   background-image: url("/img/projects/square/wntd-square-focused.jpg");
 }
-/* line 240, ../sass/layouts/_projects.scss */
+/* line 241, ../sass/layouts/_projects.scss */
 .project-list .summary.filmlinc {
   background-image: url("/img/projects/square/filmlinc-square-blurred.jpg");
 }
-/* line 242, ../sass/layouts/_projects.scss */
+/* line 243, ../sass/layouts/_projects.scss */
 .project-list .summary.filmlinc:after {
   background-image: url("/img/projects/square/filmlinc-square-focused.jpg");
 }
-/* line 246, ../sass/layouts/_projects.scss */
+/* line 247, ../sass/layouts/_projects.scss */
 .project-list .summary.surfrider {
   background-image: url("/img/projects/square/surfrider-square-blurred.jpg");
 }
-/* line 248, ../sass/layouts/_projects.scss */
+/* line 249, ../sass/layouts/_projects.scss */
 .project-list .summary.surfrider:after {
   background-image: url("/img/projects/square/surfrider-square-focused.jpg");
 }
-/* line 252, ../sass/layouts/_projects.scss */
+/* line 253, ../sass/layouts/_projects.scss */
 .project-list .summary.rb {
   background-image: url("/img/projects/square/rb-square-blurred.jpg");
 }
-/* line 254, ../sass/layouts/_projects.scss */
+/* line 255, ../sass/layouts/_projects.scss */
 .project-list .summary.rb:after {
   background-image: url("/img/projects/square/rb-square-focused.jpg");
 }
-/* line 258, ../sass/layouts/_projects.scss */
+/* line 259, ../sass/layouts/_projects.scss */
 .project-list .summary.stash {
   background-image: url("/img/projects/square/stash-square-blurred.jpg");
 }
-/* line 260, ../sass/layouts/_projects.scss */
+/* line 261, ../sass/layouts/_projects.scss */
 .project-list .summary.stash:after {
   background-image: url("/img/projects/square/stash-square-focused.gif");
 }
-/* line 264, ../sass/layouts/_projects.scss */
+/* line 265, ../sass/layouts/_projects.scss */
 .project-list .summary.lb {
   background-image: url("/img/projects/square/lb-square-blurred.jpg");
 }
-/* line 266, ../sass/layouts/_projects.scss */
+/* line 267, ../sass/layouts/_projects.scss */
 .project-list .summary.lb:after {
   background-image: url("/img/projects/square/lb-square-focused.jpg");
 }
