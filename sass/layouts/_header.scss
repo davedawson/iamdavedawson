@@ -7,7 +7,7 @@ body {
 	text-align: center;
 	background: $color-white;
 	border-bottom: 1px solid rgba(0,0,0,0.05);
-	margin-bottom: 4em;
+	// margin-bottom: 4em;
 	.nav {
 		text-align: center;
 		@include respond-to(wide-screens) {
@@ -28,10 +28,11 @@ body {
 			transition-delay: 0.3s;
 			padding: 10px;
 			font-family: $type-sans;
-			font-size: 20px;
+			font-size: 16px;
 			font-weight: 500px;
 			@include respond-to(wide-screens) {
 				margin: 1em 4%;
+				font-size: 20px
 			}
 			a {
 				color: $color-grey;
@@ -46,7 +47,7 @@ body {
 				text-align: center;
 				position: absolute;
 				top: 20px;
-			  left: 32%;
+			  left: 50%;
 			  margin: 0;
 				@include respond-to(wide-screens) {
 					position: relative;
@@ -70,6 +71,8 @@ body {
 					color: $color-red;
 					padding: 10px 10px 8px;
 					display: block;
+					position: relative;
+					left: -50%;
 					// @include baseTransition;
 				}
 

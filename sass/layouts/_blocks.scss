@@ -4,6 +4,93 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+#content {
+  padding: 1em 0;
+  @include respond-to(wide-screens) {
+    padding: 4em 0;
+  }
+}
+
+.entry {
+  h1 {
+  @include type($family: $type-display, $size: 36px, $weight: 900);
+    margin-bottom: 20px;
+  }
+  h2 {
+    @include type($family: $type-display, $size: 36px, $weight: 900);
+  }
+  h3 {
+    @include type($family: $type-sans, $size: 16px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: uppercase);
+    margin-top: 10px;
+    letter-spacing: 0.2em;
+  }
+  h4 {
+  }
+  em {
+    font-style: italic;
+  }
+  strong {
+    font-weight: bold;
+  }
+  p {
+    font-family: $type-serif;
+    font-size: 22px;
+    line-height: 30px;
+    color: $color-grey;
+    margin: 0 0 18px;
+  }
+  ul, ol {
+    margin: 0.5em 0.5em 1em;
+    padding: 0;
+    li {
+      @include type($family: $type-sans);
+      font-size: 18px;
+      line-height: 30px;
+      list-style-type: disc;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  @include respond-to(mobile) {
+    ul {
+      margin: 20em 0 1em 0;
+    }
+  }
+
+  ul {
+    li {
+    }
+  }
+  ol {
+    li {
+    }
+  }
+  li {
+    ul, ol {
+    }
+  }
+
+  blockquote {
+  }
+  a, a:active, a:visited {
+    color: $color-red;
+    text-decoration: none;
+  }
+  a:hover, a:active {
+  }
+  a:hover, a:focus {
+  }
+  a:link {
+  }
+
+  .note {
+    @include type($family: $type-sans);
+    font-style: italic;
+    font-size: 0.85em;
+    color: lighten($color-grey, 10%);
+  }
+}
+
 .pic {
   margin: 30px 0;
   @include box-shadow(rgba(0,0,0,0) 0px 0px 5px);
@@ -31,7 +118,7 @@ body {
   }
 }
 
-.blog.summary {
+.blog-list .summary {
   padding: 1em 0;
   margin: 1em 0;
   border-bottom: 1px solid transparentize($color-grey, 0.95);
@@ -80,3 +167,23 @@ time {
   font-size: 0.9em;
   color: lighten($color-grey, 40%);
 }
+
+.sidebar {
+  @include baseTransition;
+  p, p:first-of-type {
+    font-family: $type-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: lighten($color-grey, 10%);
+    margin: 0 0 18px;
+  }
+  ul li {
+    font-size: 18px;
+  }
+  .pic {
+    margin-top: 0;
+  }
+}
+
+
+

@@ -15,63 +15,8 @@ ul, ol, li {
 	padding: 0;
 	list-style-type: none;
 }
-// Standard type styles
-.entry {
-	h1 {
-	@include type($family: $type-display, $size: 36px, $weight: 900);
-	margin-bottom: 20px;
-}
-	h2 {
-		@include type($family: $type-display, $size: 36px, $weight: 900);
-	}
-	h3 {
-		@include type($family: $type-sans, $size: 16px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: uppercase);
-		margin-top: 10px;
-		letter-spacing: 0.2em;
-	}
-	h4 {
-	}
-	p {
-		font-family: $type-serif;
-		font-size: 22px;
-		line-height: 30px;
-		color: $color-grey;
-		margin: 0 0 18px;
-	}
-	ul, ol {
-		margin: 0;
-		padding: 0;
-		li {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
-	}
-	ul {
-		li {
-		}
-	}
-	ol {
-		li {
-		}
-	}
-	li {
-		ul, ol {
-		}
-	}
 
-	blockquote {
-	}
-	a, a:active, a:visited {
-		color: $color-red;
-		text-decoration: none;
-	}
-	a:hover, a:active {
-	}
-	a:hover, a:focus {
-	}
-	a:link {
-	}
-}
+
+// Standard type styles
 
 

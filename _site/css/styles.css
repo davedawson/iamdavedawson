@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,50 +19,50 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -459,88 +459,6 @@ table {
   font-style: normal;
 }
 
-/* line 1, ../sass/modules/_base.scss */
-body {
-  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: normal;
-  color: #444444;
-  text-transform: normal;
-  line-height: 1.2em;
-  background: white;
-  text-legibility: optimizeLegibility;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-/* line 9, ../sass/modules/_base.scss */
-a {
-  text-decoration: none;
-  color: #0095a1;
-}
-
-/* line 13, ../sass/modules/_base.scss */
-ul, ol, li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-/* line 20, ../sass/modules/_base.scss */
-.entry h1 {
-  font-family: "Marais", Helvetica, Arial, sans-serif;
-  font-size: 36px;
-  font-weight: 900;
-  color: #444444;
-  text-transform: normal;
-  line-height: 1.2em;
-  margin-bottom: 20px;
-}
-/* line 24, ../sass/modules/_base.scss */
-.entry h2 {
-  font-family: "Marais", Helvetica, Arial, sans-serif;
-  font-size: 36px;
-  font-weight: 900;
-  color: #444444;
-  text-transform: normal;
-  line-height: 1.2em;
-}
-/* line 27, ../sass/modules/_base.scss */
-.entry h3 {
-  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
-  text-transform: uppercase;
-  line-height: 24px;
-  margin-top: 10px;
-  letter-spacing: 0.2em;
-}
-/* line 34, ../sass/modules/_base.scss */
-.entry p {
-  font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
-  font-size: 22px;
-  line-height: 30px;
-  color: #444444;
-  margin: 0 0 18px;
-}
-/* line 41, ../sass/modules/_base.scss */
-.entry ul, .entry ol {
-  margin: 0;
-  padding: 0;
-}
-/* line 44, ../sass/modules/_base.scss */
-.entry ul li, .entry ol li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 65, ../sass/modules/_base.scss */
-.entry a, .entry a:active, .entry a:visited {
-  color: #0095a1;
-  text-decoration: none;
-}
-
 /* ==|== non-semantic helper classes ======================================== */
 /* line 3, ../sass/modules/_tools.scss */
 .ir {
@@ -618,31 +536,63 @@ ul, ol, li {
 }
 
 /* line 13, ../sass/modules/_tools.scss */
+.clear {
+  clear: both;
+}
+
+/* line 14, ../sass/modules/_tools.scss */
 .cf {
   *zoom: 1;
 }
-/* line 15, ../sass/modules/_tools.scss */
+/* line 16, ../sass/modules/_tools.scss */
 .cf:before, .cf:after {
   content: "";
   display: table;
 }
-/* line 19, ../sass/modules/_tools.scss */
+/* line 20, ../sass/modules/_tools.scss */
 .cf:after {
   clear: both;
 }
 
-/* line 24, ../sass/modules/_tools.scss */
+/* line 25, ../sass/modules/_tools.scss */
 ::-moz-selection {
   background: #1fb9e7;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 25, ../sass/modules/_tools.scss */
+/* line 26, ../sass/modules/_tools.scss */
 ::selection {
   background: #1fb9e7;
   color: #fff;
   text-shadow: none;
+}
+
+/* line 1, ../sass/modules/_base.scss */
+body {
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #444444;
+  text-transform: normal;
+  line-height: 1.2em;
+  background: white;
+  text-legibility: optimizeLegibility;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 9, ../sass/modules/_base.scss */
+a {
+  text-decoration: none;
+  color: #0095a1;
+}
+
+/* line 13, ../sass/modules/_base.scss */
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 /* line 2, ../sass/layouts/_layout.scss */
@@ -670,7 +620,6 @@ body {
   text-align: center;
   background: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  margin-bottom: 4em;
 }
 /* line 11, ../sass/layouts/_header.scss */
 #header .nav {
@@ -700,35 +649,36 @@ body {
   transition-delay: 0.3s;
   padding: 10px;
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500px;
 }
 @media only screen and (min-width: 569px) {
   /* line 20, ../sass/layouts/_header.scss */
   #header .nav li {
     margin: 1em 4%;
+    font-size: 20px;
   }
 }
-/* line 36, ../sass/layouts/_header.scss */
+/* line 37, ../sass/layouts/_header.scss */
 #header .nav li a {
   color: #444444;
 }
-/* line 38, ../sass/layouts/_header.scss */
+/* line 39, ../sass/layouts/_header.scss */
 #header .nav li a:hover {
   color: black;
 }
-/* line 43, ../sass/layouts/_header.scss */
+/* line 44, ../sass/layouts/_header.scss */
 #header .nav li.nav-logo {
   font-family: "Marais", Helvetica, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   position: absolute;
   top: 20px;
-  left: 32%;
+  left: 50%;
   margin: 0;
 }
 @media only screen and (min-width: 569px) {
-  /* line 43, ../sass/layouts/_header.scss */
+  /* line 44, ../sass/layouts/_header.scss */
   #header .nav li.nav-logo {
     position: relative;
     top: auto;
@@ -736,43 +686,43 @@ body {
   }
 }
 @media only screen and (min-width: 569px) {
-  /* line 43, ../sass/layouts/_header.scss */
+  /* line 44, ../sass/layouts/_header.scss */
   #header .nav li.nav-logo {
     width: 60px;
   }
 }
 @media only screen and (min-width: 569px) {
-  /* line 60, ../sass/layouts/_header.scss */
+  /* line 61, ../sass/layouts/_header.scss */
   #header .nav li.nav-logo:hover {
     width: 160px;
     transition-delay: 0.3s;
   }
 }
-/* line 66, ../sass/layouts/_header.scss */
+/* line 67, ../sass/layouts/_header.scss */
 #header .nav li.nav-logo a {
   border: 3px solid #0095a1;
   color: #0095a1;
   padding: 10px 10px 8px;
   display: block;
+  position: relative;
+  left: -50%;
 }
-/* line 76, ../sass/layouts/_header.scss */
+/* line 79, ../sass/layouts/_header.scss */
 #header .nav li.nav-logo strong {
   font-weight: normal;
   display: inline;
   float: none;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 @media only screen and (min-width: 569px) {
-  /* line 82, ../sass/layouts/_header.scss */
+  /* line 85, ../sass/layouts/_header.scss */
   #header .nav li.nav-logo em {
     display: inline-block;
     float: none;
@@ -782,7 +732,7 @@ body {
     transition: width 0.4s;
   }
 }
-/* line 97, ../sass/layouts/_header.scss */
+/* line 100, ../sass/layouts/_header.scss */
 #header .nav li.nav-logo:hover em {
   display: inline-block;
   opacity: 1;
@@ -791,17 +741,17 @@ body {
   transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
   transition-delay: 0.4s;
 }
-/* line 107, ../sass/layouts/_header.scss */
+/* line 110, ../sass/layouts/_header.scss */
 #header .nav li.nav-logo:hover em.ave {
   width: 20px;
   margin-right: 10px;
 }
-/* line 111, ../sass/layouts/_header.scss */
+/* line 114, ../sass/layouts/_header.scss */
 #header .nav li.nav-logo:hover em.awson {
   width: 50px;
   margin-left: 0px;
 }
-/* line 119, ../sass/layouts/_header.scss */
+/* line 122, ../sass/layouts/_header.scss */
 #header #logo h1 a {
   background: #0095a1;
   color: white;
@@ -826,6 +776,10 @@ body {
   text-align: center;
   font-size: 14px;
 }
+/* line 16, ../sass/layouts/_footer.scss */
+#footer span {
+  margin: 0 1em;
+}
 
 /* line 2, ../sass/layouts/_blocks.scss */
 body {
@@ -834,20 +788,114 @@ body {
 }
 
 /* line 7, ../sass/layouts/_blocks.scss */
+#content {
+  padding: 1em 0;
+}
+@media only screen and (min-width: 569px) {
+  /* line 7, ../sass/layouts/_blocks.scss */
+  #content {
+    padding: 4em 0;
+  }
+}
+
+/* line 15, ../sass/layouts/_blocks.scss */
+.entry h1 {
+  font-family: "Marais", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #444444;
+  text-transform: normal;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+/* line 19, ../sass/layouts/_blocks.scss */
+.entry h2 {
+  font-family: "Marais", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #444444;
+  text-transform: normal;
+  line-height: 1.2em;
+}
+/* line 22, ../sass/layouts/_blocks.scss */
+.entry h3 {
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-top: 10px;
+  letter-spacing: 0.2em;
+}
+/* line 29, ../sass/layouts/_blocks.scss */
+.entry em {
+  font-style: italic;
+}
+/* line 32, ../sass/layouts/_blocks.scss */
+.entry strong {
+  font-weight: bold;
+}
+/* line 35, ../sass/layouts/_blocks.scss */
+.entry p {
+  font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  color: #444444;
+  margin: 0 0 18px;
+}
+/* line 42, ../sass/layouts/_blocks.scss */
+.entry ul, .entry ol {
+  margin: 0.5em 0.5em 1em;
+  padding: 0;
+}
+/* line 45, ../sass/layouts/_blocks.scss */
+.entry ul li, .entry ol li {
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #444444;
+  text-transform: normal;
+  line-height: 1.2em;
+  font-size: 18px;
+  line-height: 30px;
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+}
+/* line 75, ../sass/layouts/_blocks.scss */
+.entry a, .entry a:active, .entry a:visited {
+  color: #0095a1;
+  text-decoration: none;
+}
+/* line 86, ../sass/layouts/_blocks.scss */
+.entry .note {
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #444444;
+  text-transform: normal;
+  line-height: 1.2em;
+  font-style: italic;
+  font-size: 0.85em;
+  color: #5e5e5e;
+}
+
+/* line 94, ../sass/layouts/_blocks.scss */
 .pic {
   margin: 30px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
 }
-/* line 10, ../sass/layouts/_blocks.scss */
+/* line 97, ../sass/layouts/_blocks.scss */
 .pic img {
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 14, ../sass/layouts/_blocks.scss */
+/* line 101, ../sass/layouts/_blocks.scss */
 .pic p, .pic p:first-of-type {
   width: 100%;
   padding: 0.7em;
@@ -861,41 +909,39 @@ body {
   box-sizing: border-box;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 25, ../sass/layouts/_blocks.scss */
+/* line 112, ../sass/layouts/_blocks.scss */
 .pic:hover p {
   color: #464646;
   background: rgba(68, 68, 68, 0.2);
 }
-/* line 29, ../sass/layouts/_blocks.scss */
+/* line 116, ../sass/layouts/_blocks.scss */
 .pic:hover {
   -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
 }
 
-/* line 34, ../sass/layouts/_blocks.scss */
-.blog.summary {
+/* line 121, ../sass/layouts/_blocks.scss */
+.blog-list .summary {
   padding: 1em 0;
   margin: 1em 0;
   border-bottom: 1px solid rgba(68, 68, 68, 0.05);
 }
-/* line 38, ../sass/layouts/_blocks.scss */
-.blog.summary h2 {
+/* line 125, ../sass/layouts/_blocks.scss */
+.blog-list .summary h2 {
   font-size: 2rem;
   margin-bottom: 0.4em;
   font-family: "Marais", Helvetica, Arial, sans-serif;
 }
-/* line 43, ../sass/layouts/_blocks.scss */
-.blog.summary p {
+/* line 130, ../sass/layouts/_blocks.scss */
+.blog-list .summary p {
   font-size: 18px;
   font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
   color: #444444;
@@ -903,7 +949,7 @@ body {
   line-height: 1.4rem;
 }
 
-/* line 53, ../sass/layouts/_blocks.scss */
+/* line 140, ../sass/layouts/_blocks.scss */
 .entry p:first-of-type {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -913,36 +959,64 @@ body {
   line-height: 2.3rem;
 }
 @media only screen and (min-width: 569px) {
-  /* line 53, ../sass/layouts/_blocks.scss */
+  /* line 140, ../sass/layouts/_blocks.scss */
   .entry p:first-of-type {
     font-size: 1.8rem;
     line-height: 2.3rem;
   }
 }
 @media only screen and (min-width: 569px) and (max-width: 971px) {
-  /* line 53, ../sass/layouts/_blocks.scss */
+  /* line 140, ../sass/layouts/_blocks.scss */
   .entry p:first-of-type {
     font-size: 1.5rem;
     line-height: 1.9rem;
   }
 }
 
-/* line 68, ../sass/layouts/_blocks.scss */
+/* line 155, ../sass/layouts/_blocks.scss */
 .blog.entry h1 {
   font-size: 2.4rem;
   margin-bottom: 2rem;
 }
-/* line 72, ../sass/layouts/_blocks.scss */
+/* line 159, ../sass/layouts/_blocks.scss */
 .blog.entry time {
   margin-bottom: 2rem;
 }
 
-/* line 77, ../sass/layouts/_blocks.scss */
+/* line 164, ../sass/layouts/_blocks.scss */
 time {
   font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
   font-style: italic;
   font-size: 0.9em;
   color: #aaaaaa;
+}
+
+/* line 171, ../sass/layouts/_blocks.scss */
+.sidebar {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 173, ../sass/layouts/_blocks.scss */
+.sidebar p, .sidebar p:first-of-type {
+  font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #5e5e5e;
+  margin: 0 0 18px;
+}
+/* line 180, ../sass/layouts/_blocks.scss */
+.sidebar ul li {
+  font-size: 18px;
+}
+/* line 183, ../sass/layouts/_blocks.scss */
+.sidebar .pic {
+  margin-top: 0;
 }
 
 /* line 3, ../sass/layouts/_home.scss */
@@ -959,7 +1033,6 @@ time {
   background-image: -webkit-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: -moz-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: -o-linear-gradient(#58d8e3, #58bee3, #26aadb);
-  background-image: -ms-linear-gradient(#58d8e3, #58bee3, #26aadb);
   background-image: linear-gradient(#58d8e3, #58bee3, #26aadb);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1137,12 +1210,10 @@ time {
   border-radius: 3px;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1234,12 +1305,10 @@ time {
 .page-navigation .left .arrow, .page-navigation .right .arrow {
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1274,12 +1343,10 @@ time {
 .page-navigation .left .arrow span, .page-navigation .right .arrow span {
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1292,12 +1359,10 @@ time {
     font-size: 14px;
     -webkit-transition-property: all;
     -moz-transition-property: all;
-    -ms-transition-property: all;
     -o-transition-property: all;
     transition-property: all;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
-    -ms-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
   }
@@ -1307,12 +1372,10 @@ time {
   opacity: 1;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1330,12 +1393,10 @@ time {
   opacity: 1;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1442,12 +1503,10 @@ time {
   margin-bottom: 0.3rem;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1528,8 +1587,7 @@ time {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 250px;
-  height: 10em;
+  height: 200px;
   margin: 4% 0;
   background: #000;
   background-size: cover;
@@ -1539,12 +1597,10 @@ time {
   box-sizing: border-box;
   -webkit-transition-property: all;
   -moz-transition-property: all;
-  -ms-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
@@ -1717,4 +1773,22 @@ time {
 /* line 266, ../sass/layouts/_projects.scss */
 .project-list .summary.lb:after {
   background-image: url("/img/projects/square/lb-square-focused.jpg");
+}
+
+/* line 1, ../sass/layouts/_pages.scss */
+.page--about- #content {
+  padding: 36em 0 4em;
+  background-image: url(/img/pages/about-bg-mobile.jpg);
+  background-position: 65% 0;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 569px) {
+  /* line 1, ../sass/layouts/_pages.scss */
+  .page--about- #content {
+    background-image: url(/img/pages/about-bg-high.jpg);
+  }
+}
+/* line 9, ../sass/layouts/_pages.scss */
+.page--about- #content h1 {
+  font-size: 5rem;
 }
