@@ -8,13 +8,13 @@ $mq-desktop-max       : 1382px;
 
 @mixin respond-to($media) {
   @if $media == desktop {
-    @media only screen and (min-width: $mq-mobile-landscape + 1) { @content; }
+    @media only screen and (min-width: $mq-tablet-landscape + 1) { @content; }
   }
   @else if $media == tablet {
-    @media only screen and (min-width: $mq-mobile-landscape + 1) and (max-width: $mq-desktop) { @content; }
+    @media only screen and (min-width: $mq-tablet-portrait) and (max-width: $mq-desktop) { @content; }
   }
   @else if $media == mobile {
-    @media only screen and (max-width: $mq-mobile-landscape) { @content; }
+    @media only screen and (max-width: $mq-tablet-portrait ) { @content; }
   }
   @else if $media == retina {
     @media  (min--moz-device-pixel-ratio: 1.3),

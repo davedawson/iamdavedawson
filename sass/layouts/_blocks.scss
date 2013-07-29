@@ -73,12 +73,15 @@ body {
   blockquote {
   }
   a, a:active, a:visited {
-    color: $color-red;
+    color: $color-action;
     text-decoration: none;
+    @include baseTransition;
   }
   a:hover, a:active {
+    color: darken($color-action, 20%);
   }
   a:hover, a:focus {
+    color: darken($color-action, 20%);
   }
   a:link {
   }
@@ -129,10 +132,14 @@ body {
   }
   p {
     font-size: 18px;
-    font-family: $type-serif;
+    font-family: $type-sans;
     color: $color-grey;
     font-size: 1rem;
     line-height: 1.4rem;
+  }
+  time {
+    margin-top: 1.5em;
+    display: block;
   }
 }
 
@@ -162,7 +169,7 @@ line-height: 1.9rem;
 }
 
 time {
-  font-family: $type-serif;
+  font-family: $type-sans;
   font-style: italic;
   font-size: 0.9em;
   color: lighten($color-grey, 40%);

@@ -8,7 +8,11 @@ body {
 }
 a {
 	text-decoration: none;
-	color: $color-red;
+	color: $color-action;
+	@include baseTransition;
+}
+a:hover {
+	color: darken($color-action, 10%);
 }
 ul, ol, li {
 	margin: 0;

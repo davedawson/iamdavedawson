@@ -34,6 +34,10 @@ body {
 				margin: 1em 4%;
 				font-size: 20px
 			}
+			@include respond-to(medium-screens) {
+				font-size: 16px;
+				padding: 10px 5px;
+			}
 			a {
 				color: $color-grey;
 				&:hover {
@@ -60,20 +64,23 @@ body {
 				}
 				&:hover {
 					@include respond-to(wide-screens) {
-						width: 160px;
+						width: 165px;
 						transition-delay: 0.3s;
 					}
 				}
 				a {
-					// background: $color-red;
-					border: 3px solid $color-red;
+					// background: $color-action;
+					border: 3px solid $color-action;
 					// color: $color-white;
-					color: $color-red;
+					color: $color-action;
 					padding: 10px 10px 8px;
 					display: block;
 					position: relative;
 					left: -50%;
 					// @include baseTransition;
+					@include respond-to(wide-screens) {
+						left: auto;
+					}
 				}
 
 				strong {
@@ -120,7 +127,7 @@ body {
 	}
 	#logo {
 		h1 a{
-			background: $color-red;
+			background: $color-action;
 			color: $color-white;
 			text-align: center;
 		// 	font-size: 18px;
