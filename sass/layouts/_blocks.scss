@@ -10,21 +10,25 @@ body {
     padding: 4em 0;
   }
 }
-
+// Base styles
 .entry {
   h1 {
-  @include type($family: $type-display, $size: 36px, $weight: 900);
+    @include type($family: $type-display, $size: 36px, $weight: 900);
     margin-bottom: 20px;
   }
   h2 {
-    @include type($family: $type-display, $size: 36px, $weight: 900);
+    @include type($family: $type-serif, $size: 24px, $weight: 900);
+    margin: 1.5em 0 0.55em;
   }
   h3 {
-    @include type($family: $type-sans, $size: 16px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: uppercase);
-    margin-top: 10px;
-    letter-spacing: 0.2em;
+    @include type($family: $type-sans, $size: 20px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: none);
+    margin: 0.95em 0 0.2em;
+    letter-spacing: 0;
   }
   h4 {
+    @include type($family: $type-sans, $size: 16px, $weight: bold, $line-height: 24px, $color: $color-grey, $transform: uppercase);
+    margin: 20px 0 5px;
+    letter-spacing: 0.2em;
   }
   em {
     font-style: italic;
@@ -40,33 +44,18 @@ body {
     margin: 0 0 18px;
   }
   ul, ol {
-    margin: 0.5em 0.5em 1em;
+    margin: 0.5em 0 1em;
     padding: 0;
     li {
       @include type($family: $type-sans);
       font-size: 18px;
       line-height: 30px;
       list-style-type: disc;
-      margin: 0;
+      margin: 0 0 0 1em;
       padding: 0;
-    }
-  }
-  @include respond-to(mobile) {
-    ul {
-      margin: 20em 0 1em 0;
-    }
-  }
-
-  ul {
-    li {
-    }
-  }
-  ol {
-    li {
-    }
-  }
-  li {
-    ul, ol {
+      @include respond-to(wide-screens) {
+        margin: 0;
+      }
     }
   }
 

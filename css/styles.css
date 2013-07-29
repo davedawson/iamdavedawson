@@ -781,7 +781,53 @@ body {
   width: 50px;
   margin-left: 0px;
 }
-/* line 129, ../sass/layouts/_header.scss */
+/* line 126, ../sass/layouts/_header.scss */
+#header .nav li.nav-contact {
+  position: relative;
+}
+/* line 128, ../sass/layouts/_header.scss */
+#header .nav li.nav-contact:hover em {
+  opacity: 1;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 132, ../sass/layouts/_header.scss */
+#header .nav li.nav-contact em {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  /* line 132, ../sass/layouts/_header.scss */
+  #header .nav li.nav-contact em {
+    display: block;
+    opacity: 0;
+    text-align: center;
+    font-size: 13px;
+    color: #aaaaaa;
+    top: 35px;
+    position: absolute;
+    width: 200%;
+    left: -50%;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+}
+/* line 151, ../sass/layouts/_header.scss */
 #header #logo h1 a {
   background: #0095a1;
   color: white;
@@ -840,33 +886,45 @@ body {
 }
 /* line 19, ../sass/layouts/_blocks.scss */
 .entry h2 {
-  font-family: "Marais", Helvetica, Arial, sans-serif;
-  font-size: 36px;
+  font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
+  font-size: 24px;
   font-weight: 900;
   color: #444444;
   text-transform: normal;
   line-height: 1.2em;
+  margin: 1.5em 0 0.55em;
 }
-/* line 22, ../sass/layouts/_blocks.scss */
+/* line 23, ../sass/layouts/_blocks.scss */
 .entry h3 {
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #444444;
+  text-transform: none;
+  line-height: 24px;
+  margin: 0.95em 0 0.2em;
+  letter-spacing: 0;
+}
+/* line 28, ../sass/layouts/_blocks.scss */
+.entry h4 {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: #444444;
   text-transform: uppercase;
   line-height: 24px;
-  margin-top: 10px;
+  margin: 20px 0 5px;
   letter-spacing: 0.2em;
 }
-/* line 29, ../sass/layouts/_blocks.scss */
+/* line 33, ../sass/layouts/_blocks.scss */
 .entry em {
   font-style: italic;
 }
-/* line 32, ../sass/layouts/_blocks.scss */
+/* line 36, ../sass/layouts/_blocks.scss */
 .entry strong {
   font-weight: bold;
 }
-/* line 35, ../sass/layouts/_blocks.scss */
+/* line 39, ../sass/layouts/_blocks.scss */
 .entry p {
   font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
   font-size: 22px;
@@ -874,12 +932,12 @@ body {
   color: #444444;
   margin: 0 0 18px;
 }
-/* line 42, ../sass/layouts/_blocks.scss */
+/* line 46, ../sass/layouts/_blocks.scss */
 .entry ul, .entry ol {
-  margin: 0.5em 0.5em 1em;
+  margin: 0.5em 0 1em;
   padding: 0;
 }
-/* line 45, ../sass/layouts/_blocks.scss */
+/* line 49, ../sass/layouts/_blocks.scss */
 .entry ul li, .entry ol li {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -890,10 +948,16 @@ body {
   font-size: 18px;
   line-height: 30px;
   list-style-type: disc;
-  margin: 0;
+  margin: 0 0 0 1em;
   padding: 0;
 }
-/* line 75, ../sass/layouts/_blocks.scss */
+@media only screen and (min-width: 768px) {
+  /* line 49, ../sass/layouts/_blocks.scss */
+  .entry ul li, .entry ol li {
+    margin: 0;
+  }
+}
+/* line 64, ../sass/layouts/_blocks.scss */
 .entry a, .entry a:active, .entry a:visited {
   color: #0095a1;
   text-decoration: none;
@@ -908,15 +972,15 @@ body {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 80, ../sass/layouts/_blocks.scss */
+/* line 69, ../sass/layouts/_blocks.scss */
 .entry a:hover, .entry a:active {
   color: #00373b;
 }
-/* line 83, ../sass/layouts/_blocks.scss */
+/* line 72, ../sass/layouts/_blocks.scss */
 .entry a:hover, .entry a:focus {
   color: #00373b;
 }
-/* line 89, ../sass/layouts/_blocks.scss */
+/* line 78, ../sass/layouts/_blocks.scss */
 .entry .note {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -929,21 +993,21 @@ body {
   color: #5e5e5e;
 }
 
-/* line 97, ../sass/layouts/_blocks.scss */
+/* line 86, ../sass/layouts/_blocks.scss */
 .pic {
   margin: 30px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 5px;
 }
-/* line 100, ../sass/layouts/_blocks.scss */
+/* line 89, ../sass/layouts/_blocks.scss */
 .pic img {
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 104, ../sass/layouts/_blocks.scss */
+/* line 93, ../sass/layouts/_blocks.scss */
 .pic p, .pic p:first-of-type {
   width: 100%;
   padding: 0.7em;
@@ -966,31 +1030,31 @@ body {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 115, ../sass/layouts/_blocks.scss */
+/* line 104, ../sass/layouts/_blocks.scss */
 .pic:hover p {
   color: #464646;
   background: rgba(68, 68, 68, 0.2);
 }
-/* line 119, ../sass/layouts/_blocks.scss */
+/* line 108, ../sass/layouts/_blocks.scss */
 .pic:hover {
   -moz-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px;
 }
 
-/* line 124, ../sass/layouts/_blocks.scss */
+/* line 113, ../sass/layouts/_blocks.scss */
 .blog-list .summary {
   padding: 1em 0;
   margin: 1em 0;
   border-bottom: 1px solid rgba(68, 68, 68, 0.05);
 }
-/* line 128, ../sass/layouts/_blocks.scss */
+/* line 117, ../sass/layouts/_blocks.scss */
 .blog-list .summary h2 {
   font-size: 2rem;
   margin-bottom: 0.4em;
   font-family: "Marais", Helvetica, Arial, sans-serif;
 }
-/* line 133, ../sass/layouts/_blocks.scss */
+/* line 122, ../sass/layouts/_blocks.scss */
 .blog-list .summary p {
   font-size: 18px;
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
@@ -998,13 +1062,13 @@ body {
   font-size: 1rem;
   line-height: 1.4rem;
 }
-/* line 140, ../sass/layouts/_blocks.scss */
+/* line 129, ../sass/layouts/_blocks.scss */
 .blog-list .summary time {
   margin-top: 1.5em;
   display: block;
 }
 
-/* line 147, ../sass/layouts/_blocks.scss */
+/* line 136, ../sass/layouts/_blocks.scss */
 .entry p:first-of-type {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -1014,31 +1078,31 @@ body {
   line-height: 2.3rem;
 }
 @media only screen and (min-width: 768px) {
-  /* line 147, ../sass/layouts/_blocks.scss */
+  /* line 136, ../sass/layouts/_blocks.scss */
   .entry p:first-of-type {
     font-size: 1.8rem;
     line-height: 2.3rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 971px) {
-  /* line 147, ../sass/layouts/_blocks.scss */
+  /* line 136, ../sass/layouts/_blocks.scss */
   .entry p:first-of-type {
     font-size: 1.5rem;
     line-height: 1.9rem;
   }
 }
 
-/* line 162, ../sass/layouts/_blocks.scss */
+/* line 151, ../sass/layouts/_blocks.scss */
 .blog.entry h1 {
   font-size: 2.4rem;
   margin-bottom: 2rem;
 }
-/* line 166, ../sass/layouts/_blocks.scss */
+/* line 155, ../sass/layouts/_blocks.scss */
 .blog.entry time {
   margin-bottom: 2rem;
 }
 
-/* line 171, ../sass/layouts/_blocks.scss */
+/* line 160, ../sass/layouts/_blocks.scss */
 time {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-style: italic;
@@ -1046,7 +1110,7 @@ time {
   color: #aaaaaa;
 }
 
-/* line 178, ../sass/layouts/_blocks.scss */
+/* line 167, ../sass/layouts/_blocks.scss */
 .sidebar {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -1059,7 +1123,7 @@ time {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 180, ../sass/layouts/_blocks.scss */
+/* line 169, ../sass/layouts/_blocks.scss */
 .sidebar p, .sidebar p:first-of-type {
   font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
   font-size: 18px;
@@ -1067,11 +1131,11 @@ time {
   color: #5e5e5e;
   margin: 0 0 18px;
 }
-/* line 187, ../sass/layouts/_blocks.scss */
+/* line 176, ../sass/layouts/_blocks.scss */
 .sidebar ul li {
   font-size: 18px;
 }
-/* line 190, ../sass/layouts/_blocks.scss */
+/* line 179, ../sass/layouts/_blocks.scss */
 .sidebar .pic {
   margin-top: 0;
 }
