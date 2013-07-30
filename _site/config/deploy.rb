@@ -11,7 +11,8 @@ set :repository,  "git@github.com:davedawson/iamdavedawson.git"
 
 ssh_options[:username] = 'iamdavedawson.com@s102864.gridserver.com'
 
-# set :deploy_to,  "/home/#{site}/domains/{domain}/html"
+# set :repository, "svn+ssh://#{user}@#{domain}/home/#{site}/data/svn/#{application}/trunk"
+set :deploy_to,  "/home/#{site}/domains/{domain}/html"
 
 set :checkout, "export"
 

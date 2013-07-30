@@ -1,6 +1,6 @@
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 {% capture id_prefix %}{% if post %}post{% else %}page{% endif %}{% endcapture %}
-{% capture id %}{{ id_prefix }}-{{ page.url | replace:'/','-' }}{% endcapture %}
+{% capture id %}{{ id_prefix }}{{ page.url | replace:'/',' ' }}{% endcapture %}
 
 <body class="{{ layout }} {{ id }}">
   <section id="header" class="cf">

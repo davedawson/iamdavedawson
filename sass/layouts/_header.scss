@@ -105,22 +105,24 @@ body {
 				}
 			}
 			&.nav-logo:hover em {
-				display: inline-block;
-				opacity: 1;
-				height: auto;
-				width: 100px;
-				// @include baseTransition;
+				@include respond-to(wide-screens) {
+					display: inline-block;
+					opacity: 1;
+					height: auto;
+					width: 100px;
+					// @include baseTransition;
 
-				transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
-				transition-delay: 0.4s;
-				// width: 140px;
-				&.ave {
-					width: 20px;
-					margin-right: 10px;
-				}
-				&.awson {
-					width: 50px;
-					margin-left: 0px
+					transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
+					transition-delay: 0.4s;
+					// width: 140px;
+					&.ave {
+						width: 20px;
+						margin-right: 10px;
+					}
+					&.awson {
+						width: 55px;
+						margin-left: 0.5px
+					}
 				}
 			}
 			&.nav-contact {

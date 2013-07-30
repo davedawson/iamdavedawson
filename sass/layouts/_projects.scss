@@ -69,7 +69,7 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
     // background: $color-white;
     // border: 1px solid darken($color-tan, 14%);
     border-top: 0;
-    margin: 0;
+    margin: 6em 0 0 0;
 
     .description {
       @include type($family: $type-sans, $size: 18px, $line-height: 24px, $color: $color-grey);

@@ -17,7 +17,9 @@ jQuery(document).ready(function() {
         $('.page-navigation .left').flexVerticalCenter();
       },
       projectSticky: function(){
-        $(".page-navigation").scrollToFixed( { bottom: 0, limit: $('.nav-wrap').offset().top } );
+        if ($(window).width() > 800) {
+          $(".page-navigation").scrollToFixed( { bottom: 0, limit: $('.nav-wrap').offset().top } );
+        }
       }
     };
     /*-------------------------------------------

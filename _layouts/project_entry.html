@@ -61,22 +61,23 @@ layout: default
     <div class="wrap cf">
       <div class="left cf">
       {% if page.previous.categories contains 'projects' %}
-        {% if page.previous.url %}
-        <a href="{{page.previous.url}}" class="arrow" title="Previous Post: {{page.previous.title}}">
-          <span>{{page.previous.title}}</span> <strong>&larr;</strong>
+        {% if page.next.url %}
+        <a href="{{page.next.url}}" class="arrow" title="next Post: {{page.next.title}}">
+          <span>{{page.next.title}}</span> <strong>&larr;</strong>
         </a>
         {% endif %}
       {% endif %}
       </div>
 
       <div class="right cf">
-      {% if page.previous.categories contains 'projects' %}
-        {% if page.next.url %}
-        <a href="{{page.next.url}}" class="arrow" title="next Post: {{page.next.title}}">
-          <span>{{page.next.title}}</span> <strong>&rarr;</strong>
+        {% if page.previous.categories contains 'projects' %}
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}" class="arrow" title="Previous Post: {{page.previous.title}}">
+          <span>{{page.previous.title}}</span> <strong>&rarr;</strong>
         </a>
         {% endif %}
       {% endif %}
+
       </div>
     </div>
   </div>
