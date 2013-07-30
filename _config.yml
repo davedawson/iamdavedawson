@@ -8,7 +8,7 @@ plugins:     ./_plugins
 
 # relative_permalinks: true
 
-future:      true
+future:      false
 lsi:         false
 pygments:    false
 markdown:    maruku

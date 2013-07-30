@@ -1094,7 +1094,7 @@ body {
 
 /* line 155, ../sass/layouts/_blocks.scss */
 .blog.entry h1 {
-  font-size: 2.4rem;
+  font-size: 3.4rem;
   margin-bottom: 2rem;
 }
 /* line 159, ../sass/layouts/_blocks.scss */
@@ -1145,7 +1145,7 @@ time {
 
 /* line 2, ../sass/layouts/_blog.scss */
 .blog-entry h1 {
-  font-size: 3rem;
+  font-size: 3.4rem;
 }
 
 /* line 6, ../sass/layouts/_blog.scss */
