@@ -64,7 +64,7 @@ body {
   a, a:active, a:visited {
     color: $color-action;
     text-decoration: none;
-    @include baseTransition;
+    @include transition(all 0.3s ease-in-out);;
   }
   a:hover, a:active {
     color: darken($color-action, 20%);
@@ -103,7 +103,7 @@ body {
     color: lighten($color-grey, 0.7);
     background: transparentize($color-grey, 0.9);
     @include borderBox;
-    @include baseTransition;
+    @include transition(all 0.3s ease-in-out);;
   }
   &:hover p {
     color: lighten($color-grey, 0.6);
@@ -169,7 +169,7 @@ time {
 }
 
 .sidebar {
-  @include baseTransition;
+  @include transition(all 0.3s ease-in-out);;
   p, p:first-of-type {
     font-family: $type-serif;
     font-size: 18px;

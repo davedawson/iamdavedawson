@@ -9,7 +9,7 @@ body {
 a {
 	text-decoration: none;
 	color: $color-action;
-	@include baseTransition;
+	@include transition(all 0.3s ease-in-out);;
 }
 a:hover {
 	color: darken($color-action, 10%);

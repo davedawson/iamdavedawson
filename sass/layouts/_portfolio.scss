@@ -48,7 +48,7 @@
 			background: #eeeeee;
 			padding: 4px 10px;
 			@include borderRadius;
-			@include baseTransition;
+			@include transition(all 0.3s ease-in-out);;
 			&:hover {
 				background: $color-white;
 			}
@@ -131,7 +131,7 @@
 	}
 
 	.left .arrow, .right .arrow {
-		@include baseTransition;
+		@include transition(all 0.3s ease-in-out);;
 		display: block;
 		background: transparent;
 		margin: 30px auto;
@@ -157,7 +157,7 @@
 			}
 		}
 		span {
-			@include baseTransition;
+			@include transition(all 0.3s ease-in-out);;
 			@include respond-to(wide-screens) {
 				display: none;
 				width: 0;
@@ -165,12 +165,12 @@
 				font-size: 14px;
 				position: relative;
 				top: 1px;
-				@include baseTransition;
+				@include transition(all 0.3s ease-in-out);;
 			}
 		}
 		&:hover {
 			opacity: 1;
-			@include baseTransition;
+			@include transition(all 0.3s ease-in-out);;
 			@include respond-to(wide-screens) {
 				background: darken(#f8f8f5,10%);
 			}
@@ -181,7 +181,7 @@
 				float: left;
 				width: auto;
 				opacity: 1;
-				@include baseTransition;
+				@include transition(all 0.3s ease-in-out);;
 			}
 		}
 	}

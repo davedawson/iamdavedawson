@@ -27,7 +27,7 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
       font-size: 3rem;
       line-height: 3.1rem;
       margin-bottom: 0.3rem;
-      @include baseTransition;
+      @include transition(all 0.3s ease-in-out);;
       @include respond-to(wide-screens) {
         font-size: 5.6rem;
         line-height: 6.7rem;
@@ -133,7 +133,7 @@ $ndnf: "/img/projects/large/ndnf-large.jpg";
     background-size: cover;
     z-index: 1;
     @include borderBox;
-    @include baseTransition;
+    @include transition(all 0.3s ease-in-out);;
     @include respond-to(wide-screens) {
       width: 46.6225%;
       float: left;
