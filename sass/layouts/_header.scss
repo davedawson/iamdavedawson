@@ -24,8 +24,10 @@ body {
 			width: auto;
 			margin-top: 80px;
 			// @include transition(all 0.3s ease-in-out);;
-			transition: width 0.2s;
-			transition-delay: 0.3s;
+			// transition: width 0.2s;
+			@include transition(width 0.2s);
+			@include transition-delay(0.3s);
+			// transition-delay: 0.3s;
 			padding: 10px;
 			font-family: $type-sans;
 			font-size: 16px;
@@ -65,7 +67,8 @@ body {
 				&:hover {
 					@include respond-to(wide-screens) {
 						width: 165px;
-						transition-delay: 0.3s;
+						@include transition-delay(0.3s);
+						// transition-delay: 0.3s;
 					}
 				}
 				a {
@@ -87,7 +90,7 @@ body {
 					font-weight: normal;
 					display: inline;
 					float: none;
-					@include transition(all 0.3s ease-in-out);;
+					@include transition(all 0.3s ease-in-out);
 				}
 				em {
 					@include respond-to(handhelds) { }
@@ -100,7 +103,8 @@ body {
 				    width: 0;
 						// @include transition(all 0.3s ease-in-out);;
 						// transition-delay: 0;
-						transition: width 0.4s;
+						// transition: width 0.4s;
+						@include transition(width 0.4s ease-in-out);
 					}
 				}
 			}
@@ -112,8 +116,10 @@ body {
 					width: 100px;
 					// @include transition(all 0.3s ease-in-out);;
 
-					transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
-					transition-delay: 0.4s;
+					// transition: opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in;
+					// transition-delay: 0.4s;
+					@include transition(opacity 0.8s 0s ease-in, height 0.4s 0 ease-in, width 0.4s 0 ease-in, margin 0.1s 0 ease-in);
+					@include transition-delay(0.4s);
 					// width: 140px;
 					&.ave {
 						width: 20px;
@@ -129,7 +135,7 @@ body {
 				position: relative;
 				&:hover em {
 					opacity: 1;
-					@include transition(all 0.3s ease-in-out);;
+					@include transition(all 0.3s ease-in-out);
 				}
 				em {
 					display: none;
@@ -143,7 +149,7 @@ body {
 						position: absolute;
 						width: 200%;
 						left: -50%;
-						@include transition(all 0.3s ease-in-out);;
+						@include transition(all 0.3s ease-in-out);
 					}
 				}
 			}
