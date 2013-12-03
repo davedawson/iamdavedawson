@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,50 +24,50 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -1046,10 +1046,11 @@ body {
 /* line 121, ../sass/layouts/_blocks.scss */
 .blog-list .summary h2 {
   font-size: 2rem;
+  line-height: 2.3rem;
   margin-bottom: 0.4em;
   font-family: "Marais", Helvetica, Arial, sans-serif;
 }
-/* line 126, ../sass/layouts/_blocks.scss */
+/* line 127, ../sass/layouts/_blocks.scss */
 .blog-list .summary p {
   font-size: 18px;
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
@@ -1057,13 +1058,13 @@ body {
   font-size: 1rem;
   line-height: 1.4rem;
 }
-/* line 133, ../sass/layouts/_blocks.scss */
+/* line 134, ../sass/layouts/_blocks.scss */
 .blog-list .summary time {
   margin-top: 1.5em;
   display: block;
 }
 
-/* line 140, ../sass/layouts/_blocks.scss */
+/* line 141, ../sass/layouts/_blocks.scss */
 .entry p:first-of-type {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -1073,31 +1074,31 @@ body {
   line-height: 2.3rem;
 }
 @media only screen and (min-width: 768px) {
-  /* line 140, ../sass/layouts/_blocks.scss */
+  /* line 141, ../sass/layouts/_blocks.scss */
   .entry p:first-of-type {
     font-size: 1.8rem;
     line-height: 2.3rem;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 971px) {
-  /* line 140, ../sass/layouts/_blocks.scss */
+  /* line 141, ../sass/layouts/_blocks.scss */
   .entry p:first-of-type {
     font-size: 1.5rem;
     line-height: 1.9rem;
   }
 }
 
-/* line 155, ../sass/layouts/_blocks.scss */
+/* line 156, ../sass/layouts/_blocks.scss */
 .blog.entry h1 {
   font-size: 3.4rem;
   margin-bottom: 2rem;
 }
-/* line 159, ../sass/layouts/_blocks.scss */
+/* line 160, ../sass/layouts/_blocks.scss */
 .blog.entry time {
   margin-bottom: 2rem;
 }
 
-/* line 164, ../sass/layouts/_blocks.scss */
+/* line 165, ../sass/layouts/_blocks.scss */
 time {
   font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif;
   font-style: italic;
@@ -1105,14 +1106,14 @@ time {
   color: #aaaaaa;
 }
 
-/* line 171, ../sass/layouts/_blocks.scss */
+/* line 172, ../sass/layouts/_blocks.scss */
 .sidebar {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 173, ../sass/layouts/_blocks.scss */
+/* line 174, ../sass/layouts/_blocks.scss */
 .sidebar p, .sidebar p:first-of-type {
   font-family: "skolar", Times, "Times New Roman", Arial, sans-serif;
   font-size: 18px;
@@ -1120,11 +1121,11 @@ time {
   color: #5e5e5e;
   margin: 0 0 18px;
 }
-/* line 180, ../sass/layouts/_blocks.scss */
+/* line 181, ../sass/layouts/_blocks.scss */
 .sidebar ul li {
   font-size: 18px;
 }
-/* line 183, ../sass/layouts/_blocks.scss */
+/* line 184, ../sass/layouts/_blocks.scss */
 .sidebar .pic {
   margin-top: 0;
 }

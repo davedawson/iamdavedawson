@@ -7,7 +7,7 @@ categories: blog
     {% for post in site.posts %}
       {% if post.categories contains 'blog' %}
       <li class="summary {{ post.class }}">
-          <a href="{{ post.url }}" class="cf"><h2>{{ post.title }}</h2></a>
+          <a href="{{ post.url }}" class="cf"><h2>{{ post.title | strip_html }}</h2></a>
           <p>{{ post.summary }}</p>
           <time>{{ post.date | date: "%B %d, %Y" }}</time>
       </li>
