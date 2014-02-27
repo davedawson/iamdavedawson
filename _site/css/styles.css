@@ -1143,9 +1143,17 @@ time {
 /* line 10, ../sass/layouts/_home.scss */
 .layout-home h2 {
   text-align: center;
-  margin: 0.5em auto 1.2em;
+  margin: 0.5em auto 0;
   font-size: 1.4rem;
   color: rgba(68, 68, 68, 0.75);
+}
+/* line 16, ../sass/layouts/_home.scss */
+.layout-home h3 {
+  text-align: center;
+  margin: 0.5em auto 1.2em;
+  font-size: 1rem;
+  font-style: italic;
+  color: rgba(68, 68, 68, 0.6);
 }
 
 /* line 2, ../sass/layouts/_blog.scss */
