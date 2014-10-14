@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -943,15 +943,15 @@ body {
   text-transform: normal;
   line-height: 1.2em;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 26px;
   list-style-type: disc;
-  margin: 0 0 0 1em;
+  margin: 0 0 10px 1em;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
   /* line 49, ../sass/layouts/_blocks.scss */
   .entry ul li, .entry ol li {
-    margin: 0;
+    margin: 0 0 10px 0;
   }
 }
 /* line 64, ../sass/layouts/_blocks.scss */
@@ -1128,6 +1128,149 @@ time {
 /* line 184, ../sass/layouts/_blocks.scss */
 .sidebar .pic {
   margin-top: 0;
+}
+
+/* line 190, ../sass/layouts/_blocks.scss */
+.ks {
+  background-color: #2bde73;
+  color: #fff;
+  padding: 20px 5%;
+}
+/* line 194, ../sass/layouts/_blocks.scss */
+.ks .description {
+  width: 60%;
+  float: left;
+}
+@media only screen and (max-width: 767px) {
+  /* line 194, ../sass/layouts/_blocks.scss */
+  .ks .description {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 971px) {
+  /* line 194, ../sass/layouts/_blocks.scss */
+  .ks .description {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 206, ../sass/layouts/_blocks.scss */
+.ks a {
+  color: #fff;
+}
+/* line 209, ../sass/layouts/_blocks.scss */
+.ks .wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 0;
+}
+/* line 35, ../sass/modules/_shortcuts.scss */
+.ks .wrap:before, .ks .wrap:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* line 36, ../sass/modules/_shortcuts.scss */
+.ks .wrap:after {
+  clear: both;
+}
+/* line 214, ../sass/layouts/_blocks.scss */
+.ks h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 36px !important;
+  line-height: 36px;
+  margin-bottom: 0px !important;
+  text-align: left !important;
+  margin-top: 5px;
+  font-weight: bold !important;
+  font-family: "ff-tisa-sans-web-pro", "freight-sans-pro", Helvetica, Arial, sans-serif !important;
+}
+/* line 225, ../sass/layouts/_blocks.scss */
+.ks h3 {
+  text-align: left !important;
+  font-size: 18px !important;
+  line-height: 22px;
+  margin-bottom: 15px;
+  font-style: normal !important;
+  font-weight: normal !important;
+}
+/* line 233, ../sass/layouts/_blocks.scss */
+.ks .button {
+  background: white;
+  padding: 18px 20px;
+  font-size: 20px;
+  color: #2bde73;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+@media only screen and (min-width: 768px) and (max-width: 971px) {
+  /* line 233, ../sass/layouts/_blocks.scss */
+  .ks .button {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 233, ../sass/layouts/_blocks.scss */
+  .ks .button {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 250, ../sass/layouts/_blocks.scss */
+  .ks h1, .ks h3, .ks .button {
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 971px) {
+  /* line 250, ../sass/layouts/_blocks.scss */
+  .ks h1, .ks h3, .ks .button {
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 264, ../sass/layouts/_blocks.scss */
+.ks .button {
+  float: right;
+  width: 30%;
+  margin-left: 5%;
+  text-align: center;
+}
+/* line 270, ../sass/layouts/_blocks.scss */
+.ks .ks-embed {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 270, ../sass/layouts/_blocks.scss */
+  .ks .ks-embed {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 971px) {
+  /* line 270, ../sass/layouts/_blocks.scss */
+  .ks .ks-embed {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
 }
 
 /* line 2, ../sass/layouts/_home.scss */
