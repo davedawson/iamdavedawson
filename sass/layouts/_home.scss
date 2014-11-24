@@ -3,19 +3,30 @@
     margin: 0 auto 4em;
   }
   h1 {
-    text-align: center;
+    text-align: left;
     font-family: $type-display;
     line-height: 1.2em;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 1em;
+    @include respond-to(wide-screens) {
+      font-size: 3em;
+      text-align: center;
+
+    }
   }
   h2 {
-    text-align: center;
+    text-align: left;
     margin: 0.5em auto 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.3em;
     color: transparentize($color-grey, 0.25);
-    width: 60%;
+    
+    @include respond-to(wide-screens) {
+      font-size: 1.4rem;
+      line-height: 1.3em;
+      text-align: center;
+      width: 60%;
+    }
   }
   h3 {
     text-align: center;

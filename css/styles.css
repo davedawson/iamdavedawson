@@ -1279,22 +1279,37 @@ time {
 }
 /* line 5, ../sass/layouts/_home.scss */
 .layout-home h1 {
-  text-align: center;
+  text-align: left;
   font-family: "Marais", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 1em;
 }
-/* line 12, ../sass/layouts/_home.scss */
+@media only screen and (min-width: 768px) {
+  /* line 5, ../sass/layouts/_home.scss */
+  .layout-home h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+}
+/* line 17, ../sass/layouts/_home.scss */
 .layout-home h2 {
-  text-align: center;
+  text-align: left;
   margin: 0.5em auto 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.3em;
   color: rgba(68, 68, 68, 0.75);
-  width: 60%;
 }
-/* line 20, ../sass/layouts/_home.scss */
+@media only screen and (min-width: 768px) {
+  /* line 17, ../sass/layouts/_home.scss */
+  .layout-home h2 {
+    font-size: 1.4rem;
+    line-height: 1.3em;
+    text-align: center;
+    width: 60%;
+  }
+}
+/* line 31, ../sass/layouts/_home.scss */
 .layout-home h3 {
   text-align: center;
   margin: 0.5em auto 1.2em;
@@ -1302,7 +1317,7 @@ time {
   font-style: italic;
   color: rgba(68, 68, 68, 0.6);
 }
-/* line 27, ../sass/layouts/_home.scss */
+/* line 38, ../sass/layouts/_home.scss */
 .layout-home .project-list {
   margin-top: 50px;
 }
