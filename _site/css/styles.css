@@ -1282,21 +1282,29 @@ time {
   text-align: center;
   font-family: "Marais", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
+  font-size: 3em;
+  margin-bottom: 1em;
 }
-/* line 10, ../sass/layouts/_home.scss */
+/* line 12, ../sass/layouts/_home.scss */
 .layout-home h2 {
   text-align: center;
   margin: 0.5em auto 0;
   font-size: 1.4rem;
+  line-height: 1.3em;
   color: rgba(68, 68, 68, 0.75);
+  width: 60%;
 }
-/* line 16, ../sass/layouts/_home.scss */
+/* line 20, ../sass/layouts/_home.scss */
 .layout-home h3 {
   text-align: center;
   margin: 0.5em auto 1.2em;
   font-size: 1rem;
   font-style: italic;
   color: rgba(68, 68, 68, 0.6);
+}
+/* line 27, ../sass/layouts/_home.scss */
+.layout-home .project-list {
+  margin-top: 50px;
 }
 
 /* line 2, ../sass/layouts/_blog.scss */

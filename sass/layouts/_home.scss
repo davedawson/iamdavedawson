@@ -6,12 +6,16 @@
     text-align: center;
     font-family: $type-display;
     line-height: 1.2em;
+    font-size: 3em;
+    margin-bottom: 1em;
   }
   h2 {
     text-align: center;
     margin: 0.5em auto 0;
     font-size: 1.4rem;
+    line-height: 1.3em;
     color: transparentize($color-grey, 0.25);
+    width: 60%;
   }
   h3 {
     text-align: center;
@@ -19,5 +23,8 @@
     font-size: 1rem;
     font-style: italic;
     color: transparentize($color-grey, 0.4);
+  }
+  .project-list {
+    margin-top: 50px;
   }
 }
