@@ -1366,6 +1366,29 @@ time {
   margin-left: -27px;
 }
 
+/* line 43, ../sass/layouts/_blog.scss */
+body.comfort-is-overrated {
+  background: #000;
+  color: white;
+}
+/* line 46, ../sass/layouts/_blog.scss */
+body.comfort-is-overrated .comfort-logo {
+  display: block;
+}
+/* line 51, ../sass/layouts/_blog.scss */
+body.comfort-is-overrated .entry p, body.comfort-is-overrated .entry h1, body.comfort-is-overrated .entry h2, body.comfort-is-overrated .entry ul, body.comfort-is-overrated .entry li {
+  color: #dadada;
+}
+/* line 54, ../sass/layouts/_blog.scss */
+body.comfort-is-overrated .entry h1 {
+  color: #fff;
+  display: none;
+}
+/* line 57, ../sass/layouts/_blog.scss */
+body.comfort-is-overrated .entry h1.headline {
+  display: block;
+}
+
 /* line 7, ../sass/layouts/_portfolio.scss */
 .impact {
   width: 100%;

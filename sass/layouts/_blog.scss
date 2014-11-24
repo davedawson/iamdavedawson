@@ -39,3 +39,25 @@
     }
   }
 }
+
+body.comfort-is-overrated {
+  background: #000;
+  color: white;
+  .comfort-logo {
+    display: block;
+
+  }
+  .entry {
+    p, h1, h2, ul, li {
+      color: #dadada;
+    }  
+    h1 {
+      color: #fff;
+      display: none;
+      &.headline {
+        display: block;
+      }
+    }
+  }
+  
+}
