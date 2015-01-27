@@ -3,15 +3,13 @@
     margin: 0 auto 4em;
   }
   h1 {
-    text-align: left;
+    text-align: center;
     font-family: $type-display;
     line-height: 1.2em;
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
     @include respond-to(wide-screens) {
       font-size: 3em;
-      text-align: center;
-
     }
   }
   h2 {
