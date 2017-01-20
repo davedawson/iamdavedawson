@@ -1,1 +1,4 @@
 /config/deploy.rb
+aws.json
+_site/
+.sass-cache/
