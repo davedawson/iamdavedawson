@@ -3,20 +3,20 @@ layout: home
 categories: projects
 ---
 <div class="container base">
+  <span class="waving">👋</span>
   <h1>Dave Dawson is a web designer.</h1>
-  <h3><a href="http://www.havesomecottlestonpie.com">Cottleston Pie</a> is where he houses the work of his tiny design studio.</h3>
-  <ul class="project-list entries">
-    {% for post in site.posts %}
-      {% if post.categories contains 'projects' %}
-      <li class="project summary {{ post.class }}">
-        <a href="{{ post.url }}" class="thumb">
-          <div class="wrap cf">
-            <span class="logo {{ post.logo-class }}">
-            </span>
-          </div>
-        </a>
-      </li>
-      {% endif %}
-    {% endfor %}
+  <h2>I’m a designer and I’m here to contribute to something bigger than myself. </h2>
+  <ul>
+    <li>Connecting people</li>
+    <li>Sharing my experience</li>
+    <li>Encouraging people to pursue their own goals</li>
   </ul>
+  <div class="helpful-list">
+    <div class="item">
+      <img src="" alt="" />
+      <h2>I run Cottleston Pie, a digital design studio in New York City.</h2>
+      <p>We work with nonprofits, higher education, cultural institions, and political campaigns that do important work.</p>
+      <p><a href="">Work With Us</a></p>
+    </div>
+  </div>
 </div>
