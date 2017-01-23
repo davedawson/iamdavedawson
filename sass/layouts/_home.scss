@@ -1,9 +1,22 @@
 .layout-home {
   background: $color-dark-grey;
   color: #fff;
+  #content, .container {
+    height: 100%;
+  }
+  #content {
+    padding-top: 0;
+    @include clearfix;
+  }
   .title-wrap {
     height: 100%;
-    padding: 200px 0;
+    background: #1b1d1d;
+    // padding: 200px 0;
+    // @include center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    margin-bottom: 60px;
     ul {
       text-align: center;
       margin-top: 12px;

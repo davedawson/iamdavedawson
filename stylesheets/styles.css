@@ -1134,9 +1134,29 @@ time {
   background: #252727;
   color: #fff;
 }
+.layout-home #content, .layout-home .container {
+  height: 100%;
+}
+.layout-home #content {
+  padding-top: 0;
+  min-height: 0;
+}
+.layout-home #content:before, .layout-home #content:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.layout-home #content:after {
+  clear: both;
+}
 .layout-home .title-wrap {
   height: 100%;
-  padding: 200px 0;
+  background: #1b1d1d;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  margin-bottom: 60px;
 }
 .layout-home .title-wrap ul {
   text-align: center;
