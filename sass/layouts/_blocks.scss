@@ -1,7 +1,17 @@
 @import "modules/shortcuts";
+
+* {
+  @include box-sizing(border-box);
+}
+
 body {
   background: transparentize ($color-bg, 0.2);
   text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: none;
+}
+
+html, body {
+  height: 100%;
 }
 
 #content {

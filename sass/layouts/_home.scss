@@ -1,39 +1,189 @@
 .layout-home {
-  #content {
-    margin: 0 auto 4em;
+  background: $color-dark-grey;
+  color: #fff;
+  .title-wrap {
+    height: 100%;
+    padding: 200px 0;
+    ul {
+      text-align: center;
+      margin-top: 12px;
+      li {
+        font-size: 18px;
+        line-height: 24px;
+        display: inline;
+        color: $color-light-text-on-dark;
+        &:after {
+          content: "•";
+          padding: 20px;
+          color: #575757;
+        }
+        &:last-child:after {
+          content: "";
+          padding: 0;
+        }
+      }
+    }
+  }
+  .waving {
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
+    display: block;
   }
   h1 {
     text-align: center;
-    font-family: $type-display;
-    line-height: 1.2em;
-    font-size: 2em;
-    margin-bottom: 0.2em;
-    @include respond-to(wide-screens) {
-      font-size: 3em;
+    max-width: 600px;
+    margin: 40px auto 40px;
+    img {
+      width: 100%;
     }
   }
   h2 {
-    text-align: left;
-    margin: 0.5em auto 0;
-    font-size: 1.2rem;
-    line-height: 1.3em;
-    color: transparentize($color-grey, 0.25);
-    
-    @include respond-to(wide-screens) {
-      font-size: 1.4rem;
-      line-height: 1.3em;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .helpful-list {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .row {
+      clear: both;
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      .item {
+      }
+    }
+    .item {
+      // flex: 1;
+      // border: 2px solid rgba(255,255,255,0.3);
+      border: 2px solid #fff;
+      padding: 30px 50px 50px;
       text-align: center;
-      width: 60%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      &:hover {
+        border-color: #fff;
+      }
+      @include respond-to(wide-screens) {
+        // @include gs-span(d, 1, 6);
+        width: 48.51074%;
+        float: left;
+      }  
+      &:nth-child(even) {
+        @include respond-to(wide-screens) {
+          // @include gs-span(d, 7, 12);
+          margin-left: auto;
+        }  
+      }
+      &.cp {
+        @include respond-to(wide-screens) {
+          @include gs-span(d, 1, 12);
+          position: relative;
+          display: flex; 
+          padding-left: 0;
+          .logo {
+            width: 50%; 
+            position: relative;
+            float: left;
+            .wrap {
+              @include clearfix;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              display: flex; /* add */
+              justify-content: center; /* add to align horizontal */
+              align-items: center; /* add to align vertical */
+            }
+            img {
+              max-width: 230px;
+              @include center();  
+            }
+            
+          }
+          .description {
+            width: 50%; 
+            float: right;
+            text-align: left; 
+            margin-left: 30px;
+            h2 {
+              text-align: left;
+            }
+          }
+        }
+        h2 {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+      
+      .logo {
+        margin: 30px auto;
+        img {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+
+      &.usa {
+        img {
+          margin-top: -15px;
+        }
+        .cta a {
+          font-style: italic;
+          font-weight: 100;
+        }
+      }
+
+      &.get-biked {
+        img {
+          max-width: 150px;  
+        }
+      }
+
+      &.the-agency {
+        img {
+          margin-top: -30px;
+          max-width: 120px;  
+        }
+      }
+
+      h2 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 100;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-light-text-on-dark;
+      }
+      a {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: bold;
+      }
+
+      .cta {
+        color: #fff;
+        margin: 30px 0 0 0;
+        a { 
+          color: #fff
+        }
+      }
+
+      &.cp {
+
+      }
+      a {
+        color: #fff;
+      }
     }
   }
-  h3 {
-    text-align: center;
-    margin: 0.5em auto 1.2em;
-    font-size: 1rem;
-    font-style: italic;
-    color: transparentize($color-grey, 0.4);
-  }
-  .project-list {
-    margin-top: 50px;
-  }
+  
 }

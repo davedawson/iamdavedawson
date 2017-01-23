@@ -1,5 +1,47 @@
 $pih: "/img/projects/large/pih-large.jpg";
 $ndnf: "/img/projects/large/ndnf-large.jpg";
+
+.layout-projects {
+  #content {
+    margin: 0 auto 4em;
+  }
+  h1 {
+    text-align: center;
+    font-family: $type-display;
+    line-height: 1.2em;
+    font-size: 2em;
+    margin-bottom: 0.2em;
+    @include respond-to(wide-screens) {
+      font-size: 3em;
+    }
+  }
+  h2 {
+    text-align: left;
+    margin: 0.5em auto 0;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    color: transparentize($color-grey, 0.25);
+    
+    @include respond-to(wide-screens) {
+      font-size: 1.4rem;
+      line-height: 1.3em;
+      text-align: center;
+      width: 60%;
+    }
+  }
+  h3 {
+    text-align: center;
+    margin: 0.5em auto 1.2em;
+    font-size: 1rem;
+    font-style: italic;
+    color: transparentize($color-grey, 0.4);
+  }
+  .project-list {
+    margin-top: 50px;
+  }
+}
+
+
 .project-specific {
   padding-top: 0;
   margin-bottom: 6em;
