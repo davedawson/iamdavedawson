@@ -1,0 +1,40 @@
+{
+  "name": "iamdavedawson.dev",
+  "version": "6.5.0",
+  "description": "Dave Dawson's website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.9.3",
+    "gulp-concat": "^2.2.0",
+    "gulp-jshint": "^1.5.6",
+    "gulp-uglify": "^0.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "1.0.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-svg2png": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davedawson/iamdavedawson.git"
+  },
+  "author": "Dave Dawson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davedawson/iamdavedawson/issues"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "homepage": "https://github.com/davedawson/iamdavedawson"
+}
