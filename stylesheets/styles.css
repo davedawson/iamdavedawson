@@ -1201,13 +1201,18 @@ time {
 }
 @media only screen and (min-width: 768px) {
   .layout-home .profile, .layout-ooh .profile {
-    margin: 100px auto 200px;
+    margin: 100px auto 200px -9%;
   }
 }
 .layout-home .profile img, .layout-ooh .profile img {
   width: 100%;
   margin: 0 auto;
   max-width: 300px;
+}
+@media only screen and (min-width: 768px) {
+  .layout-home .profile img, .layout-ooh .profile img {
+    max-width: none;
+  }
 }
 .layout-home .profile .img-wrap, .layout-ooh .profile .img-wrap {
   position: relative;
@@ -1260,7 +1265,7 @@ time {
     margin-right: -100%;
     width: 39.93734%;
     position: relative;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-bottom: -20px;
   }
 }

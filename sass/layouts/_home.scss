@@ -67,7 +67,7 @@
     position: relative;
     
     @include respond-to(medium-and-above) {
-      margin: 100px auto 200px;
+      margin: 100px auto 200px -9%;
       // @include gs-span(d, 4, 9);  
     }
     @include respond-to(wide-screens) {
@@ -84,6 +84,9 @@
       width: 100%;
       margin: 0 auto;
       max-width: 300px;
+      @include respond-to(medium-and-above) {
+        max-width: none;
+      }
     }
     .img-wrap {
       position: relative;
@@ -134,7 +137,7 @@
         @include respond-to(medium-and-above) {
           @include gs-span(d, 3, 7);  
           position: relative;
-          margin-top: 30px;
+          margin-top: 100px;
           margin-bottom: -20px;
         }
         position: relative;
