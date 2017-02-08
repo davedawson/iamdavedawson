@@ -63,7 +63,7 @@ body {
 				}
 				// @include transition(all 0.3s ease-in-out);;
 				@include respond-to(wide-screens) {
-					width: 60px;
+					width: 73px;
 				}
 				&:hover {
 					@include respond-to(wide-screens) {

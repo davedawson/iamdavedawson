@@ -10,3 +10,18 @@
 		font-size: 5rem;
 	}
 }
+
+.page.open-office-hours {
+	.title-wrap {
+		a {
+			margin: 0 auto;
+			text-align: center;
+			display: inline-block;
+			background: #fff;
+			color: $color-dark-grey;
+			padding: 15px 25px;
+			// text-transform: uppercase;
+			// letter-spacing: 0.1em;
+		}
+	}
+}

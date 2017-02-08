@@ -631,7 +631,7 @@ body {
 }
 @media only screen and (min-width: 972px) {
   #header .nav li.nav-logo {
-    width: 60px;
+    width: 73px;
   }
 }
 @media only screen and (min-width: 972px) {
@@ -1130,107 +1130,151 @@ time {
   }
 }
 
-.layout-home {
+.layout-home, .layout-ooh {
   background: #252727;
   color: #fff;
 }
-.layout-home #content, .layout-home .container {
-  height: 100%;
-}
-.layout-home #content {
+.layout-home #content, .layout-ooh #content {
   padding-top: 0;
   min-height: 0;
 }
-.layout-home #content:before, .layout-home #content:after {
+.layout-home #content:before, .layout-home #content:after, .layout-ooh #content:before, .layout-ooh #content:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden;
 }
-.layout-home #content:after {
+.layout-home #content:after, .layout-ooh #content:after {
   clear: both;
 }
-.layout-home .title-wrap {
+.layout-home .title-wrap, .layout-ooh .title-wrap {
   height: 100%;
-  background: #1b1d1d;
+  padding: 200px 0 0px;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   margin-bottom: 60px;
 }
-.layout-home .title-wrap ul {
+.layout-home .title-wrap ul, .layout-ooh .title-wrap ul {
   text-align: center;
   margin-top: 12px;
 }
-.layout-home .title-wrap ul li {
+.layout-home .title-wrap ul li, .layout-ooh .title-wrap ul li {
   font-size: 18px;
   line-height: 24px;
   display: inline;
   color: #bdbfbf;
 }
-.layout-home .title-wrap ul li:after {
+.layout-home .title-wrap ul li:after, .layout-ooh .title-wrap ul li:after {
   content: "•";
   padding: 20px;
   color: #575757;
 }
-.layout-home .title-wrap ul li:last-child:after {
+.layout-home .title-wrap ul li:last-child:after, .layout-ooh .title-wrap ul li:last-child:after {
   content: "";
   padding: 0;
 }
-.layout-home .waving {
+.layout-home .waving, .layout-ooh .waving {
   text-align: center;
   font-size: 45px;
   width: 100%;
   display: block;
 }
-.layout-home h1 {
+.layout-home h1, .layout-ooh h1 {
   text-align: center;
   max-width: 600px;
   margin: 40px auto 40px;
 }
-.layout-home h1 img {
+.layout-home h1 img, .layout-ooh h1 img {
   width: 100%;
 }
-.layout-home h2 {
+.layout-home h2, .layout-ooh h2 {
   font-size: 30px;
   line-height: 38px;
   font-weight: normal;
   text-align: center;
   margin-bottom: 15px;
 }
-.layout-home .helpful-list {
+.layout-home .profile, .layout-ooh .profile {
+  background: #1f2020;
+  border-radius: 14px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  margin: 200px auto 0;
+}
+@media only screen and (min-width: 768px) {
+  .layout-home .profile, .layout-ooh .profile {
+    display: block;
+    float: left;
+    margin-left: 25.72021%;
+    margin-right: -100%;
+    width: 48.51074%;
+  }
+}
+@media only screen and (min-width: 972px) {
+  .layout-home .profile, .layout-ooh .profile {
+    display: block;
+    float: left;
+    margin-left: 34.29362%;
+    margin-right: -100%;
+    width: 31.36393%;
+  }
+}
+.layout-home .profile img, .layout-ooh .profile img {
+  border-radius: 150px;
+  max-width: 120px;
+}
+.layout-home .profile .img-wrap, .layout-ooh .profile .img-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -80px;
+  width: 100%;
+  text-align: center;
+}
+.layout-home .profile p, .layout-ooh .profile p {
+  color: #bdbfbf;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.layout-home .helpful-list, .layout-ooh .helpful-list {
   max-width: 900px;
   margin: 0 auto;
 }
-.layout-home .helpful-list .row {
-  clear: both;
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
+@media only screen and (min-width: 768px) {
+  .layout-home .helpful-list .row, .layout-ooh .helpful-list .row {
+    clear: both;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
 }
-.layout-home .helpful-list .item {
+.layout-home .helpful-list .item, .layout-ooh .helpful-list .item {
   border: 2px solid #fff;
   padding: 30px 50px 50px;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  width: 100%;
 }
-.layout-home .helpful-list .item:hover {
+.layout-home .helpful-list .item:hover, .layout-ooh .helpful-list .item:hover {
   border-color: #fff;
 }
-@media only screen and (min-width: 972px) {
-  .layout-home .helpful-list .item {
+@media only screen and (min-width: 768px) {
+  .layout-home .helpful-list .item, .layout-ooh .helpful-list .item {
     width: 48.51074%;
     float: left;
   }
 }
-@media only screen and (min-width: 972px) {
-  .layout-home .helpful-list .item:nth-child(even) {
+@media only screen and (min-width: 768px) {
+  .layout-home .helpful-list .item:nth-child(even), .layout-ooh .helpful-list .item:nth-child(even) {
     margin-left: auto;
   }
 }
-@media only screen and (min-width: 972px) {
-  .layout-home .helpful-list .item.cp {
+@media only screen and (min-width: 768px) {
+  .layout-home .helpful-list .item.cp, .layout-ooh .helpful-list .item.cp {
     display: block;
     float: left;
     margin-left: 0%;
@@ -1240,12 +1284,12 @@ time {
     display: flex;
     padding-left: 0;
   }
-  .layout-home .helpful-list .item.cp .logo {
+  .layout-home .helpful-list .item.cp .logo, .layout-ooh .helpful-list .item.cp .logo {
     width: 50%;
     position: relative;
     float: left;
   }
-  .layout-home .helpful-list .item.cp .logo .wrap {
+  .layout-home .helpful-list .item.cp .logo .wrap, .layout-ooh .helpful-list .item.cp .logo .wrap {
     min-height: 0;
     position: absolute;
     top: 0;
@@ -1259,16 +1303,16 @@ time {
     align-items: center;
     /* add to align vertical */
   }
-  .layout-home .helpful-list .item.cp .logo .wrap:before, .layout-home .helpful-list .item.cp .logo .wrap:after {
+  .layout-home .helpful-list .item.cp .logo .wrap:before, .layout-home .helpful-list .item.cp .logo .wrap:after, .layout-ooh .helpful-list .item.cp .logo .wrap:before, .layout-ooh .helpful-list .item.cp .logo .wrap:after {
     content: "\0020";
     display: block;
     height: 0;
     visibility: hidden;
   }
-  .layout-home .helpful-list .item.cp .logo .wrap:after {
+  .layout-home .helpful-list .item.cp .logo .wrap:after, .layout-ooh .helpful-list .item.cp .logo .wrap:after {
     clear: both;
   }
-  .layout-home .helpful-list .item.cp .logo img {
+  .layout-home .helpful-list .item.cp .logo img, .layout-ooh .helpful-list .item.cp .logo img {
     max-width: 230px;
     position: absolute;
     top: 50%;
@@ -1279,64 +1323,64 @@ time {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  .layout-home .helpful-list .item.cp .description {
+  .layout-home .helpful-list .item.cp .description, .layout-ooh .helpful-list .item.cp .description {
     width: 50%;
     float: right;
     text-align: left;
     margin-left: 30px;
   }
-  .layout-home .helpful-list .item.cp .description h2 {
+  .layout-home .helpful-list .item.cp .description h2, .layout-ooh .helpful-list .item.cp .description h2 {
     text-align: left;
   }
 }
-.layout-home .helpful-list .item.cp h2 {
+.layout-home .helpful-list .item.cp h2, .layout-ooh .helpful-list .item.cp h2 {
   font-size: 30px;
   line-height: 36px;
 }
-.layout-home .helpful-list .item .logo {
+.layout-home .helpful-list .item .logo, .layout-ooh .helpful-list .item .logo {
   margin: 30px auto;
 }
-.layout-home .helpful-list .item .logo img {
+.layout-home .helpful-list .item .logo img, .layout-ooh .helpful-list .item .logo img {
   width: 100%;
   max-width: 300px;
 }
-.layout-home .helpful-list .item.usa img {
+.layout-home .helpful-list .item.usa img, .layout-ooh .helpful-list .item.usa img {
   margin-top: -15px;
 }
-.layout-home .helpful-list .item.usa .cta a {
+.layout-home .helpful-list .item.usa .cta a, .layout-ooh .helpful-list .item.usa .cta a {
   font-style: italic;
   font-weight: 100;
 }
-.layout-home .helpful-list .item.get-biked img {
+.layout-home .helpful-list .item.get-biked img, .layout-ooh .helpful-list .item.get-biked img {
   max-width: 150px;
 }
-.layout-home .helpful-list .item.the-agency img {
+.layout-home .helpful-list .item.the-agency img, .layout-ooh .helpful-list .item.the-agency img {
   margin-top: -30px;
   max-width: 120px;
 }
-.layout-home .helpful-list .item h2 {
+.layout-home .helpful-list .item h2, .layout-ooh .helpful-list .item h2 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 100;
 }
-.layout-home .helpful-list .item p {
+.layout-home .helpful-list .item p, .layout-ooh .helpful-list .item p {
   font-size: 16px;
   line-height: 24px;
   color: #bdbfbf;
 }
-.layout-home .helpful-list .item a {
+.layout-home .helpful-list .item a, .layout-ooh .helpful-list .item a {
   font-size: 20px;
   line-height: 28px;
   font-weight: bold;
 }
-.layout-home .helpful-list .item .cta {
+.layout-home .helpful-list .item .cta, .layout-ooh .helpful-list .item .cta {
   color: #fff;
   margin: 30px 0 0 0;
 }
-.layout-home .helpful-list .item .cta a {
+.layout-home .helpful-list .item .cta a, .layout-ooh .helpful-list .item .cta a {
   color: #fff;
 }
-.layout-home .helpful-list .item a {
+.layout-home .helpful-list .item a, .layout-ooh .helpful-list .item a {
   color: #fff;
 }
 
@@ -1993,4 +2037,13 @@ body.comfort-is-overrated .entry h1.headline {
 }
 .page.about #content h1 {
   font-size: 5rem;
+}
+
+.page.open-office-hours .title-wrap a {
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  background: #fff;
+  color: #252727;
+  padding: 15px 25px;
 }
