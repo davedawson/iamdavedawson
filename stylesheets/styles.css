@@ -1131,7 +1131,7 @@ time {
 }
 
 .layout-home, .layout-ooh {
-  background: #252727;
+  background: #233a4a;
   color: #fff;
 }
 .layout-home #content, .layout-ooh #content {
@@ -1196,15 +1196,82 @@ time {
   margin-bottom: 15px;
 }
 .layout-home .profile, .layout-ooh .profile {
-  background: #1f2020;
-  border-radius: 14px;
-  padding: 40px;
-  text-align: center;
+  text-align: left;
   position: relative;
-  margin: 200px auto 0;
 }
 @media only screen and (min-width: 768px) {
   .layout-home .profile, .layout-ooh .profile {
+    margin: 100px auto 200px;
+  }
+}
+.layout-home .profile img, .layout-ooh .profile img {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.layout-home .profile .img-wrap, .layout-ooh .profile .img-wrap {
+  position: relative;
+  margin: 30px 10% 30px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .layout-home .profile .img-wrap, .layout-ooh .profile .img-wrap {
+    margin: auto;
+    max-width: none;
+    display: block;
+    float: left;
+    margin-left: 60.01383%;
+    margin-right: -100%;
+    width: 31.36393%;
+    position: relative;
+    z-index: 2;
+  }
+}
+.layout-home .profile p, .layout-ooh .profile p {
+  color: #bdbfbf;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .layout-home .profile p, .layout-ooh .profile p {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: left;
+  }
+}
+.layout-home .profile p strong, .layout-ooh .profile p strong {
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+.layout-home .profile p.intro, .layout-ooh .profile p.intro {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .layout-home .profile p.intro, .layout-ooh .profile p.intro {
+    display: block;
+    float: left;
+    margin-left: 17.14681%;
+    margin-right: -100%;
+    width: 39.93734%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: -20px;
+  }
+}
+.layout-home .profile p.detail, .layout-ooh .profile p.detail {
+  clear: both;
+  text-align: center;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .layout-home .profile p.detail, .layout-ooh .profile p.detail {
+    margin-top: 0;
     display: block;
     float: left;
     margin-left: 25.72021%;
@@ -1212,32 +1279,8 @@ time {
     width: 48.51074%;
   }
 }
-@media only screen and (min-width: 972px) {
-  .layout-home .profile, .layout-ooh .profile {
-    display: block;
-    float: left;
-    margin-left: 34.29362%;
-    margin-right: -100%;
-    width: 31.36393%;
-  }
-}
-.layout-home .profile img, .layout-ooh .profile img {
-  border-radius: 150px;
-  max-width: 120px;
-}
-.layout-home .profile .img-wrap, .layout-ooh .profile .img-wrap {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -80px;
-  width: 100%;
-  text-align: center;
-}
-.layout-home .profile p, .layout-ooh .profile p {
-  color: #bdbfbf;
-  font-size: 14px;
-  line-height: 22px;
-  margin-top: 20px;
+.layout-home .profile p.detail a, .layout-ooh .profile p.detail a {
+  color: #fff;
 }
 .layout-home .helpful-list, .layout-ooh .helpful-list {
   max-width: 900px;
@@ -1382,6 +1425,15 @@ time {
 }
 .layout-home .helpful-list .item a, .layout-ooh .helpful-list .item a {
   color: #fff;
+}
+.layout-home #footer, .layout-ooh #footer {
+  margin-top: 30px;
+}
+.layout-home #footer p, .layout-ooh #footer p {
+  color: #bdbfbf;
+}
+.layout-home #footer span, .layout-ooh #footer span {
+  color: #575757;
 }
 
 .blog-entry h1 {
