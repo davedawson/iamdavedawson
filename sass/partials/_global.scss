@@ -1,0 +1,39 @@
+ *  { 
+  transition: all 0.1s linear; 
+  -moz-transition: all 0.1s linear; 
+  -webkit-transition: all 0.1s linear; 
+  -o-transition: all 0.1s linear; 
+  @include borderBox;
+ }
+
+// Body Styles
+html, body, section {
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+
+.container { 
+  position: relative;
+  margin: 0 auto;
+  @include respond-to(handhelds) {
+    padding: 0 3%;
+  }
+  @include respond-to(medium-screens) {
+    margin: 0 auto;
+    padding: 0 3%;
+  }
+  @include respond-to(wide-screens) {
+    max-width: 1082px;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  @include respond-to(extra-wide-screens) {
+    max-width: 1200px;
+  }
+}
+
+img {
+  max-width: 100%;
+}

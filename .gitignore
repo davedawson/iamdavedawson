@@ -1,1 +1,3 @@
 /config/deploy.rb
+node_modules
+site

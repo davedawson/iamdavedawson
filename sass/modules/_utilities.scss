@@ -1,0 +1,25 @@
+/* UTILITIES */
+
+// Clearfix
+.cf:before, .cf:after {content:" "; display:table;}
+.cf:after {clear: both;}
+  //IE
+  .cf {*zoom: 1;}
+
+// Misc
+
+.hide { display: none; }
+
+.h-hidden {
+	display: inherit;
+	@include respond-to(handhelds) {
+		display: none;
+	}
+}
+
+.h-visible {
+	display: none;
+	@include respond-to(handhelds) {
+		display: inherit;
+	}
+}

@@ -1,0 +1,74 @@
+// Type Styles
+h1 {
+  @include respond-to(medium-screens) {
+
+  }
+  @include respond-to(wide-screens) {
+
+  }
+  @include respond-to(extra-wide-screens) {
+
+  }
+}
+
+h2 {
+  
+}
+
+h3 {
+
+}
+
+h4 { 
+ 
+}
+
+p, dt, dd, table {
+  
+}
+
+a {
+  
+}
+
+a:hover {
+  text-decoration: none;
+}
+ul, ol { 
+  padding: 0; 
+}
+ul li, ol li, {
+  list-style-type: none;
+  @include respond-to(handhelds) {  }
+  @include respond-to(medium-screens) {  }
+  @include respond-to(wide-screens) {  }
+}
+
+blockquote { color: #666; margin: 1em;  }
+
+em {
+  font-style: italic
+}
+
+strong {
+  font-weight: bold;
+}
+
+abbr {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-text;
+  margin: 10px 0 5px;
+  display: block;
+}
+
+address {
+  font-size: 14px;
+  line-height: 20px;
+}
