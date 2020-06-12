@@ -11,7 +11,12 @@ html, body, section {
   margin: 0;
   padding: 0;
 }
-body {
+.page-content {
+  padding: 2%;
+  // Applies padding to match page border
+  @include respond-to(medium-and-above) {
+    padding: 50px;
+  }
 }
 
 .container { 
@@ -36,4 +41,34 @@ body {
 
 img {
   max-width: 100%;
+}
+
+// Page padding
+@include respond-to(medium-and-above) {
+  #top, #bottom, #left, #right {
+      background: #fff;
+      position: fixed;
+      z-index: 9;
+  }
+  #left, #right {
+      top: 0; bottom: 0;
+      width: 50px;
+      }
+      #left { left: 0; }
+      #right { right: 0; }
+      
+  #top, #bottom {
+      left: 0; right: 0;
+      height: 50px;
+      }
+      #top { top: 0; }
+      #bottom { bottom: 0; }
+  .bg {
+      // background: url(/img/intro-bg-gradient.png) repeat-x center top;
+      // position: fixed;
+      // height: 72vh;
+  }
+  #top {
+      z-index: 2;
+  }
 }

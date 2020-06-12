@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content=" ">
-  
-  <meta property="og:title" content="Dave Dawson | Creative Director">
-  <meta property="og:description" content=" ">
-
-  <title></title>
-  <link rel="canonical" href="/">
-  <link href="/favicon.ico" rel="icon" type="image/x-icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-  
-  <!--[if lt IE 9]>
-    <script src="/js/ie.js"></script>
-  <![endif]-->
-  <!--[if (!IE) | (gt IE 9)]><!-->
-  <!--<![endif]-->
-  <!--[if IE 9]>
-  <link rel="stylesheet" href="/stylesheets/gridset-ie-9.css" />
-  <![endif]-->
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/stylesheets/gridset-ie-lte8.css" />
-  <![endif]-->
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="/js/source.min.js"></script>
-  <script src="/js/index.min.js"></script>
-</head>
-
+{% include head.html %}
 
   <body class="page-landing">
     
@@ -121,17 +88,16 @@
         </section>
 
         <!-- <div class="container"> -->
-            
-                <section class="header">
-</section>
-            
+            {% unless layout.class == "four-oh-four" or  layout.class == "closed" %}
+                {% include header.html %}
+            {% endunless %}
             <div class="page-content w-100 cf">
             
                 
                 
             </div>
         <!-- </div> -->
-        
+        {% include footer.html %}
         </div>	  
   </body>
 

@@ -4,7 +4,6 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var autoprefixer = require('autoprefixer');
 var cp          = require('child_process');
-var fs          = require("fs");
 var minifycss   = require('gulp-minify-css');
 var iconfont    = require('gulp-iconfont');
 var svg2png     = require('gulp-svg2png');
@@ -59,11 +58,11 @@ gulp.task('sass', function() {
     var processors = [
         autoprefixer({browsers: ['last 2 versions', '> 1%', 'Firefox ESR']})
     ];
-    return gulp.src("sass/**/*.scss")
-            .pipe(postcss(processors))
-            .pipe(cssnano())
-            .pipe(gulp.dest("_site/stylesheets"))
-            .pipe(browserSync.stream());
+    return gulp.src('./sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(cssnano())
+    .pipe(gulp.dest("_site/stylesheets"))
+    .pipe(browserSync.stream());
 });
 
 

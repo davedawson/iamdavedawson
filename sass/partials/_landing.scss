@@ -1,0 +1,39 @@
+.page-landing {
+    .intro {
+        background: $color-red;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5%;
+        height: 100vh;
+        @include respond-to(medium-and-above) {
+            height: calc(100vh - 100px);
+        }
+        h3 {
+            font-size: 144px;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+            margin-top: -210px;
+        }
+        img {
+            border: 20px solid #fff;
+        }
+        .activities {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                // height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
