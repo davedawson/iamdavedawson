@@ -6,6 +6,11 @@
   @include borderBox;
  }
 
+body { 
+  font-family: $typeSans;
+  color: $color-text;
+}
+
 // Body Styles
 html, body, section {
   margin: 0;
@@ -30,16 +35,17 @@ html, body, section {
     padding: 0 3%;
   }
   @include respond-to(wide-screens) {
-    max-width: 1082px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 1%;
   }
   @include respond-to(extra-wide-screens) {
-    max-width: 1200px;
+    max-width: 2000px;
   }
 }
 
 img {
+  width: 100%;
   max-width: 100%;
 }
 
@@ -70,5 +76,17 @@ img {
   }
   #top {
       z-index: 2;
+  }
+}
+
+
+
+.text-block {
+  clear: both;
+  @include respond-to(medium-and-above) {
+    @include gs-span(d, 3, 10);
+  }
+  @include respond-to(wide-and-above) {
+    @include gs-span(d, 3, 8);
   }
 }

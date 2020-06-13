@@ -1,14 +1,13 @@
 // Variables
 
-$typeSans: "Avenir", Helvetica, Arial, sans-serif;
-$typeSerif: Georgia, Times, serif;
+$typeSans: "urw-din", Helvetica, Arial, sans-serif;
+$typeSerif: "skolar-latin", Georgia, Times, serif;
 $typeCondensed: "Avenir Condensed", "Avenir", Helvetica, Arial, sans-serif;
-$typeScript: Wisdom, Georgia, "Times New Roman", Times, serif;
-$radius: 4px;
+$radius: 5px;
 
 $color-light: #e4eff0;
 $color-text: #444;
 $color-blue: #141D4E;
 $color-red: #FF3527;
 $color-background: #fbfbfa;
-$color-borders: #e5e5e5;
+$color-border: rgba(0,0,0,0.1);
