@@ -29,56 +29,90 @@
             
         </div>
         <section class="intro">
-            <ul class="activities" data-flickity='{ "contain": false, "fade": true, "prevNextButtons": false, "pageDots": false }'>
+            <ul class="activities">
                 <li>
                     <div>
-                        <img src="https://via.placeholder.com/400x570.png" alt="" />
-                        <h3>Here to help</h3>
+                        <img src="/img/heros/headshot.jpg" alt="Dave Dawson and Spock siting at Alta Plaza park" />
+                        <div class="title-wrap">
+                            <h3><span>Here</span> <span>to</span> <span>help</span></h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="/img/heros/nyc-pizza.jpg" alt="Dave Dawson eating pizza on Bleeker St." />
+                        <div class="title-wrap">
+                            <h3><span>Here</span> <span>to</span> <span>eat</span> <span>pizza</span></h3>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="https://via.placeholder.com/400x570.png" alt="" />
-                        <h3>Here to eat pizza</h3>
-                    </div>
-                </li>
-                <!-- <li>
-                    <div>
-                        <img src="https://via.placeholder.com/400x570.png" alt="" />
-                        <h3>Here to dig into the details</h3>
-                    </div>
-                </li> -->
-                <li>
-                    <div>
-                        <img src="https://via.placeholder.com/400x570.png" alt="" />
-                        <h3>Here to push ideas</h3>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="https://via.placeholder.com/400x570.png" alt="" />
-                        <h3>Here to ride bikes</h3>
+                        <div class="title-wrap">
+                            <h3><span>Here</span> <span>to</span> <span>get</span> <span>into</span> <span>the</span> <span>weeds</span></h3>
+                        </div>
                     </div>
                 </li>
                 <!-- <li>
                     <div>
                         <img src="https://via.placeholder.com/400x570.png" alt="" />
-                        <h3>Here to keep it moving</h3>
+                        <div class="title-wrap">
+                            <h3>Here to push things</h3>
+                        </div>
                     </div>
                 </li> -->
                 <li>
                     <div>
+                        <img src="/img/heros/queensborough-bridge.jpg" alt="Dave Dawson on the Queensborough Bridge" />
+                        <div class="title-wrap">
+                            <h3><span>Here</span> <span>to</span> <span>ride</span> <span>bikes</span></h3>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li>
+                    <div>
                         <img src="https://via.placeholder.com/400x570.png" alt="" />
-                        <h3>Here to spread love</h3>
+                        <div class="title-wrap">
+                            <h3>Here to keep it moving</h3>
+                        </div>
+                    </div>
+                </li> -->
+                <li>
+                    <div>
+                        <img src="/img/heros/color-portrait.jpg" alt="Dave and Mary Dawson at an event in LA" />
+                        <div class="title-wrap">
+                            <h3><span>Here</span> <span>to</span> <span>spread</span> <span>love</span></h3>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="https://via.placeholder.com/400x570.png" alt="" />
-                        <h3>Happy to be here</h3>
+                        <img src="/img/heros/color-portrait.jpg" alt="Dave and Mary Dawson at an event in LA" />
+                        <div class="title-wrap">
+                            <h3><span>Here</span> <span>to</span> <span>solve</span> <span>problems</span></h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="/img/heros/spock-sierras.jpg" alt="Spock Dawson somewhere in the Sierras" />
+                        <div class="title-wrap">
+                            <h3><span>Here</span> <span>for</span> <span>this</span></h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="happy">
+                    <div>
+                        <div class="title-wrap">
+                            <h3><span>Happy</span> <span>to</span> <span>be</span> <span>here</span><span>.</span></h3>
+                        </div>
                     </div>
                 </li>
             </ul>
+            <div class="button-wrap">
+                <div class="button--next"><img src="/img/icon-refresh.svg" alt="Next activity"></div>
+            </div>
         </section>
         <section class="overview">
             <div class="container">
@@ -308,11 +342,56 @@
 
 </html>
 
+<script>
+    fitty('.intro h3');
+</script>
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+
+<script>
+    // init Flickity
+    var $carousel = $('.activities').flickity({
+        contain: false,
+        fade: true,
+        wrapAround: true,
+        prevNextButtons: false,
+        pageDots: false
+    });
+
+    // Flickity instance
+    var flkty = $carousel.data('flickity');
+    // elements
+    var $cellButtonGroup = $('.button-group--cells');
+    var $cellButtons = $cellButtonGroup.find('.button');
+
+    // update selected cellButtons
+    $carousel.on( 'select.flickity', function() {
+    $cellButtons.filter('.is-selected')
+        .removeClass('is-selected');
+    $cellButtons.eq( flkty.selectedIndex )
+        .addClass('is-selected');
+    });
+
+    $carousel.on( 'change.flickity', function( event, index ) {
+        console.log( 'Slide changed to ' + index )
+        console.log(flkty.selectedIndex);
+    });
+
+    // select cell on button click
+    $cellButtonGroup.on( 'click', '.button', function() {
+        var index = $(this).index();
+        $carousel.flickity( 'select', index );
+    });
+
+    // next
+    $('.button--next').on( 'click', function() {
+        $carousel.flickity('next');
+        $('.title-wrap')
+    });
+</script>
 
 <script type="module">
     import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
