@@ -76,12 +76,12 @@
                         <h3>Here to eat pizza</h3>
                     </div>
                 </li>
-                <li>
+                <!-- <li>
                     <div>
                         <img src="https://via.placeholder.com/400x570.png" alt="" />
                         <h3>Here to dig into the details</h3>
                     </div>
-                </li>
+                </li> -->
                 <li>
                     <div>
                         <img src="https://via.placeholder.com/400x570.png" alt="" />
@@ -94,12 +94,12 @@
                         <h3>Here to ride bikes</h3>
                     </div>
                 </li>
-                <li>
+                <!-- <li>
                     <div>
                         <img src="https://via.placeholder.com/400x570.png" alt="" />
                         <h3>Here to keep it moving</h3>
                     </div>
-                </li>
+                </li> -->
                 <li>
                     <div>
                         <img src="https://via.placeholder.com/400x570.png" alt="" />
@@ -125,15 +125,15 @@
                     <div class="priorities">
                         <h4>My priorities</h4>
                         <div class="priority c-p">
-                            <h3>Cottleston Pie</h3>
-                            <p>We create digital products and websites for progressive causes, organizations, and companies. <a href="http://www.havesomecottlestonpie.com">Hire us ></a></p>
+                            <h3><span>Cottleston Pie</span></h3>
+                            <p><strong>A digital design studio in California.</strong> I founded Cottleston Pie in 2012 to work with progressive organizations and collaborate with talented people. <a href="http://www.havesomecottlestonpie.com">Hire us ></a></p>
                         </div>
                         <div class="priority o-h">
-                            <h3>Office Hours</h3>
+                            <h3><span>Office Hours</span></h3>
                             <p>Each week, I set aside time for open office hours to chat with folks new to the design industry. <a href="">Let's talk ></a></p>
                         </div>
                         <div class="priority t-a">
-                            <h3>The Agency</h3>
+                            <h3><span>The Agency</span></h3>
                             <p>I founded and run an online community for independent creators. Interested in joining? <a href="">Get in touch ></a></p>
                         </div>
                     </div>
@@ -324,8 +324,7 @@
                 </div>
             </div>
         </section>
-
-        <h3>This is meant to be an overview. If you'd like to discuss my work further, or to learn more about a specific project, please get in touch. </h3>
+        <h3 id="myElement">This is meant to be an overview. If you'd like to discuss my work further, or to learn more about a specific project, please get in touch. </h3>
 
         <!-- <div class="container"> -->
             
@@ -349,3 +348,30 @@
 <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+
+<script type="module">
+    import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
+
+    // const e = document.querySelector('.overview .c-p h3');
+    // const annotation = annotate(e, { type: 'highlight', color: '#FFF176' });
+    const a = annotate(document.querySelector('.overview .c-p h3'), { type: 'highlight', color: '#FFF176' });
+    const b = annotate(document.querySelector('.overview .o-h h3'), { type: 'highlight', color: '#FFF176' });
+    const c = annotate(document.querySelector('.overview .t-a h3'), { type: 'highlight', color: '#FFF176' });
+
+    const ag = annotationGroup([a]);
+    ag.show();
+
+    // let hoverState = document.getElementById(".overview .o-h h3");
+  
+    // // This handler will be executed only once when the cursor
+    // // moves over the unordered list
+    // hoverState.addEventListener("mouseenter", function( event ) {   
+    // // highlight the mouseenter target
+    // const ag = annotationGroup([b]);
+
+    // // reset the color after a short delay
+    // setTimeout(function() {
+    //     // event.target.style.color = "";
+    // }, 500);
+    // }, false);
+</script>

@@ -20,6 +20,7 @@
             position: relative;
             z-index: 2;
             margin-top: -110px;
+            color: #fff;
             @include respond-to(medium-and-above) {
                 font-size: 102px;
                 margin-top: -210px;
@@ -31,6 +32,7 @@
         }
         img {
             border: 20px solid #fff;
+            width: auto;
         }
         .activities {
             width: 100%;
@@ -57,6 +59,15 @@
         color: #fff;
         p, h2, h3, h4, a {
             color: #fff;
+        }
+        h3 {
+            
+            display: inline-block;
+            padding: 0.5rem;
+            margin-left: -0.5rem;
+            .c-p & {
+                
+            }
         }
         @include clearfix;
         .text-block {
@@ -106,6 +117,15 @@
                     @include respond-to(medium-and-above) {
                         @include gs-span(d, 7, 12);
                         padding-left: 1%;
+                    }
+                }
+                &.c-p {
+                    h3 {
+                        font-size: 32px;
+                        color: $color-text;
+                    }
+                    p {
+                        font-size: 28px;
                     }
                 }
             }
