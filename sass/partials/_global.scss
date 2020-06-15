@@ -17,7 +17,6 @@ html, body, section {
   padding: 0;
 }
 .page-content {
-  padding: 2%;
   // Applies padding to match page border
   @include respond-to(medium-and-above) {
     padding: 50px;
@@ -89,4 +88,9 @@ img {
   @include respond-to(wide-and-above) {
     @include gs-span(d, 3, 8);
   }
+}
+
+.twitter-tweet {
+  width: 100% !important;
+  max-width: 550px;
 }

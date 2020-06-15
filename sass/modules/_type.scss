@@ -34,6 +34,9 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 0 0 2rem;
+  &.list-header {
+    margin: 1rem 0 0;
+  }
 }
 
 p, dt, dd, table {
@@ -75,6 +78,12 @@ abbr {
   letter-spacing: 0.1em;
 }
 
+span.note {
+  font-size: 12px;
+  display: block;
+  font-style: italic;
+}
+
 label {
   font-size: 14px;
   font-weight: bold;
@@ -87,7 +96,6 @@ address {
   font-size: 14px;
   line-height: 20px;
 }
-
 
 blockquote {
   p {
@@ -131,5 +139,19 @@ p, li {
   margin-top: 0;
   &.small {
     font-size: 16px;
+  }
+}
+
+.text-block {
+  ul {
+    padding: 0 30px;
+    li {
+      list-style-type: disc;
+      font-size: 17px;
+      margin-bottom: 4px;
+      &:last-child {
+        margin: 0;
+      }
+    }
   }
 }

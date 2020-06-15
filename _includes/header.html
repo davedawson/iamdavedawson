@@ -1,2 +1,21 @@
-<section class="header">
-</section>
+<!-- Page borders -->
+<div class="global-header">
+    <div id="left">
+        <div class="title">
+            <h1><a href="/">Dave Dawson</a></h1>
+        </div>
+    </div>
+    <div id="right">
+        <nav class="global">
+            <ul>
+                <li><a href="{% if template.name != "landing" %}/#work"{% else %}#work{% endif %}>Work</a></li>
+                <li><a href="/adventures">Adventures</a></li>
+                <li><a href="">Writing</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+</div>

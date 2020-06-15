@@ -1,0 +1,30 @@
+.interior {
+    .text-block {
+        margin-bottom: 25vh;
+    }
+    &.page-about {
+        .image {
+            @include respond-to(medium-and-above) {
+                @include gs-span(d, 10, 11);
+                margin-top: 2rem;
+            }
+        }
+    }
+    &.page-adventures {
+        .text-block {
+            @include respond-to(medium-and-above) {
+                @include gs-span(d, 3, 10);
+            }
+            .image {
+                @include respond-to(medium-and-above) {
+                    @include gs-span(d, 1, 4);
+                }
+            }
+            .description {
+                @include respond-to(medium-and-above) {
+                    @include gs-span(d, 5, 12);
+                }
+            }
+        }
+    }
+}

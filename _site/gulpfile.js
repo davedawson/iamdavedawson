@@ -49,8 +49,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 // Static Server + watching scss/html files
 gulp.task('watch', ['sass'], function() {
+    gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_utilities/*', 'additional-utilities/*', '_partners/*', 'contact/*', 'about.html', 'faq.html', 'faq.md', 'about/*', 'img/*', '_includes/*', '_faqs/*', 'coned.html', 'js/*', 'about/*', 'adventures/*'], ['jekyll-rebuild']);
     gulp.watch("sass/**/*.scss", ['sass']);
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_utilities/*', 'additional-utilities/*', '_partners/*', 'contact/*', 'about.html', 'faq.html', 'faq.md', 'about/*', 'img/*', '_includes/*', '_faqs/*', 'coned.html', 'js/*'], ['jekyll-rebuild']);
 });
 
 // Compile sass into CSS & auto-inject into browsers
