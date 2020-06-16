@@ -16,22 +16,7 @@ class: "page-landing"
                 </div>
             </div>
         </li>
-        <li class="details">
-            <div>
-                <img src="/img/heros//details.png" alt="Figma mockup example" />
-                <div class="title-wrap">
-                    <h3><span>Here</span> <span>to</span> <span>dig</span> <span>into</span> <span>the</span> <span>details</span></h3>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <img src="/img/heros/nyc-pizza.jpg" alt="Dave Dawson eating pizza on Bleeker St." />
-                <div class="title-wrap">
-                    <h3><span>Here</span> <span>to</span> <span>eat</span> <span>pizza</span></h3>
-                </div>
-            </div>
-        </li>
+
         <li class="problems">
             <div>
                 <img src="/img/heros/problems.png" alt="Kickoff meeting" />
@@ -40,6 +25,26 @@ class: "page-landing"
                 </div>
             </div>
         </li>
+
+        <li>
+            <div>
+                <img src="/img/heros/nyc-pizza.jpg" alt="Dave Dawson eating pizza on Bleeker St." />
+                <div class="title-wrap">
+                    <h3><span>Here</span> <span>to</span> <span>eat</span> <span>pizza</span></h3>
+                </div>
+            </div>
+        </li>
+
+        <li class="details">
+            <div>
+                <img src="/img/heros/solutions.png" alt="Wireframe mockup example" />
+                <div class="title-wrap">
+                    <h3><span>Here</span> <span>to</span> <span>find</span> <span>solutions</span></h3>
+                </div>
+            </div>
+        </li>
+        
+        
         <li>
             <div>
                 <img src="/img/heros/queensborough-bridge.jpg" alt="Dave Dawson on the Queensborough Bridge" />
@@ -48,6 +53,16 @@ class: "page-landing"
                 </div>
             </div>
         </li>
+
+        <li class="details">
+            <div>
+                <img src="/img/heros/details.png" alt="Figma mockup example" />
+                <div class="title-wrap">
+                    <h3><span>Here</span> <span>to</span> <span>dig</span> <span>into</span> <span>the</span> <span>details</span></h3>
+                </div>
+            </div>
+        </li>
+
         <li>
             <div>
                 <img src="/img/heros/color-portrait.jpg" alt="Dave and Mary Dawson at an event in LA" />
@@ -103,7 +118,7 @@ class: "page-landing"
                 <div class="priority t-a">
                     <h3><span>The Agency</span></h3>
                     <p>I founded and run an online community for independent creators. Interested in joining?</p>
-                    <p><a href="mailto:dave@iamdavedawson.com" class="more">Get in touch</a> <span class="inline note">Warning: direct link to email</span></p>
+                    <p><a href="mailto:dave@hey.com" class="more">Get in touch</a> <span class="inline note">Warning: direct link to email</span></p>
                 </div>
             </div>
         </div>
@@ -354,7 +369,7 @@ class: "page-landing"
                     </ul>
                     <div class="connect">
                         <h3>Looking for more?</h3>
-                        <p class="small">This page is meant to serve as a quick overview of my work. But you may have more questions (I hope you do!). I’d be happy to talk about your project and where I might be able to help, and/or discuss any of the projects listed above in more detail. You can send me an email at <a href="mailto:dave@iamdavedawson.com">dave@iamdavedawson.com</a>.</p>
+                        <p class="small">This page is meant to serve as a quick overview of my work. But you may have more questions (I hope you do!). I’d be happy to talk about your project and where I might be able to help, and/or discuss any of the projects listed above in more detail. You can send me an email at <a href="mailto:dave@hey.com">dave@hey.com</a>.</p>
                     </div>
                 </div>
             </div>
@@ -368,6 +383,23 @@ class: "page-landing"
 <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
 
 <script>
+
+    var contactLink = $('nav .with-tooltip').hover(
+        function(){ $(this).children('.tooltip').addClass('is-visible'); },
+        function(){ $(this).children('.tooltip').removeClass('is-visible'); }
+    );
+    
+    var clipboard = new ClipboardJS('.copy-link');
+
+    clipboard.on('success', function(e) {
+        $('nav .contact .success').addClass('copied');
+        setTimeout(
+            function(){
+                $('nav .contact .success').removeClass('copied');
+            }, 
+        1500);
+    });
+        
     // init Flickity
     var $carousel = $('.activities').flickity({
         contain: false,

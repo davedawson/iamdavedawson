@@ -10,18 +10,30 @@
         color: $color-blue;
         text-transform: uppercase;
         margin: 0;
-        padding: 17px;
-        padding: 17px;
+        padding: 12px;
         text-align: center;
+        @include respond-to(medium-and-above) {
+            padding: 17px;
+        }
         a {
             text-decoration: none;
             color: $color-blue;
         }
     }
     .title {
-        width: 100%;;
+        width: 100%;
+        @include respond-to(handhelds) {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
         h1 {
-            width: 100%;;
+            width: 100%;
+            @include respond-to(handhelds) {
+                text-transform: none;
+                letter-spacing: -0.05em;
+                font-size: 22px;
+                // font-weight: normal;
+            }
             @include respond-to(medium-and-above) {
                 writing-mode: vertical-rl;
                 transform: rotate(180deg);
@@ -39,8 +51,119 @@
             margin: 0;
             li {
                 display: inline-block;
-                padding: 2%;
+                padding: 2% 17px;
+                position: relative;
+                .tooltip {
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    z-index: 4;
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                    text-align: center;
+                    top: 32px;
+                    width: 230px;
+                    left: -75%;
+                    transition: opacity ease 0.2s margin ease 0.2s;
+                    margin-top: 30px;
+                    @include respond-to(medium-and-above) {
+                        transform: rotate(-90deg);
+                        top: -20px;
+                        right: 44px;
+                        height: 250px;
+                    }
+                    &:hover {
+                        cursor: default;
+                    }
+                    &.is-visible {
+                        visibility: visible;
+                        transition: opacity ease 0.2s margin ease 0.2s;
+                        display: block;
+                        opacity: 1;
+                        margin-top: 0px;
+                    }
+                    h3 {
+                        margin: 0;
+                        // font-size: 14px;
+                        text-transform: none;
+                        letter-spacing: 0;
+                        transform: rotate(-270deg);
+                        display: inline-block;
+                    }
+                    p {
+                        font-size: 13px;
+                        font-weight: normal;
+                        line-height: 1.2;
+                        text-transform: none;
+                        letter-spacing: 0;
+                        margin: 0;
+                    }
+                }
+                &.contact {
+                    .tooltip {
+                        // display: none;
+                        p {
+                            strong {
+                                display: block;
+                                padding: 6px;
+                                background: rgba(0,0,0,0.1);
+                                border-radius: 4px;
+                                margin: 10px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                            em {
+                                font-weight: bold;
+                                text-decoration: underline;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .success {
+                            opacity: 0;
+                            position: absolute;
+                            font-size: 52px;
+                            display: block;
+                            @include respond-to(medium-and-above) {
+                                transform: rotate(-240deg);
+                            }
+                            &.copied { 
+                                animation: success linear 0.9s;
+                                left: 200px;
+                            }
+                        }
+                    }
+                }
+                &.writing {
+                    .tooltip {
+                        @include respond-to(medium-and-above) {
+                            right: 134px;
+                            top: -60px;
+                            width: 70px;
+                        }
+                    }
+                }
             }
         }
+    }
+}
+
+@keyframes success {
+    0% {
+      opacity: 0;
+      left: 0px;
+    }
+    50% {
+        opacity: 1;
+        left: 100px;
+    }
+    100% {
+        opacity: 0;
+        left: 200px;
+        transform: rotate(-340deg);
     }
 }

@@ -35,6 +35,7 @@
   <script src="/js/source.js"></script>
   <!-- TODO: Minify -->
   <script src="/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 
     <!-- TODO: Only on homepage? -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -65,9 +66,24 @@
             <ul>
                 <li><a href="/#work">Work</a></li>
                 <!-- ><li><a href="/adventures">Adventures</a></li> -->
-                <li><a href="https://medium.com/@davedawson">Writing</a></li>
+                <li class="with-tooltip writing"><a href="https://medium.com/@davedawson">Writing</a>
+                    <div class="tooltip">
+                        <div class="wrap">
+                            <p>Just a heads up, this link takes you to Medium.com.</p>
+                        </div>
+                    </div>
+                </li>
                 <!-- <li><a href="/about">About</a></li> -->
-                <li><a href="">Contact</a></li>
+                <li class="contact with-tooltip"><a href="mailto:dave@hey.com">Contact</a>
+                    <div class="tooltip">
+                        <div class="wrap">
+                            <h3>👋</h3>
+                            <p></strong>This Contact link opens an email window. Sometimes that's great, but if you want a less intrusive way to get a hold of me, you can <em class="copy-link" data-clipboard-text="dave@hey.com">click here</em> to copy this email address to your clipboard <strong class="copy-link" data-clipboard-text="dave@hey.com">dave@hey.com</strong></p>
+                            <p>Talk soon!</p>
+                            <span class="success">👍</span>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
     </div>
@@ -87,22 +103,7 @@
                 </div>
             </div>
         </li>
-        <li class="details">
-            <div>
-                <img src="/img/heros//details.png" alt="Figma mockup example" />
-                <div class="title-wrap">
-                    <h3><span>Here</span> <span>to</span> <span>dig</span> <span>into</span> <span>the</span> <span>details</span></h3>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <img src="/img/heros/nyc-pizza.jpg" alt="Dave Dawson eating pizza on Bleeker St." />
-                <div class="title-wrap">
-                    <h3><span>Here</span> <span>to</span> <span>eat</span> <span>pizza</span></h3>
-                </div>
-            </div>
-        </li>
+
         <li class="problems">
             <div>
                 <img src="/img/heros/problems.png" alt="Kickoff meeting" />
@@ -111,6 +112,26 @@
                 </div>
             </div>
         </li>
+
+        <li>
+            <div>
+                <img src="/img/heros/nyc-pizza.jpg" alt="Dave Dawson eating pizza on Bleeker St." />
+                <div class="title-wrap">
+                    <h3><span>Here</span> <span>to</span> <span>eat</span> <span>pizza</span></h3>
+                </div>
+            </div>
+        </li>
+
+        <li class="details">
+            <div>
+                <img src="/img/heros/solutions.png" alt="Wireframe mockup example" />
+                <div class="title-wrap">
+                    <h3><span>Here</span> <span>to</span> <span>find</span> <span>solutions</span></h3>
+                </div>
+            </div>
+        </li>
+        
+        
         <li>
             <div>
                 <img src="/img/heros/queensborough-bridge.jpg" alt="Dave Dawson on the Queensborough Bridge" />
@@ -119,6 +140,16 @@
                 </div>
             </div>
         </li>
+
+        <li class="details">
+            <div>
+                <img src="/img/heros/details.png" alt="Figma mockup example" />
+                <div class="title-wrap">
+                    <h3><span>Here</span> <span>to</span> <span>dig</span> <span>into</span> <span>the</span> <span>details</span></h3>
+                </div>
+            </div>
+        </li>
+
         <li>
             <div>
                 <img src="/img/heros/color-portrait.jpg" alt="Dave and Mary Dawson at an event in LA" />
@@ -174,7 +205,7 @@
                 <div class="priority t-a">
                     <h3><span>The Agency</span></h3>
                     <p>I founded and run an online community for independent creators. Interested in joining?</p>
-                    <p><a href="mailto:dave@iamdavedawson.com" class="more">Get in touch</a> <span class="inline note">Warning: direct link to email</span></p>
+                    <p><a href="mailto:dave@hey.com" class="more">Get in touch</a> <span class="inline note">Warning: direct link to email</span></p>
                 </div>
             </div>
         </div>
@@ -425,7 +456,7 @@
                     </ul>
                     <div class="connect">
                         <h3>Looking for more?</h3>
-                        <p class="small">This page is meant to serve as a quick overview of my work. But you may have more questions (I hope you do!). I’d be happy to talk about your project and where I might be able to help, and/or discuss any of the projects listed above in more detail. You can send me an email at <a href="mailto:dave@iamdavedawson.com">dave@iamdavedawson.com</a>.</p>
+                        <p class="small">This page is meant to serve as a quick overview of my work. But you may have more questions (I hope you do!). I’d be happy to talk about your project and where I might be able to help, and/or discuss any of the projects listed above in more detail. You can send me an email at <a href="mailto:dave@hey.com">dave@hey.com</a>.</p>
                     </div>
                 </div>
             </div>
@@ -439,6 +470,23 @@
 <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
 
 <script>
+
+    var contactLink = $('nav .with-tooltip').hover(
+        function(){ $(this).children('.tooltip').addClass('is-visible'); },
+        function(){ $(this).children('.tooltip').removeClass('is-visible'); }
+    );
+    
+    var clipboard = new ClipboardJS('.copy-link');
+
+    clipboard.on('success', function(e) {
+        $('nav .contact .success').addClass('copied');
+        setTimeout(
+            function(){
+                $('nav .contact .success').removeClass('copied');
+            }, 
+        1500);
+    });
+        
     // init Flickity
     var $carousel = $('.activities').flickity({
         contain: false,
@@ -447,6 +495,7 @@
         prevNextButtons: false,
         pageDots: false,
         adaptiveHeight: true,
+        imagesLoaded: true
     });
 
     // Flickity instance
