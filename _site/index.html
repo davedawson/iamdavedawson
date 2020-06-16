@@ -76,6 +76,8 @@
 </div>
 	<div class="page-content">
 		<section class="intro">
+    <div class="intro-nav left"></div>
+    <div class="intro-nav right"></div>
     <ul class="activities">
         <li>
             <div>
@@ -85,9 +87,9 @@
                 </div>
             </div>
         </li>
-        <li>
+        <li class="details">
             <div>
-                <img src="https://via.placeholder.com/400x570.png" alt="" />
+                <img src="/img/heros//details.png" alt="Figma mockup example" />
                 <div class="title-wrap">
                     <h3><span>Here</span> <span>to</span> <span>dig</span> <span>into</span> <span>the</span> <span>details</span></h3>
                 </div>
@@ -101,17 +103,9 @@
                 </div>
             </div>
         </li>
-        <!-- <li>
+        <li class="problems">
             <div>
-                <img src="https://via.placeholder.com/400x570.png" alt="" />
-                <div class="title-wrap">
-                    <h3>Here to push things</h3>
-                </div>
-            </div>
-        </li> -->
-        <li>
-            <div>
-                <img src="/img/heros/color-portrait.jpg" alt="Dave and Mary Dawson at an event in LA" />
+                <img src="/img/heros/problems.png" alt="Kickoff meeting" />
                 <div class="title-wrap">
                     <h3><span>Here</span> <span>to</span> <span>define</span> <span>problems</span></h3>
                 </div>
@@ -125,14 +119,6 @@
                 </div>
             </div>
         </li>
-        <!-- <li>
-            <div>
-                <img src="https://via.placeholder.com/400x570.png" alt="" />
-                <div class="title-wrap">
-                    <h3>Here to keep it moving</h3>
-                </div>
-            </div>
-        </li> -->
         <li>
             <div>
                 <img src="/img/heros/color-portrait.jpg" alt="Dave and Mary Dawson at an event in LA" />
@@ -208,16 +194,10 @@
     
     <ul class="logo-block">
         <li data-aos="slide-up">
-            <img src="/img/logos/client-logo-aclu.svg" alt="ACLU" />
+            <img src="/img/logos/client-logo-filmlinc.svg" alt="Film at Lincoln Center" />
         </li>
         <li data-aos="slide-up">
             <img src="/img/logos/client-logo-audubon.svg" alt="Audubon" />
-        </li>
-        <li data-aos="slide-up">
-            <img src="/img/logos/client-logo-creative-mornings.svg" alt="CreativeMornings" />
-        </li>
-        <li data-aos="slide-up">
-            <img src="/img/logos/client-logo-filmlinc.svg" alt="Film at Lincoln Center" />
         </li>
         <li data-aos="slide-up">
             <img src="/img/logos/client-logo-harpers-magazine.svg" alt="Harper's Magazine" />
@@ -226,39 +206,45 @@
             <img src="/img/logos/client-logo-hrc.svg" alt="Human Rights Campaign" />
         </li>
         <li data-aos="slide-up">
+            <img src="/img/logos/client-logo-obama-2012.svg" alt="Obama 2012" />
+        </li>
+        <li data-aos="slide-up">
+            <img src="/img/logos/client-logo-surfrider.svg" alt="Surfrider Foundation" />
+        </li>
+        <li data-aos="slide-up">
+            <img src="/img/logos/client-logo-creative-mornings.svg" alt="CreativeMornings" />
+        </li>
+        <li data-aos="slide-up">
+            <img src="/img/logos/client-logo-sundance.svg" alt="Sundance Film Festival" />
+        </li>
+        <li data-aos="slide-up" class="smaller">
             <img src="/img/logos/client-logo-it-gets-better-project.png" alt="It Gets Better Project" />
         </li>
         <li data-aos="slide-up">
             <img src="/img/logos/client-logo-nextgen-climate.png" alt="NextGen Climate" />
         </li>
-        <li data-aos="slide-up">
+        <li data-aos="slide-up" class="smaller">
+            <img src="/img/logos/client-logo-aclu.svg" alt="ACLU" />
+        </li>
+        <li data-aos="slide-up" class="smaller">
             <img src="/img/logos/client-logo-nti.svg" alt="Need to Impeach" />
-        </li>
-        <li data-aos="slide-up">
-            <img src="/img/logos/client-logo-nyit.svg" alt="New York Institute of Technology" />
-        </li>
-        <li data-aos="slide-up">
-            <img src="/img/logos/client-logo-obama-2012.svg" alt="Obama 2012" />
         </li>
         <li data-aos="slide-up">
             <img src="/img/logos/client-logo-sierra-club.svg" alt="Sierra Club" />
         </li>
         <li data-aos="slide-up">
+            <img src="/img/logos/client-logo-nyit.svg" alt="New York Institute of Technology" />
+        </li>        
+        <li data-aos="slide-up">
             <img src="/img/logos/client-logo-smithsonian.svg" alt="Smithsonian" />
-        </li>
-        <li data-aos="slide-up">
-            <img src="/img/logos/client-logo-sundance.svg" alt="Sundance Film Festival" />
-        </li>
-        <li data-aos="slide-up">
-            <img src="/img/logos/client-logo-surfrider.svg" alt="Surfrider Foundation" />
-        </li>
+        </li>        
         <li data-aos="slide-up">
             <img src="/img/logos/client-logo-tom-2020.svg" alt="Tom Steyer for President" />
         </li>
         <li data-aos="slide-up">
             <img src="/img/logos/client-logo-typedia.svg" alt="Typedia" />
         </li>
-        <li data-aos="slide-up">
+        <li data-aos="slide-up" class="smaller">
             <img src="/img/logos/client-logo-yale.svg" alt="Yale University" />
         </li>
 
@@ -460,7 +446,7 @@
         wrapAround: true,
         prevNextButtons: false,
         pageDots: false,
-        adaptiveHeight: true
+        adaptiveHeight: true,
     });
 
     // Flickity instance
@@ -488,8 +474,12 @@
     });
 
     // next
-    $('.button--next').on( 'click', function() {
+    $('.button--next, .intro-nav.right').on( 'click', function() {
         $carousel.flickity('next');
+    });
+    // prev
+    $('.intro-nav.left').on( 'click', function() {
+        $carousel.flickity('previous');
     });
 </script>
 

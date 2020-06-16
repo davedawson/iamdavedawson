@@ -9,7 +9,6 @@
         text-align: center;
         padding: 5%;
         width: 100%;
-        // min-height: 90vh;
         position: relative;
         @include respond-to(medium-and-above) {
             height: calc(98vh - 100px);
@@ -52,6 +51,11 @@
             width: 100%;
             margin: 0;
             padding: 0;
+            .flickity-viewport {
+                &:hover {
+                    cursor: default;
+                }
+            }
             li {
                 margin: 0;
                 padding: 0;
@@ -67,7 +71,6 @@
                 &:not(.happy){
                     .title-wrap {
                         position: relative;
-                        // margin-top: -110px;
                         z-index: 2;
                         width: 95%;
                         max-width: 900px;
@@ -89,8 +92,11 @@
                         
                     }
                 }
-                &.happy > div {
-                    
+                &.details, &.problems {
+                    img {
+                        border-color: transparent;
+                        border: 0;
+                    }
                 }
                 // Flickity animation 
                 img, h3 {
@@ -154,10 +160,33 @@
         .flickity-prev-next-button.previous {
             display: none;
         }
+        .intro-nav {
+            @include respond-to(medium-and-above) {
+                position: absolute;
+                top: 0;
+                z-index: 2;
+                width: 20%;
+                height: 100%;
+                &:hover {
+                    cursor: e-resize;
+                }
+            }
+            &.right {
+                right: 0;
+            }
+            &.left {
+                left: 0;
+                &:hover {
+                    cursor: w-resize;
+                }
+            }
+        }
         .button-wrap {
             width: 100%;
             text-align: center;
             margin-top: 30px;
+            position: relative;
+            z-index: 3;
             @include respond-to(medium-and-above) {
                 bottom: 50px;
                 position: absolute;
@@ -331,6 +360,12 @@
                     top: 0;
                     transition: all 0.85s;
                 }
+                &.smaller {
+                    img {
+                        max-width: 115px;
+                    }
+                }
+                
             }
             // Stagger image loading
             @for $i from 1 through 20 {
