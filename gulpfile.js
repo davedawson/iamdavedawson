@@ -49,8 +49,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 // Static Server + watching scss/html files
 gulp.task('watch', ['sass'], function() {
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_utilities/*', 'additional-utilities/*', '_partners/*', 'contact/*', 'about.html', 'faq.html', 'faq.md', 'about/*', 'img/*', '_includes/*', '_faqs/*', 'coned.html', 'js/*', 'about/*', 'adventures/*'], ['jekyll-rebuild']);
-    gulp.watch("sass/**/*.scss", ['sass']);
+    gulp.watch("_sass/**/*.scss", ['sass']);
+    gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_utilities/*', 'additional-utilities/*', '_partners/*', 'contact/*', 'about.html', 'faq.html', 'faq.md', 'about/*', 'img/*', '_includes/*', '_faqs/*', 'coned.html', 'js/*', 'about/*', 'adventures/*', '_config.yml'], ['jekyll-rebuild','sass']);
 });
 
 // Compile sass into CSS & auto-inject into browsers
@@ -58,10 +58,11 @@ gulp.task('sass', function() {
     var processors = [
         autoprefixer({browsers: ['last 2 versions', '> 1%', 'Firefox ESR']})
     ];
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./_sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(cssnano())
-    .pipe(gulp.dest("_site/stylesheets"))
+    .pipe(rename('styles.css'))
+    .pipe(gulp.dest("_site/assets/css"))
     .pipe(browserSync.stream());
 });
 

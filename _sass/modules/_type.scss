@@ -44,11 +44,11 @@ p, dt, dd, table {
 }
 
 a {
-  font-weight: bold;
+  // font-weight: bold;
   color: $color-blue;
-  text-decoration: none;
+  text-decoration: underline;
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 

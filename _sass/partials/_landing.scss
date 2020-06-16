@@ -190,6 +190,9 @@
         p, h2, h3, h4, a {
             color: #fff;
         }
+        p {
+            text-shadow: 0 0 2px rgba(0,0,0,0.05);
+        }
         h3 {
             display: inline-block;
             padding: 0.5rem;
@@ -307,8 +310,11 @@
             li {
                 // margin: 1%;
                 position: relative;
-                animation: 1s ease-in-out both fade-in;
+                // animation: 1s ease-in-out both fade-in;
                 text-align: center;
+                opacity: 0;
+                top: 40px;
+                transition: all 0.25s;
                 img {
                     opacity: 0.4;    
                     max-width: 150px;
@@ -316,13 +322,20 @@
                     &:hover {
                         opacity: 0.7;
                     }
+                    // opacity: 0;
+                    // transition-property: transform, opacity;
                 }
-                
+                &.aos-animate {
+                    transform: skewX(0);
+                    opacity: 1;
+                    top: 0;
+                    transition: all 0.85s;
+                }
             }
             // Stagger image loading
             @for $i from 1 through 20 {
                 li:nth-child(#{$i}) {
-                    animation-delay: $i * (1s / 10);
+                    transition-delay: $i * (1s / 10);
                 }
             }
         }
@@ -332,7 +345,7 @@
                 width: gs-width(d, 3, 10, false, true);
                 margin-bottom: 30vh;
             }
-            @include respond-to(wide-and-above) {
+            @include respond-to(extra-wide-screens) {
                 width: gs-width(d, 3, 6, false, true);
             }
         }
@@ -504,3 +517,24 @@
         margin-top: 0px;
     }
 }
+
+// [data-aos="example-anim1"] {
+//     transform: skewX(45deg);
+//     opacity: 0;
+//     transition-property: transform, opacity;
+//     &.aos-animate {
+//       transform: skewX(0);
+//       opacity: 1;
+//     }
+//   }
+
+//   .logo-block li {
+//     width: 200px;
+//     height: 200px;
+//     margin: 50px auto;
+//     padding-top: 75px;
+//     background: #ccc;
+//     text-align: center;
+//     color: #FFF;
+//     font-size: 3em;
+//   }
