@@ -1,4 +1,3 @@
-<!-- Page borders -->
 <div class="global-header">
     <div id="left">
         <div class="title">
@@ -9,7 +8,8 @@
         <nav class="global">
             <ul>
                 <li><a href="{% if template.name != "landing" %}/#work"{% else %}#work{% endif %}>Work</a></li>
-                <!-- ><li><a href="/adventures">Adventures</a></li> -->
+                {% comment %}
+                <li><a href="/adventures">Adventures</a></li>
                 <li class="with-tooltip writing"><a href="https://medium.com/@davedawson">Writing</a>
                     <div class="tooltip">
                         <div class="wrap">
@@ -17,12 +17,13 @@
                         </div>
                     </div>
                 </li>
-                <!-- <li><a href="/about">About</a></li> -->
+                <li><a href="/about">About</a></li>
+                {% endcomment %}
                 <li class="contact with-tooltip"><a href="mailto:dave@hey.com">Contact</a>
                     <div class="tooltip">
                         <div class="wrap">
                             <h3>👋</h3>
-                            <p></strong>This Contact link opens an email window. Sometimes that's great, but if you want a less intrusive way to get a hold of me, you can <em class="copy-link" data-clipboard-text="dave@hey.com">click here</em> to copy this email address to your clipboard <strong class="copy-link" data-clipboard-text="dave@hey.com">dave@hey.com</strong></p>
+                            <p></strong>This Contact link opens an email window. Sometimes that's great, but if you want a less intrusive way to get a hold of me, you can <em class="copy-link" data-clipboard-text="dave@hey.com">click here</em> to copy this email address to your clipboard: <strong class="copy-link" data-clipboard-text="dave@hey.com">dave@hey.com</strong></p>
                             <p>Talk soon!</p>
                             <span class="success">👍</span>
                         </div>
