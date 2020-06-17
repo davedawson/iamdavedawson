@@ -317,11 +317,11 @@
         }
         .logo-block {
             clear: both;
-            padding: 0 2%;
+            padding: 0 5%;
             align-items: center;
             display: grid;
             justify-content: center;
-            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
             column-gap: 2rem;
             row-gap: 1.5rem;
             margin: 10vh auto 10vh;
@@ -329,6 +329,7 @@
                 margin: 15vh auto 15vh;
                 column-gap: 5%;
                 row-gap: 3rem;
+                padding: 0 2%;
             }
             @include respond-to(wide-and-above) {
                 row-gap: 4rem;

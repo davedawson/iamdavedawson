@@ -189,7 +189,7 @@ html, body, section { margin: 0; padding: 0; }
 
 .container { position: relative; margin: 0 auto; }
 
-@media only screen and (max-width: 768px) { .container { padding: 0 3%; } }
+@media only screen and (max-width: 768px) { .container { padding: 0 5%; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) { .container { margin: 0 auto; padding: 0 3%; } }
 
@@ -453,9 +453,9 @@ img { width: 100%; max-width: 100%; }
 
 @media only screen and (min-width: 769px) { .page-landing .work-areas .lede .text-block { width: 57.0841471354%; } }
 
-.page-landing .work-areas .logo-block { clear: both; padding: 0 2%; align-items: center; display: grid; justify-content: center; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); column-gap: 2rem; row-gap: 1.5rem; margin: 10vh auto 10vh; }
+.page-landing .work-areas .logo-block { clear: both; padding: 0 5%; align-items: center; display: grid; justify-content: center; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); column-gap: 2rem; row-gap: 1.5rem; margin: 10vh auto 10vh; }
 
-@media only screen and (min-width: 769px) { .page-landing .work-areas .logo-block { margin: 15vh auto 15vh; column-gap: 5%; row-gap: 3rem; } }
+@media only screen and (min-width: 769px) { .page-landing .work-areas .logo-block { margin: 15vh auto 15vh; column-gap: 5%; row-gap: 3rem; padding: 0 2%; } }
 
 @media only screen and (min-width: 1025px) { .page-landing .work-areas .logo-block { row-gap: 4rem; margin: 30vh auto 30vh; column-gap: 5%; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); } }
 

@@ -27,7 +27,7 @@ html, body, section {
   position: relative;
   margin: 0 auto;
   @include respond-to(handhelds) {
-    padding: 0 3%;
+    padding: 0 5%;
   }
   @include respond-to(medium-screens) {
     margin: 0 auto;
