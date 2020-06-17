@@ -8,13 +8,13 @@
   {% if page.meta-fb-image %}
     <meta property="og:image" content="{{ site.url }}{{ page.meta-fb-image }}">
   {% endif %}
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.meta-description %}{{ page.meta-description }} {% else %}{{ site.meta-description | strip_html | strip_newlines }} {% endif %}">
   <meta property="og:image" content="{% if page.meta-image %}{{ page.meta-image }} {% else %}{{ site.meta-image | strip_html | strip_newlines }} {% endif %}">
   <meta property="og:url" content="{{ site.url }}{% unless page.template == "landing" %}/{% endunless %}{{ page.url }}">
   <meta name="twitter:card" content="summary_large_image">
 
-  <title>{{ page.title }}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="/favicon.ico" rel="icon" type="image/x-icon">
   <link href="/assets/css/styles.css" media="screen, projection" rel="stylesheet" type="text/css" />
