@@ -385,10 +385,11 @@
     .background-wrap {
         clear: both;
         background: $color-background;
-        padding: 50px 0;
+        // padding: 50px 0;
         position: relative;
         z-index: 2;
         @include clearfix;
+        box-shadow: 0 0 55px 70px $color-background;
     }
     .fu-process {
         clear: both;
