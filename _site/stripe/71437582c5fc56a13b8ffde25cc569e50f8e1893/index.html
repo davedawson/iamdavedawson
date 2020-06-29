@@ -652,46 +652,6 @@
                 }
             });
         });
-        
-        function hideNav() {
-            $(".sidebar-nav").addClass('hidden');
-        };
-        function showNav() {
-            $(".sidebar-nav").removeClass('hidden');
-        };
-
-        var nav = $(".sidebar-nav");
-        $('.hide-nav').each(function() {
-            // var inview = new Waypoint.Inview({
-            //     element: $(this),
-            //     enter: function(direction) {
-            //         $(".sidebar-nav").addClass('hidden');
-            //         console.log('entered');
-            //     },
-            //     entered: function(direction) {
-            //         $(".sidebar-nav").addClass('hidden');
-            //         console.log('entered');
-            //     },
-            //     exit: function(direction) {
-            //         $(".sidebar-nav").removeClass('hidden');
-            //         console.log('exit');
-            //     },
-            //     exited: function(direction) {
-            //         $(".sidebar-nav").removeClass('hidden');
-            //         console.log('exit');
-            //     }
-            // })
-            // new Waypoint.Inview({
-            //     element: $(this),
-            //     enter: hideNav(),
-            //     exited: showNav(),
-            //     offset: {
-            //         top: 300, // 300px
-            //         bottom: 200 // 200px
-            //     }
-            // });
-        });
-
 
         // nav
         var contactLink = $('nav .with-tooltip').hover(
