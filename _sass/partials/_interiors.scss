@@ -30,4 +30,37 @@
             }
         }
     }
+    &.page-password {
+        height: 100%;
+        .page-content, .wrap {
+            height: 100%;
+        }
+        background: $color-background;
+        text-align: center;
+        .wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 300px;
+        }
+        button {
+            background: $color-blue;
+            color: #fff;
+            border: 0;
+            border-radius: 9px;
+            padding: 10px 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        input {
+            padding: 5px 10px;
+            border: 1px solid $color-border;
+        }
+        .box {
+
+        }
+    }
 }
