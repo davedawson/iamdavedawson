@@ -396,7 +396,7 @@
                         </div>
                         <div class="project-sidebar">
                             <p><strong>Year</strong>2020</p>
-                            <p><strong>Stakeholder:</strong>[redacted]</p>
+                            <p><strong>Stakeholder:</strong><span class="redacted">[redacted]</span></p>
                             <p><strong>Project team</strong>Product manager, two engineers</p>
                             <p><strong>My role</strong>Product design</p>
                         </div>    
@@ -568,6 +568,14 @@
             1500);
         });
     </script>
+
+    <script type="module">
+        import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
+        const a = annotate(document.querySelector('.redacted'), { type: 'crossed-off', color: '#000' });
+        const ag = annotationGroup([a]);
+        ag.show();
+    </script>
+
 </main>            
 
 	</div>

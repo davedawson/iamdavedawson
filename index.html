@@ -447,29 +447,12 @@ class: "page-landing"
 
 <script type="module">
     import { annotate, annotationGroup } from 'https://unpkg.com/rough-notation?module';
-
-    // const e = document.querySelector('.overview .c-p h3');
-    // const annotation = annotate(e, { type: 'highlight', color: '#FFF176' });
     const a = annotate(document.querySelector('.overview .c-p h3'), { type: 'highlight', color: '#FFF176' });
     const b = annotate(document.querySelector('.overview .o-h h3'), { type: 'highlight', color: '#FFF176' });
     const c = annotate(document.querySelector('.overview .t-a h3'), { type: 'highlight', color: '#FFF176' });
 
     const ag = annotationGroup([a, b, c]);
     ag.show();
-
-    // let hoverState = document.getElementById(".overview .o-h h3");
-  
-    // // This handler will be executed only once when the cursor
-    // // moves over the unordered list
-    // hoverState.addEventListener("mouseenter", function( event ) {   
-    // // highlight the mouseenter target
-    // const ag = annotationGroup([b]);
-
-    // // reset the color after a short delay
-    // setTimeout(function() {
-    //     // event.target.style.color = "";
-    // }, 500);
-    // }, false);
 </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
