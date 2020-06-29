@@ -108,7 +108,7 @@
         }
         &.mid-small-hack {
             @include respond-to(medium-and-above) {
-                @include gs-span(d, 2, 3);
+                @include gs-span(d, 2, 11);
             }
         }
     }
@@ -139,6 +139,9 @@
         margin-bottom: 60px;
         @include respond-to(medium-and-above) {
             margin-bottom: 120px;
+        }
+        h4 {
+            margin-bottom: 10px;
         }
     }
     
@@ -249,7 +252,7 @@
         @include respond-to(medium-and-above) {
             position: sticky;
             top: 100px;
-            padding-left: 3%;
+            padding-left: 4%;
         }
         &.hidden {
             opacity: 0;
@@ -410,6 +413,7 @@
         }
     }
     .thanks {
-        padding-bottom: 25vh;
+        @include clearfix;
+        padding-bottom: 50vh;
     }
 }

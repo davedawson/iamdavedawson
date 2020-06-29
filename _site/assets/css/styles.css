@@ -671,7 +671,7 @@ img { width: 100%; max-width: 100%; }
 
 @media only screen and (min-width: 769px) { .page-case-studies .mid-width { display: block; float: left; margin-left: 8.5734049479%; margin-right: -100%; width: 82.8043619792%; } }
 
-@media only screen and (min-width: 769px) { .page-case-studies .mid-width.mid-small-hack { display: block; float: left; margin-left: 8.5734049479%; margin-right: -100%; width: 14.2171223958%; } }
+@media only screen and (min-width: 769px) { .page-case-studies .mid-width.mid-small-hack { display: block; float: left; margin-left: 8.5734049479%; margin-right: -100%; width: 82.8043619792%; } }
 
 .page-case-studies .small-width { clear: both; }
 
@@ -690,6 +690,8 @@ img { width: 100%; max-width: 100%; }
 .page-case-studies .text-and-photo-block .text-block { margin-bottom: 0; }
 
 @media only screen and (min-width: 769px) { .page-case-studies .text-and-photo-block { margin-bottom: 120px; } }
+
+.page-case-studies .text-and-photo-block h4 { margin-bottom: 10px; }
 
 @media only screen and (min-width: 769px) { .page-case-studies .project-sidebar { display: block; float: left; margin-left: 77.1606445312%; margin-right: -100%; width: 14.2171223958%; margin-top: 60px; } }
 
@@ -733,7 +735,7 @@ img { width: 100%; max-width: 100%; }
 
 .page-case-studies .sidebar-nav { clear: both; z-index: 1; opacity: 1; transition: all 0.25s; }
 
-@media only screen and (min-width: 769px) { .page-case-studies .sidebar-nav { position: sticky; top: 100px; padding-left: 3%; } }
+@media only screen and (min-width: 769px) { .page-case-studies .sidebar-nav { position: sticky; top: 100px; padding-left: 4%; } }
 
 .page-case-studies .sidebar-nav.hidden { opacity: 0; }
 
@@ -813,6 +815,8 @@ img { width: 100%; max-width: 100%; }
 
 @media only screen and (min-width: 769px) { .page-case-studies .fu-process div:nth-child(2) { display: block; float: left; margin-left: 51.4404296875%; margin-right: -100%; width: 48.5107421875%; margin-top: 0; } }
 
-.page-case-studies .thanks { padding-bottom: 25vh; }
+.page-case-studies .thanks { padding-bottom: 50vh; }
+
+.page-case-studies .thanks::after { content: ""; display: table; clear: both; }
 
 /*# sourceMappingURL=styles.css.map */

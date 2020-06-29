@@ -97,6 +97,7 @@ noindex: "true"
                             <h3>Overview</h3>
                             <p>CreativeMornings is a community of over 400,000 people all over the world that get together for monthly, in-person events. The organization had done what most would consider the "hard part" of creating an active community of people who show up in real life. But they hadn't invested in the digital experience. With such an active and passionate community, CreativeMornings had only scratched the surface of how to engage them online.</p>
                             <p>Tina Roth Eisenberg, the founder, brought me in to design all aspects of the CreativeMornings digital platform, which eventually evolved into a product called CreativeGuild. I designed the experience and interface of the product, along with all of the marketing materials.</p>
+                            <p class="small"><em><strong>Note:</strong> This was a large project and I designed almost every aspect of it. So in order to dive into my design process in a bit more detail, I've focused on one feature in this case study.</em></p>
                         </div>
                         <div class="project-sidebar">
                             <p><strong>Year</strong>2017 - 2018</p>
@@ -120,7 +121,7 @@ noindex: "true"
                     <p>Based on those conversations, we created a few personas to guide us in making design decisions.</p>
                 </div>
 
-                <div class="product-shot text-block push-right">
+                <div class="product-shot push-right">
                     <img src="/img/case-studies/creativemornings/cm-personas.png" alt="CreativeMornings personas" />
                 </div>
 
@@ -197,10 +198,12 @@ noindex: "true"
                         <img src="/img/case-studies/creativemornings/cm-approved-profile-flow.png" alt="CreativeMornings approved flow screens" />
                     </div>
                 </div>
-                <div class="text-wrap">
+
+                <div class="text-block">
                     <h3>Results</h3>
                     <p>The CreativeGuild now has over 400,000 individuals, 800+ companies, and 1,000+ jobs on the site. Companies are able to contribute and support the communities they value, and creatives are able to return the favor.</p>
                 </div>
+                
 
 
             </div>
@@ -225,10 +228,6 @@ noindex: "true"
                             <p><strong>Project team</strong>Project manager, UX Researcher, Lead engineer</p>
                             <p><strong>My role</strong>Product design</p>
                         </div>
-                    </div>
-                    <div class="text-wrap">
-                        <h3>Results</h3>
-                        <p>Since launch, AddUp has expanded to include student groups, and organizers have created over 500 campaigns with the help of Sierra Club.</p>
                     </div>
                 </div>
             </div>
@@ -277,7 +276,7 @@ noindex: "true"
                     <p>While the primary user of the product is a grassroots organizer, and that's who I was designing the interface for, I also had a mandate to reduce the amount of time that each Digital team member spends hand-holding an organizer when creating and running a campaign. The earlier the AddUp product can prompt an organizer with helpful information, the more likely they are to complete the process without needing help from the Digital team.</p>
                 </div>
 
-                <div class="product-shot small-width image-shadow">
+                <div class="product-shot mid-width image-shadow">
                     <img src="/img/case-studies/sierra-club/sc-support-organizers.png" alt="Sierra Club admin review list" />
                 </div>
 
@@ -288,7 +287,7 @@ noindex: "true"
                     <p>In addition to helpers, the product does a check on the campaign before submitting for review.  If there are areas for improvement we ask the organizer to be more thorough before submitting. </p>
                 </div>
                 <div class="stacked-product-shots">
-                    <div class="product-shot small-width">
+                    <div class="product-shot mid-width">
                         <div class="round-corners">
                             <img src="/img/case-studies/sierra-club/sc-in-progress-animation.gif" alt="Sierra Club contextual helper animation" />
                         </div>
@@ -304,8 +303,13 @@ noindex: "true"
                     <p>Once feedback has been provided, the organizer is alerted in email about the notes. I designed a system where the organizer can view their notes alongside the campaign, and respond to a piece of feedback if needed.</p>
                 </div>
 
-                <div class="product-shot small-width image-shadow hide-nav">
+                <div class="product-shot mid-width image-shadow hide-nav">
                     <img src="/img/case-studies/sierra-club/sc-review.png" alt="Sierra Club admin review" />
+                </div>
+
+                <div class="text-block">
+                    <h3>Results</h3>
+                    <p>Since launch, AddUp has expanded to include student groups, and organizers have created over 500 campaigns with the help of Sierra Club.</p>
                 </div>
             </div>
         </div>
@@ -425,7 +429,7 @@ noindex: "true"
             <div class="text-block">
                 <h3>Thank you</h3>
                 <p class="large">I'm excited to be applying for this job with Stripe's Climate team, and I appreciate the time you've taken to consider my work.</p>
-                <p>I hope to hear from you soon. You can email me at <a href="mailto:dave@hey.com">dave@hey.com</a>, find me on <a href="https://twitter.com/davedawson">twitter</a>, and on <a href="https://www.linkedin.com/in/dave-dawson-b1127813b/">LinkedIn</a>.</p>
+                <p>I hope to hear from you soon. You can email me at <a href="mailto:dave@hey.com">dave@hey.com</a>, find me on <a href="https://twitter.com/davedawson">Twitter</a>, and on <a href="https://www.linkedin.com/in/dave-dawson-b1127813b/">LinkedIn</a>.</p>
                 <p>Thanks again.</p>
                 <p>— Dave</p>
             </div>
@@ -468,25 +472,25 @@ noindex: "true"
 
         var nav = $(".sidebar-nav");
         $('.hide-nav').each(function() {
-            var inview = new Waypoint.Inview({
-                element: $(this),
-                enter: function(direction) {
-                    $(".sidebar-nav").addClass('hidden');
-                    console.log('entered');
-                },
-                entered: function(direction) {
-                    $(".sidebar-nav").addClass('hidden');
-                    console.log('entered');
-                },
-                exit: function(direction) {
-                    $(".sidebar-nav").removeClass('hidden');
-                    console.log('exit');
-                },
-                exited: function(direction) {
-                    $(".sidebar-nav").removeClass('hidden');
-                    console.log('exit');
-                }
-            })
+            // var inview = new Waypoint.Inview({
+            //     element: $(this),
+            //     enter: function(direction) {
+            //         $(".sidebar-nav").addClass('hidden');
+            //         console.log('entered');
+            //     },
+            //     entered: function(direction) {
+            //         $(".sidebar-nav").addClass('hidden');
+            //         console.log('entered');
+            //     },
+            //     exit: function(direction) {
+            //         $(".sidebar-nav").removeClass('hidden');
+            //         console.log('exit');
+            //     },
+            //     exited: function(direction) {
+            //         $(".sidebar-nav").removeClass('hidden');
+            //         console.log('exit');
+            //     }
+            // })
             // new Waypoint.Inview({
             //     element: $(this),
             //     enter: hideNav(),
