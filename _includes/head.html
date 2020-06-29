@@ -10,14 +10,14 @@
   {% endif %}
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.meta-description %}{{ page.meta-description }} {% else %}{{ site.meta-description | strip_html | strip_newlines }} {% endif %}">
-  <meta property="og:image" content="{% if page.meta-image %}{{ page.meta-image }} {% else %}{{ site.meta-image | strip_html | strip_newlines }} {% endif %}">
+  <meta property="og:image" content="https://www.iamdavedawson.com/{% if page.meta-image %}{{ page.meta-image }} {% else %}{{ site.meta-image | strip_html | strip_newlines }} {% endif %}">
   <meta property="og:url" content="{{ site.url }}{% unless page.template == "landing" %}/{% endunless %}{{ page.url }}">
   {% comment %}
   <meta name=”twitter:card” content=”{% if page.meta-description %}{{ page.meta-description }} {% else %}{{ site.meta-description | strip_html | strip_newlines }} {% endif %}” /> 
   <meta name=”twitter:title” content=”{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}” /> 
   <meta name=”twitter:description” content=”{% if page.meta-description %}{{ page.meta-description }} {% else %}{{ site.meta-description | strip_html | strip_newlines }} {% endif %}” /> 
   {% endcomment %}
-  <meta name="twitter:image" content="{% if page.meta-image %}{{ page.meta-image }} {% else %}{{ site.meta-image | strip_html | strip_newlines }} {% endif %}" />
+  <meta name="twitter:image" content="https://www.iamdavedawson.com/{% if page.meta-image %}{{ page.meta-image }} {% else %}{{ site.meta-image | strip_html | strip_newlines }} {% endif %}" />
   <meta name="twitter:card" content="summary_large_image">
 
   {% if page.noindex == "true" %}
