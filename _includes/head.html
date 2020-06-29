@@ -20,6 +20,10 @@
   <meta name="twitter:image" content="{% if page.meta-image %}{{ page.meta-image }} {% else %}{{ site.meta-image | strip_html | strip_newlines }} {% endif %}" />
   <meta name="twitter:card" content="summary_large_image">
 
+  {% if page.noindex == "true" %}
+  <meta name="robots" content="noindex" />
+  {% endif %}
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="/favicon.ico" rel="icon" type="image/x-icon">

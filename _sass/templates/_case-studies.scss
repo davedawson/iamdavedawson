@@ -1,0 +1,402 @@
+.page-case-studies {
+   background: $color-background;
+    // Repeating page elements
+    #bottom {
+        display: none;
+        @include respond-to(medium-and-above) {
+            display: block;
+        }
+    }
+    .case-study {
+        @include clearfix;
+        border-bottom: 1px solid $color-border;
+        padding-bottom: 120px;
+        // margin-bottom: 25vh;
+        padding-top: 85px;
+        img {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .wrap {
+        @include clearfix;
+        clear: both;
+    }
+
+    .product-shot {
+        box-shadow: 0px 6px 32px rgba(0, 0, 0, 0.12);
+        border-radius: 9px;
+        
+        img {
+            display: block;
+            margin: 0;
+            padding: 0;    
+        }
+        &.image-shadow {
+            box-shadow: none;
+        }
+    }
+    .round-corners {
+        border-radius: 9px;
+        overflow: hidden;
+    }
+    .image-shadow {
+        img {
+            // width: calc(100% + 30px);
+            // max-width: calc(100% + 30x);
+            // margin-left: -15px;
+            @include respond-to(medium-and-above) {
+                width: calc(100% + 64px);
+                max-width: calc(100% + 64px);
+                margin-left: -32px;
+            }
+        }
+    }
+    .project-hero {
+        clear: both;
+        width: 100%;
+    }
+    .text-block-wrapper {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        @include respond-to(medium-and-above) {
+            margin-top: 120px;
+            margin-bottom: 120px;
+            .text-block {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .text-block {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        clear: both;
+        @include respond-to(medium-and-above) {
+            @include gs-span(d, 4, 10);
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
+        @include respond-to(wide-and-above) {
+            @include gs-span(d, 4, 9);
+        }
+    }
+    .push-right {
+        clear: both;
+        @include respond-to(medium-and-above) {
+            @include gs-span(d, 4, 11);
+        }
+        @include respond-to(wide-and-above) {
+            @include gs-span(d, 4, 11);
+        }
+    }
+    .full-width {
+        clear: both;
+        @include respond-to(medium-and-above) {
+            // @include gs-span(d, 1, 12);
+            width: calc(100% - 100px);
+            margin: 0 auto;
+        }
+        @include respond-to(wide-and-above) {
+            // @include gs-span(d, 2, 11);
+        }
+    }
+    .mid-width {
+        clear: both;
+        @include respond-to(medium-and-above) {
+            @include gs-span(d, 2, 11);
+        }
+    }
+    .small-width {
+        clear: both;
+        @include respond-to(medium-and-above) {
+            @include gs-span(d, 3, 10);
+        }
+    }
+    .side-by-side {
+        clear: both;
+        div:first-child {
+            @include respond-to(medium-and-above) {
+                @include gs-span(d, 2, 6);
+            }   
+        }
+        div:nth-child(2) {
+            @include respond-to(medium-and-above) {
+                @include gs-span(d, 7, 11);
+            }   
+        }
+    }
+    .text-and-photo-block {
+        .text-block {
+            margin-bottom: 0;
+        }
+        margin-bottom: 60px;
+        @include respond-to(medium-and-above) {
+            margin-bottom: 120px;
+        }
+    }
+    
+    .project-sidebar {
+        @include respond-to(medium-and-above) {
+            @include gs-span(d, 10, 11);
+        }
+        p {
+            font-size: 14px;
+        }   
+        strong {
+            display: block;
+        }
+        
+    }
+    .section-label {
+        margin: 40px auto;
+        div {
+            width: 100%;
+            text-align: center;
+            @include respond-to(medium-and-above) {
+                @include gs-span(d, 4, 8);
+                text-align: left;
+            }
+        }
+        span {
+            background: $color-background;
+            padding: 0 10px;
+            
+            position: relative;
+            z-index: 2;
+            @include respond-to(medium-and-above) {
+                margin-left: -10px;
+            }
+        }
+        &:after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid $color-border;
+            position: relative;
+            z-index: 1;
+            top: -8px;
+            @include respond-to(medium-and-above) {
+                top: 5px;
+            }
+            
+        }
+    }
+    
+    // Section-specific styles
+
+    .intro {
+        h4 {
+            margin: 0 0 5px;
+            font-size: 16px;
+        }
+        h1 {
+            font-family: freightbigcmp-pro, Georga, Times, serif;
+            font-weight: 500;
+            line-height: 0.8;
+            letter-spacing: -0.02em;
+            margin: 0;
+            font-size: 73px;
+            @include respond-to(medium-and-above) {
+                font-size: 90px;
+            }
+            @include respond-to(wide-and-above) {
+                font-size: 110px;
+                max-width: 750px;
+            }
+        }
+        .text-block {
+            margin-top: 120px;
+            margin-bottom: 40px;
+            @include respond-to(medium-and-above) {
+                margin-top: 25vh;
+                margin-bottom: 25vh;
+            }
+        }
+        .inline {
+            display: inline;
+            width: 60px;
+            position: relative;
+            top: 8px;
+        }
+    }
+    main {
+        @include clearfix;
+
+        ul.inline {
+            @include respond-to(medium-and-above) {
+                padding: 0;
+            }
+            .lead {
+                margin-bottom: 4px;
+            }
+            p {
+                
+            }
+        }
+    }
+    .sidebar-nav {
+        clear: both;
+        z-index: 1;
+        opacity: 1;
+        transition: all 0.85s;
+        @include respond-to(medium-and-above) {
+            position: sticky;
+            top: 100px;
+        }
+        &.hidden {
+            opacity: 0;
+        }
+        h4 {
+            margin: 0 0 10px;
+        }
+        ul {
+            
+        }
+        
+        li {
+            display: inline-block;
+            padding-right: 10px;
+            @include respond-to(medium-and-above) {
+                padding-right: 0;
+                display: block;
+            }
+            font-size: 14px;
+            margin-bottom: 8px;
+            &.label {
+                opacity: 0.7;
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                display: none;
+                @include respond-to(medium-and-above) {
+                    display: block;
+                }
+                // font-style: italic;
+            }
+            &.project {
+                padding-left: 10px;
+            }
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &.current {
+                    font-weight: bold;
+                }
+            }
+        }
+        @include respond-to(medium-and-above) {
+            @include gs-span(d, 2, 3);
+        }
+    }
+
+    .cover-letter {
+        clear: none;
+        @include clearfix;
+        h4 {
+            margin-bottom: 10px;
+        }
+        .letter {
+            clear: none;
+            // @include respond-to(medium-and-above) {
+            //     @include gs-span(d, 4, 9);
+            // }
+        }
+        .sidebar-image {            
+            max-width: 150px;
+            margin: 0 auto;
+            @include respond-to(medium-and-above) {
+                @include gs-span(d, 11, 12);
+                margin-top: 30px;
+            }
+            @include respond-to(wide-and-above) {
+                @include gs-span(d, 10, 11);
+            }
+            p {
+                font-size: 14px;
+                font-style: italic;
+                color: #666;
+                margin-top: 4px;;
+            }
+        }
+        .outline {
+            margin-top: 40px;
+        }
+        .text-block {
+            margin-top: 0;
+        }
+        .project-list {
+            margin: 50px 0 0;
+            @include respond-to(medium-and-above) {
+                display: flex;
+            }
+            > div {
+                // text-align: center;
+                margin-bottom: 30px;;
+                @include respond-to(medium-and-above) {
+                    
+                    width: gs-width(d, 1, 4, false, true);
+                    margin-right: gs-gutter(d, false, true);
+                }
+                a {
+                    text-decoration: none;
+                }
+                .image-wrap {
+                    height: 60px;
+                }
+                img {
+                    max-width: 140px;
+                    margin: 0 0 15px;
+                    opacity: 0.4;
+                    max-height: 60px;
+                    transition: all 0.4s;
+                }
+                &:hover {
+                    a {
+
+                    }
+                    img {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+    .fu-process {
+        clear: both;
+        @include clearfix;
+        text-align: center;
+        padding: 40px 4%;
+        @include respond-to(medium-and-above) {
+            padding: 90px 4%;
+        }
+        h4 {
+            margin: 0 0 1em;
+        }
+        div {
+            padding: 0 1%;
+        }
+        .small {
+            width: 85%;
+            margin: 0 auto 2rem;
+        }
+        div img {
+            width: 85%;
+            margin: 0 auto;
+        }
+        div:first-child {
+            @include respond-to(medium-and-above) {
+                @include gs-span(d, 1, 6);
+            }   
+        }
+        div:nth-child(2) {
+            margin-top: 60px;
+            @include respond-to(medium-and-above) {
+                @include gs-span(d, 7, 12);
+                margin-top: 0;
+            }   
+        }
+    }
+    
+}
