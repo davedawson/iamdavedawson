@@ -81,43 +81,6 @@
             @include gs-span(d, 4, 9);
         }
     }
-    .push-right {
-        clear: both;
-        @include respond-to(medium-and-above) {
-            @include gs-span(d, 4, 11);
-        }
-        @include respond-to(wide-and-above) {
-            @include gs-span(d, 4, 11);
-        }
-    }
-    .full-width {
-        clear: both;
-        @include respond-to(medium-and-above) {
-            // @include gs-span(d, 1, 12);
-            width: calc(100% - 100px);
-            margin: 0 auto;
-        }
-        @include respond-to(wide-and-above) {
-            // @include gs-span(d, 2, 11);
-        }
-    }
-    .mid-width {
-        clear: both;
-        @include respond-to(medium-and-above) {
-            @include gs-span(d, 2, 11);
-        }
-        &.mid-small-hack {
-            @include respond-to(medium-and-above) {
-                @include gs-span(d, 2, 11);
-            }
-        }
-    }
-    .small-width {
-        clear: both;
-        @include respond-to(medium-and-above) {
-            @include gs-span(d, 3, 10);
-        }
-    }
     .side-by-side {
         clear: both;
         @include clearfix;
@@ -132,18 +95,16 @@
             }   
         }
     }
-    .text-and-photo-block {
-        .text-block {
-            margin-bottom: 0;
-        }
-        margin-bottom: 60px;
+    .push-right {
+        clear: both;
         @include respond-to(medium-and-above) {
-            margin-bottom: 120px;
+            @include gs-span(d, 4, 11);
         }
-        h4 {
-            margin-bottom: 10px;
+        @include respond-to(wide-and-above) {
+            @include gs-span(d, 4, 11);
         }
     }
+
     
     .project-sidebar {
         @include respond-to(medium-and-above) {

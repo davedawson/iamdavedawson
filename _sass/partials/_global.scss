@@ -94,6 +94,15 @@ img {
   @include respond-to(wide-and-above) {
     @include gs-span(d, 3, 8);
   }
+  &.push-right {
+      clear: both;
+      @include respond-to(medium-and-above) {
+          @include gs-span(d, 3, 11);
+      }
+      @include respond-to(wide-and-above) {
+          @include gs-span(d, 3, 11);
+      }
+  }
 }
 
 .twitter-tweet {

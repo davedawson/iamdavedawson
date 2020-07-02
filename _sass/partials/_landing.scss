@@ -315,71 +315,7 @@
                 }
             }
         }
-        .logo-block {
-            clear: both;
-            padding: 0 5%;
-            align-items: center;
-            display: grid;
-            justify-content: center;
-            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-            column-gap: 2rem;
-            row-gap: 1.5rem;
-            margin: 10vh auto 10vh;
-            @include respond-to(medium-and-above) {
-                margin: 15vh auto 15vh;
-                column-gap: 5%;
-                row-gap: 3rem;
-                padding: 0 2%;
-            }
-            @include respond-to(wide-and-above) {
-                row-gap: 4rem;
-                margin: 30vh auto 30vh;
-                column-gap: 5%;
-                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-            }
-            @include respond-to(extra-wide-screens) {
-                column-gap: 1%;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            }
-            
-            li {
-                // margin: 1%;
-                position: relative;
-                // animation: 1s ease-in-out both fade-in;
-                text-align: center;
-                opacity: 0;
-                top: 40px;
-                transition: all 0.25s;
-                img {
-                    opacity: 0.4;    
-                    max-width: 150px;
-                    max-height: 75px;
-                    &:hover {
-                        opacity: 0.7;
-                    }
-                    // opacity: 0;
-                    // transition-property: transform, opacity;
-                }
-                &.aos-animate {
-                    transform: skewX(0);
-                    opacity: 1;
-                    top: 0;
-                    transition: all 0.85s;
-                }
-                &.smaller {
-                    img {
-                        max-width: 115px;
-                    }
-                }
-                
-            }
-            // Stagger image loading
-            @for $i from 1 through 20 {
-                li:nth-child(#{$i}) {
-                    transition-delay: $i * (1s / 10);
-                }
-            }
-        }
+        
         .cp-intro {
             margin-bottom: 10vh;
             @include respond-to(medium-and-above) {
