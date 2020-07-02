@@ -28,11 +28,11 @@
     li {
         // margin: 1%;
         position: relative;
-        // animation: 1s ease-in-out both fade-in;
+        animation: 1s ease-in-out both fade-in;
         text-align: center;
         opacity: 0;
         top: 40px;
-        transition: all 0.25s;
+        // transition: all ease 0.25s;
         img {
             opacity: 0.4;    
             max-width: 150px;
@@ -44,10 +44,10 @@
             // transition-property: transform, opacity;
         }
         &.aos-animate {
-            transform: skewX(0);
+            // transform: skewX(0);
             opacity: 1;
-            top: 0;
-            transition: all 0.85s;
+            // top: 0;
+            transition: all ease 0.85s;
         }
         &.smaller {
             img {
@@ -59,7 +59,20 @@
     // Stagger image loading
     @for $i from 1 through 20 {
         li:nth-child(#{$i}) {
-            transition-delay: $i * (1s / 10);
+            animation-delay: $i * (1s / 10);
         }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      top: 40px;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
     }
 }

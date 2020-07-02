@@ -11,7 +11,8 @@
         width: 100%;
         position: relative;
         @include respond-to(medium-and-above) {
-            height: calc(98vh - 100px);
+            // height: calc(98vh - 100px);
+            height: calc(100vh - 100px);
             justify-content: center;
         }
         h3 {
@@ -227,11 +228,8 @@
         p {
             text-shadow: 0 0 2px rgba(0,0,0,0.05);
         }
-        h3 {
-            display: inline-block;
-            padding: 0.5rem;
-            margin-left: -0.5rem;
-        }
+
+        
         @include clearfix;
         .text-block {
             @include respond-to(medium-and-above) {
@@ -257,6 +255,10 @@
                 font-size: 24px;
                 @include respond-to(medium-and-above) {
                     font-size: 34px;
+                }
+                &.small {
+                    font-size: 16px;
+                    font-weight: bold;
                 }
             }
         }
@@ -338,6 +340,10 @@
             display: flex;
             text-align: center;
             width: 100%;
+        }
+        .twitter-tweet {
+            margin: 0 auto;
+            padding: 0 3%;
         }
         .projects {
             clear: both;

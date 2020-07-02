@@ -34,26 +34,27 @@
             margin-top: 40px;
             margin-bottom: 40px;
             @include respond-to(medium-and-above) {
-                margin-top: 25vh;
-                margin-bottom: 25vh;
+                margin-top: 15vh;
+                margin-bottom: 15vh;
+            }
+        }
+        h1 {
+            font-family: freightbigcmp-pro, Georga, Times, serif;
+            font-weight: 500;
+            line-height: 0.8;
+            letter-spacing: -0.02em;
+            margin: 0;
+            font-size: 73px;
+            @include respond-to(medium-and-above) {
+                font-size: 90px;
+            }
+            @include respond-to(wide-and-above) {
+                font-size: 110px;
+                max-width: 750px;
             }
         }
     }
-    h1 {
-        font-family: freightbigcmp-pro, Georga, Times, serif;
-        font-weight: 500;
-        line-height: 0.8;
-        letter-spacing: -0.02em;
-        margin: 0;
-        font-size: 73px;
-        @include respond-to(medium-and-above) {
-            font-size: 90px;
-        }
-        @include respond-to(wide-and-above) {
-            font-size: 110px;
-            max-width: 750px;
-        }
-    }
+    
     .full-width {
         clear: both;
         @include respond-to(medium-and-above) {
@@ -138,6 +139,7 @@
             background: #fff;
             margin: 50px 0;
             cursor: pointer;
+            transition: all 0.3s ease;
             @include respond-to(medium-and-above) {
                 padding: 100px;
             }
@@ -145,7 +147,7 @@
                 .label-statement span {
                     animation-iteration-count: 1;
                     animation-play-state: running; 
-                    animation: bounce 2.5s ease;
+                    animation: bounce 0.25s ease;
                 }    
             }
             .label-statement span {
@@ -153,18 +155,30 @@
                 background: $color-yellow;
                 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
                 position: relative;
-                transition:all 0.3s ease;
+                transition: all 0.3s ease;
                 display: inline-block;
                 // transition: all 0.15s;
+                strong {
+                    @include respond-to(medium-and-above) {
+                        margin-right: 8px;
+                    }
+                }
                 @include respond-to(medium-and-above) {
                     padding: 15px;
-                    display: inline;
-                    margin-left: 8px;
+                    // display: inline;
+                    // margin-left: 8px;
                 }
                 &.new-label {
                     animation: fade-in-labels ease .25s;
                 }
                 
+            }
+        }
+        .priorities {
+            h3 {
+                display: inline-block;
+                padding: 0.5rem;
+                margin-left: -0.5rem;
             }
         }
         .history {
@@ -207,6 +221,15 @@
             }
             .photo {
                 margin: 0 1rem 1rem 0;
+                &[data-aos="slide-up"] {
+                    opacity: 0;
+                }
+                &.aos-animate {
+                    transform: skewX(0);
+                    opacity: 1;
+                    top: 0;
+                    transition: all 0.85s;
+                }
             }
         }
         .photo {
