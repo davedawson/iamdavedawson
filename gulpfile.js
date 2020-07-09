@@ -50,7 +50,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 // Static Server + watching scss/html files
 gulp.task('watch', ['sass'], function() {
     gulp.watch("_sass/**/*.scss", ['sass']);
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_utilities/*', 'additional-utilities/*', '_partners/*', 'contact/*', 'about.html', 'faq.html', 'faq.md', 'about/*', 'img/*', '_includes/*', '_faqs/*', 'coned.html', 'js/*', 'about/*', 'adventures/*', '_config.yml', 'stripe/*', 'stripe/71437582c5fc56a13b8ffde25cc569e50f8e1893/*'], ['jekyll-rebuild','sass']);
+    gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_utilities/*', 'additional-utilities/*', '_partners/*', 'contact/*', 'about.html', 'faq.html', 'faq.md', 'about/*', 'img/*', '_includes/*', '_faqs/*', 'coned.html', 'js/*', 'about/*', 'adventures/*', '_config.yml', 'stripe/*', 'stripe/71437582c5fc56a13b8ffde25cc569e50f8e1893/*', 'product/*', 'product/71437582c5fc56a13b8ffde25cc569e50f8e1893/*'], ['jekyll-rebuild','sass']);
 });
 
 // Compile sass into CSS & auto-inject into browsers
