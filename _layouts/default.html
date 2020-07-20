@@ -1,7 +1,6 @@
 {% include head.html %}
 
   <body class="{{ page.class }} {{ layout.class }} interior">
-    <div class="container">
     	{% unless layout.class == "four-oh-four" or  layout.class == "closed" %}
 		    {% include header.html %}
 	    {% endunless %}
@@ -10,7 +9,6 @@
 	        {{ content }}
 	        
 	    </div>
-	  </div>
     {% include footer.html %}	  
   </body>
 

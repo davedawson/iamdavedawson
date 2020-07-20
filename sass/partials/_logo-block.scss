@@ -4,10 +4,9 @@
     align-items: center;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     column-gap: 5%;
     row-gap: 1.5rem;
-    margin: 40px 0 40px;
     @include respond-to(medium-and-above) {
         // margin: 15vh auto 15vh;
         column-gap: 5%;
