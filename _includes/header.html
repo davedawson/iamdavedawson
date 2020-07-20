@@ -1,14 +1,12 @@
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-{% capture id_prefix %}{% if post %}post{% else %}page{% endif %}{% endcapture %}
-{% capture id %}{{ id_prefix }}{{ page.url | replace:'/',' ' }}{% endcapture %}
-
-<body class="{{ layout }} {{ id }}">
-  <section id="header" class="cf">
-    <ul class="container nav cf">
-      <li class="nav-projects"><a href="/projects/">Projects</a></li>
-      <li class="nav-blog"><a href="/blog/">Blog</a></li>
-      <li class="nav-logo cf"><a href="/" class="cf"><strong>D</strong><em class="ave">ave</em> <strong>D</strong><em class="awson">awson</em></a></li>
-      <li class="nav-about"><a href="/about/">About</a></li>
-      <li class="nav-contact"><a href="mailto:dave@iamdavedawson.com">Contact <em>Opens an email window</em></a></li>
-    </ul>
-  </section><!-- /#header-->
+<section class="header">
+    <div class="container">
+        <ul class="nav wrap">
+            <li class="title">
+                <a href="/">Cottleston Pie</a>
+            </li>    
+            <li class="hire">
+                <a href="/">Hire</a>
+            </li>    
+        </ul>
+    </div>
+</section>

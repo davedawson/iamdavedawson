@@ -1,0 +1,75 @@
+.logo-block {
+    clear: both;
+    // padding: 0 5%;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    column-gap: 5%;
+    row-gap: 1.5rem;
+    margin: 40px 0 40px;
+    @include respond-to(medium-and-above) {
+        // margin: 15vh auto 15vh;
+        column-gap: 5%;
+        row-gap: 3rem;
+    }
+    @include respond-to(wide-and-above) {
+        row-gap: 4rem;
+        
+        column-gap: 5%;
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+    @include respond-to(extra-wide-screens) {
+        column-gap: 1%;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    
+    li {
+        position: relative;
+        animation: 1s ease-in-out both fade-in;
+        text-align: left;
+        opacity: 1;
+        top: 40px;
+        img {
+            opacity: 0.4;
+            max-width: 60px;
+            max-height: 35px;
+            @include respond-to(medium-and-above) {   
+                max-width: 120px;
+                max-height: 55px;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &.aos-animate {
+            opacity: 1;
+            transition: all ease 0.85s;
+        }
+        &.smaller {
+            img {
+                max-width: 115px;
+            }
+        }
+        
+    }
+    // Stagger image loading
+    @for $i from 1 through 30 {
+        li:nth-child(#{$i}) {
+            animation-delay: $i * (1s / 10);
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      top: 40px;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+    }
+}

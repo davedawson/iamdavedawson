@@ -1,0 +1,14 @@
+.header {
+    margin-top: 35px;;
+    @include respond-to(medium-and-above) {
+        margin-top: 30vh;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: $color-accent;
+        text-decoration: none;
+    }
+}

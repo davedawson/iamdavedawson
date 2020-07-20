@@ -1,0 +1,17 @@
+{% include head.html %}
+
+  <body class="{{ page.class }} {{ layout.class }} interior">
+    <div class="container">
+    	{% unless layout.class == "four-oh-four" or  layout.class == "closed" %}
+		    {% include header.html %}
+	    {% endunless %}
+	    <div class="page-content w-100 cf">
+	      
+	        {{ content }}
+	        
+	    </div>
+	  </div>
+    {% include footer.html %}	  
+  </body>
+
+</html>
